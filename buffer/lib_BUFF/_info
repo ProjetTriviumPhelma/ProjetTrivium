@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/buffer
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Ebuffer_80bits
+Z1 w1542020555
+Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z5 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/buffer
+Z6 8buffer_80bits.vhd
+Z7 Fbuffer_80bits.vhd
+l0
+L5
+VfWOAYNHTC06m0=KB6bWhK2
+!s100 kok?Y[[`WD7SmnG^HdmdB1
+Z8 OL;C;10.2c;57
+32
+Z9 !s110 1542020557
+!i10b 1
+Z10 !s108 1542020557.550823
+Z11 !s90 -work|lib_BUFF|buffer_80bits.vhd|
+Z12 !s107 buffer_80bits.vhd|
+!i111 0
+Z13 o-work lib_BUFF
+Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 13 buffer_80bits 0 22 fWOAYNHTC06m0=KB6bWhK2
+l22
+L16
+VDl@4Lo6h3@UlHjfAgBF=J3
+!s100 AfCVJ:9BjHWl0:We^m_BY0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i111 0
+R13
+R14

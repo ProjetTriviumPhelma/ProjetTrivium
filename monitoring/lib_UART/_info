@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Euart_rx
+Z1 w1541402920
+Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z5 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring
+Z6 8UART_RX.vhd
+Z7 FUART_RX.vhd
+l0
+L18
+V[3Pl3h1P^4Z5WjA>K78W72
+Z8 OL;C;10.2c;57
+32
+Z9 !s110 1541674978
+Z10 !s108 1541674978.644146
+Z11 !s90 -work|lib_UART|UART_RX.vhd|
+Z12 !s107 UART_RX.vhd|
+Z13 o-work lib_UART
+Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+!s100 >0NhBa;H>l<j0<@e:3BPZ2
+!i10b 1
+!i111 0
+Artl
+R2
+R3
+R4
+DEx4 work 7 uart_rx 0 22 [3Pl3h1P^4Z5WjA>K78W72
+l45
+L31
+VFR3m5cPL7@[jTdniNQaRV1
+R8
+32
+R9
+R10
+R11
+R12
+R13
+R14
+!s100 cOLQ<K[X38Hi@_g3SG;`n2
+!i10b 1
+!i111 0
+Euart_tb
+R1
+R2
+R3
+R4
+R5
+Z15 8tb_UART.vhd
+Z16 Ftb_UART.vhd
+l0
+L8
+V2ABK=72;RYeg]k:PQ6k_i3
+!s100 S^;Le777g@oc>>MD<[>Gd3
+R8
+32
+Z17 !s110 1541675005
+!i10b 1
+Z18 !s108 1541675005.798379
+Z19 !s90 -work|lib_UART|tb_UART.vhd|
+Z20 !s107 tb_UART.vhd|
+!i111 0
+R13
+R14
+Abehave
+R2
+R3
+R4
+DEx4 work 7 uart_tb 0 22 2ABK=72;RYeg]k:PQ6k_i3
+l79
+L11
+VHl80iX9BocZ:GMHmoICXg0
+!s100 _aeo^]DUV_J6RTmLeQl@13
+R8
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i111 0
+R13
+R14
+Euart_tx
+R1
+R2
+R3
+R4
+R5
+Z21 8UART_TX.vhd
+Z22 FUART_TX.vhd
+l0
+L18
+V5FAgL>EM>2XhBbOOVXT_i2
+R8
+32
+Z23 !s110 1541674982
+Z24 !s108 1541674982.325846
+Z25 !s90 -work|lib_UART|UART_TX.vhd|
+Z26 !s107 UART_TX.vhd|
+R13
+R14
+!s100 WPO=d]T7IP4@=ec@9a4Q51
+!i10b 1
+!i111 0
+Artl
+R2
+R3
+R4
+DEx4 work 7 uart_tx 0 22 5FAgL>EM>2XhBbOOVXT_i2
+l44
+L33
+VDi`ogBleXW1QPAYo`NZYB1
+R8
+32
+R23
+R24
+R25
+R26
+R13
+R14
+!s100 j`_P8giTo]O=VdTg?8Pbj2
+!i10b 1
+!i111 0
