@@ -1,0 +1,35 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -voptargs=+acc lib_BUFF.tb_chiffrement
+# vsim -voptargs=+acc lib_BUFF.tb_chiffrement 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_chiffrement(behavior)#1
+# Loading work.chiffrement(behavior)#1
+# Loading work.trivium(behavior)#1
+# Loading work.buffer_80bits(behavior)#1
+add wave -r /*
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
