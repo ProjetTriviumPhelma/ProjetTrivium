@@ -1,9 +1,10 @@
-#IP Chiffrement
+# IP Chiffrement
 
-![IP Chiffrement](presentation/Chiffrement.png?raw=true "Title")
+![IP Chiffrement](presentation/Chiffrement.png "IP Chiffrement")
 
+## IP Trivium
 
-![FSM Trivium](presentation/Trivium_FSM.png)
+![FSM Trivium](presentation/Trivium_FSM.png "FSM Trivium")
 
 
 Référence vers depot github:
