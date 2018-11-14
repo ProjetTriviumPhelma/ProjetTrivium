@@ -8,8 +8,16 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/buffer
 !i10d 8192
 !i10e 25
 !i10f 100
+T_opt
+!s110 1542126257
+V?VzXVKmd^aB1lF7MCFI6M0
+04 14 8 work tb_chiffrement behavior 1
+=1-002564c7984c-5beafab1-15185-174c
+o-quiet -auto_acc_if_foreign -work lib_BUFF +acc
+n@_opt
+OL;O;10.2c;57
 Ebuffer_80bits
-Z1 w1542020555
+Z1 w1542126238
 Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
 Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
@@ -19,17 +27,17 @@ Z7 Fbuffer_80bits.vhd
 l0
 L5
 VfWOAYNHTC06m0=KB6bWhK2
-!s100 kok?Y[[`WD7SmnG^HdmdB1
 Z8 OL;C;10.2c;57
 32
-Z9 !s110 1542020557
-!i10b 1
-Z10 !s108 1542020557.550823
+Z9 !s110 1542126241
+Z10 !s108 1542126241.601666
 Z11 !s90 -work|lib_BUFF|buffer_80bits.vhd|
 Z12 !s107 buffer_80bits.vhd|
-!i111 0
 Z13 o-work lib_BUFF
 Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+!s100 kok?Y[[`WD7SmnG^HdmdB1
+!i10b 1
+!i111 0
 Abehavior
 R2
 R3
@@ -37,15 +45,138 @@ R4
 DEx4 work 13 buffer_80bits 0 22 fWOAYNHTC06m0=KB6bWhK2
 l22
 L16
-VDl@4Lo6h3@UlHjfAgBF=J3
-!s100 AfCVJ:9BjHWl0:We^m_BY0
+V=Fi3RAETO>mn_KESj>:fd2
 R8
 32
 R9
-!i10b 1
 R10
 R11
 R12
-!i111 0
 R13
 R14
+!s100 L1R<TQPDg]Foej18[a>4^2
+!i10b 1
+!i111 0
+Echiffrement
+Z15 w1542124162
+R2
+R3
+R4
+R5
+Z16 8chiffrement.vhd
+Z17 Fchiffrement.vhd
+l0
+L6
+V@g@In9fjck]mObR^Qh0nW0
+R8
+32
+Z18 !s110 1542126244
+Z19 !s108 1542126244.649785
+Z20 !s90 -work|lib_BUFF|chiffrement.vhd|
+Z21 !s107 chiffrement.vhd|
+R13
+R14
+!s100 @3A57TUHdN6bTETaP6`jX0
+!i10b 1
+!i111 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 11 chiffrement 0 22 @g@In9fjck]mObR^Qh0nW0
+l61
+L18
+VA]2CR4zGWUS^XnEYPohLd0
+R8
+32
+R18
+R19
+R20
+R21
+R13
+R14
+!s100 ;>5BRAknSNzJ2;hUIh`iT2
+!i10b 1
+!i111 0
+Etb_chiffrement
+Z22 w1542022204
+R2
+R3
+R4
+R5
+Z23 8tb_chiffrement.vhd
+Z24 Ftb_chiffrement.vhd
+l0
+L6
+VOXPNC`Aa?P?AiN=ZPfnWQ3
+R8
+32
+Z25 !s110 1542126247
+Z26 !s108 1542126247.366996
+Z27 !s90 -work|lib_BUFF|tb_chiffrement.vhd|
+Z28 !s107 tb_chiffrement.vhd|
+R13
+R14
+!s100 OY9hUn096ObJ;cS06cn^D1
+!i10b 1
+!i111 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 14 tb_chiffrement 0 22 OXPNC`Aa?P?AiN=ZPfnWQ3
+l45
+L9
+V5H_=mg@Z1RbHWn?nfYj9X0
+R8
+32
+R25
+R26
+R27
+R28
+R13
+R14
+!s100 G5GKCT8;Ec@0X4X=0UJhR2
+!i10b 1
+!i111 0
+Etrivium
+Z29 w1542020235
+R2
+R3
+R4
+R5
+Z30 8../test_trivium/trivium.vhd
+Z31 F../test_trivium/trivium.vhd
+l0
+L13
+VT=lEUhX;ZM1GFScSBh<C>0
+R8
+32
+Z32 !s110 1542022489
+Z33 !s108 1542022489.814243
+Z34 !s90 -work|lib_BUFF|../test_trivium/trivium.vhd|
+Z35 !s107 ../test_trivium/trivium.vhd|
+R13
+R14
+!s100 8fcd=26OXPRW;LbQAMSAe0
+!i10b 1
+!i111 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 7 trivium 0 22 T=lEUhX;ZM1GFScSBh<C>0
+l46
+L27
+VVJjoR6l]ecfSi7YbOSLfR1
+R8
+32
+R32
+R33
+R34
+R35
+R13
+R14
+!s100 J6:Z6AYbcBM882HCU_LL:2
+!i10b 1
+!i111 0

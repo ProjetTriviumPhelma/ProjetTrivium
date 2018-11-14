@@ -22,19 +22,26 @@ signal s_out : std_logic_vector (80 downto 1);
 begin
 	STACK_BITS: process(CLK,MODE_RUN)
 	begin
-            if (MODE_RUN ='0' or RSTb ='0') then
-            	s_out <= (others => '0');
+        
+            if (RSTb ='0') then
+                s_out <= (others => '0');
+                ACK <= '0';
             else
-            	if(CLK'event and CLK='1') then
-                        ACK <= '0';
-			s_out (80 downto 2) <= s_out (79 downto 1);
-			s_out (1) <= STREAM_IN;
-                        nb_loops <= nb_loops + "0000001"; 
-                end if;
-                if (nb_loops >= NB_LOOPS_RUN) then
-                	nb_loops <= "0000000";
-                        ACK <= '1';
-                end if;
+                if (MODE_RUN = '1') then
+            		if(CLK'event and CLK='1') then
+				s_out (80 downto 2) <= s_out (79 downto 1);
+				s_out (1) <= STREAM_IN;
+                        	nb_loops <= nb_loops + "0000001";
+                        	if (nb_loops >= NB_LOOPS_RUN) then
+                			nb_loops <= "0000000";
+                        		ACK <= '1';
+                		end if;
+                	end if;
+                else
+			if(CLK'event and CLK='1') then
+                        	ACK <= '0';
+			end if;
+		end if;
             end if;
         end process;
 STREAM_OUT <= s_out;
