@@ -10,9 +10,12 @@ Dans l'IP on retrouve deux autres IPs :
 ## IP Trivium
 
 Le Trivium Permet de chiffrer un flux de donnée
+
 Spécifications:
-- > 32bits/cycle à un frequence de 10MHz
+Le nombre de bits codés > 32bits/cycle à un frequence de 10MHz
+
 ![Trivium](presentation/Trivium.png "Trivium")
+
 Nous avons implémenté 6 entrées et 3 sorties :
 - L'entrée 'CLK' permet d'être synchronisée sur l'horloge
 - L'entrée 'RSTb' permet de reseter la machine à état de l'IP
