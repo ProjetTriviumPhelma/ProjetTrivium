@@ -1,3 +1,3 @@
 TEST
 
-![FSM Trivium](../presentation/Trivium_FSM.png)
+![FSM Trivium](presentation/Trivium_FSM.png?raw=true "Title")
