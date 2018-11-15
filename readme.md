@@ -1,7 +1,11 @@
-# IP Chiffrement
+# Développement du VHDL
+
+## IP Chiffrement
 
 L'IP Chiffrement est un bloc VHDL avec 6 entrées et 2 sorties comme représenté ci-dessous:
+
 ![IP Chiffrement](presentation/Chiffrement.png "IP Chiffrement")
+
 Cette IP permet de charger en entrée un flux de donnée de 80bits et d'obtenir en sortie un paquet de 80bits chiffrés.
 Dans ce bloc on retrouve deux autres IPs :
 - Le `TRIVIUM`
@@ -9,7 +13,7 @@ Dans ce bloc on retrouve deux autres IPs :
 
 ![Chiffrement ARCHI](presentation/Chiffrement_TOP.png "Chiffrement ARCHI")
 
-## IP Trivium
+### IP Trivium
 
 Le Trivium Permet de chiffrer un flux de donnée
 
@@ -31,8 +35,7 @@ Nous avons implémenté 6 entrées et 3 sorties :
 
 ![FSM Trivium](presentation/Trivium_FSM.png "FSM Trivium")
 
-
-## IP Buffer_80bits
+### IP Buffer_80bits
 
 ![Buffer](presentation/Buffer.png "Buffer")
 
@@ -43,7 +46,12 @@ Nous avons implémenté 4 entrées et 2 sorties :
 - L'entrée `STREAM_IN` correspond à l'entrée du flux de donnée (bus sur 80bits)
 - La sortie `ACK` est un flag qui avertit lorsque les 80 bits sont prets en sortie
 - La sortie `STREAM_OUT` le vecteur de 80 bits chiffrés
-____________________________
+
+# Test des blocs RTL
+
+## Test et validation du Tivium
+
+_________________________________
 **Référence vers depot github :**
 
 - [IP Trivium Regis](https://github.com/inmcm/HDL_Ciphers/blob/master/Trivium)
