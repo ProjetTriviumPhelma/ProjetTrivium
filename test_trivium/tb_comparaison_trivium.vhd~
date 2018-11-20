@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY Trivium_Generator_TB IS
+END Trivium_Generator_TB;
+ 
+ARCHITECTURE behavior OF Trivium_Generator_TB IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT Trivium_Generator
+    PORT(
+         SYS_CLK : IN  std_logic;
+         RST : IN  std_logic;
+         PLAINTEXT_IN : IN  std_logic_vector(7 downto 0);
+         CIPHERTEXT_OUT : OUT  std_logic_vector(7 downto 0);
+         IV_INPUT : IN  std_logic_vector(79 downto 0);
+         PLNTXT_EN : IN  std_logic;
+         CPHRTXT_RDY : OUT  std_logic
+        );
+    END COMPONENT;

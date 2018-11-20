@@ -17,7 +17,6 @@ architecture Behavior of tb_trivium is
         Port ( CLK : in std_logic;
 	       RSTb : in std_logic;
                EN : in std_logic;
-               LOAD : in std_logic;
 	       IV_IN : in STD_LOGIC_VECTOR (80 downto 1);
 	       SK_IN : in STD_LOGIC_VECTOR (80 downto 1);
                ACK : out std_logic;
@@ -33,7 +32,6 @@ architecture Behavior of tb_trivium is
     signal s_clk       : std_logic := '0';
     signal s_rstb       : std_logic := '0';
     signal s_en       : std_logic := '0';
-    signal s_load       : std_logic := '1';
     
     signal K  : std_logic_vector(80 downto 1) := "11111111111111111111111111111111111111111111111111111111111111111111111111111111"; 
     signal IV : std_logic_vector(80 downto 1) := "10101010101010101010101010101010101010101010101010101010101010101010101010101010";
@@ -46,11 +44,11 @@ architecture Behavior of tb_trivium is
 
 begin
 
-    UUT : Trivium port map(s_clk, s_rstb, s_en, s_load, IV, K, s_ack, s_mode_run, s_out);
-    s_clk <= not s_clk after 20 ns;
+    UUT : Trivium port map(s_clk, s_rstb, s_en, IV, K, s_ack, s_mode_run, s_out);
+    s_clk <= not s_clk after 10 ns;
     s_rstb <= '1' after 80 ns;
-    s_load <= '0' after 110 ns;
-    s_en <= not s_en after 130 ns;
+    --s_en <= not s_en after 35 us;
+    s_en <= '1' after 130 ns, '0' after 28 us, '1' after 28020 ns;
  
 
 end architecture;

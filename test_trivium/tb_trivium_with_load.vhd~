@@ -48,7 +48,7 @@ begin
     s_clk <= not s_clk after 10 ns;
     s_rstb <= '1' after 80 ns;
     --s_en <= not s_en after 35 us;
-    s_en <= '1' after 130 ns, '0' after 28 us, '1' after 20 ns;
+    s_en <= '1' after 130 ns, '0' after 35 us;
  
 
 end architecture;
