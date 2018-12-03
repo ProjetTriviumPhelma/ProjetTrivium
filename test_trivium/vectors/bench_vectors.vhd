@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use std.textio.all;
-use ieee.std_logic_textio.all; -- pour le fichier de sortie
+-- use ieee.std_logic_textio.all;
 
 
 entity bench_vectors is
@@ -10,18 +10,31 @@ end bench_vectors;
 
 
 architecture arch2 of bench_vectors is
+	component hextobin is
+ 		port (
+ 		I : in character;
+		O : out std_logic_vector (3 downto 0)
+ 		);
+	end component;
+
 	constant filename : string := "test-vectors.txt";
 	file vecteurs : text open read_mode is filename;
         file file_output : text open write_mode is "debug.log"; -- pour fichier de sortie
+	signal s_I : character; -- signal pour les vecteurs de tests
+	signal s_O : std_logic_vector (3 downto 0); -- signal pour les réponses
+	signal v_K		: std_logic_vector(79 downto 0);
 begin
-	--UUT : entity detecteurPremier(flotdonnees) port map (I, F);
+        UUT:hextobin PORT MAP(
+		I => s_I,
+		O => s_O
+	);
+	-- UUT : entity hextobin(decod) port map (I, O);
 	process
 		variable v_ILINE		: line; -- pointeur vers un objet de type string
 		variable v_OLINE		: line; -- pointeur vers un objet de type string
 		variable c		: character;
                 --variable s		: string := "x";
 		--variable v_K		: std_logic_vector(19 downto 0) := X"00000000000000000000";
-		variable v_K		: std_logic_vector(79 downto 0);
 		--variable v_IV		: std_logic_vector(19 downto 0);
 		variable v_IV		: std_logic_vector(79 downto 0);
     		variable v_0_63		: std_logic_vector(63 downto 0);
@@ -29,6 +42,7 @@ begin
 		variable v_256_319	: std_logic_vector(63 downto 0);
 		variable v_448_511	: std_logic_vector(63 downto 0);
 		variable v_XOR		: std_logic_vector(63 downto 0);
+		variable j		: integer;
 	begin
 		while not endfile(vecteurs) loop
 			readline(vecteurs, v_ILINE);
@@ -37,15 +51,18 @@ begin
 					read(v_ILINE, c); -- lecture
 				end loop;
 				read(v_ILINE, c); -- lecture du "="
-				for I in o to 19 loop
+				for j in 0 to 19 loop
 					read(v_ILINE, c); -- lecture
+					s_I <= c;
+					wait for 10 ns;
+					v_K <= v_K & s_O;
 					--####################COMPLETER LA BOUCLE
 				end loop;
 				--while not (v_ILINE(1 to 1) = "I") loop
 					--read(v_ILINE, c); -- lecture
 					--s <= s&c;
 				--end loop;
-				read(v_ILINE, v_K); -- lecture de key
+				--read(v_ILINE, v_K); -- lecture de key
 				readline(vecteurs, v_ILINE); -- passer la ligne de key
 				--v_K <= to_stdlogicvector(s);
 				while not (v_ILINE(1 to 1) = "=") loop
@@ -108,6 +125,7 @@ begin
 				write(v_OLINE, v_XOR, right, 64);
 				writeline(file_output, v_OLINE);
 			end if;
+			v_K <= (others => '0');
 		end loop;
 		deallocate(v_ILINE); -- relâcher la mémoire du tampon
 		deallocate(v_OLINE); -- relâcher la mémoire du tampon
