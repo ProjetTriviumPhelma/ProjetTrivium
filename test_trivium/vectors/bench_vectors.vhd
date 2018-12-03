@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use std.textio.all;
--- use ieee.std_logic_textio.all;
+use ieee.std_logic_textio.all;
 
 
 entity bench_vectors is
@@ -55,7 +55,8 @@ begin
 					read(v_ILINE, c); -- lecture
 					s_I <= c;
 					wait for 10 ns;
-					v_K <= v_K & s_O;
+					v_K <= v_K XOR s_O;
+					v_K(79 downto 4) <= v_K(75 downto 0);
 					--####################COMPLETER LA BOUCLE
 				end loop;
 				--while not (v_ILINE(1 to 1) = "I") loop
