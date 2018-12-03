@@ -1,0 +1,41 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+
+
+entity detecteurPremierTB is
+end detecteurPremierTB;
+
+
+architecture arch2 of detecteurPremierTB is
+	signal I : unsigned(5 downto 0); -- signal pour les vecteurs de tests
+	signal F : std_logic; -- signal pour les réponses
+	constant filename : string := "premiers.txt";
+	file vecteurs : text open read_mode is filename;
+begin
+	UUT : entity detecteurPremier(flotdonnees) port map (I, F);
+	process
+		variable tampon : line; -- pointeur vers un objet de type string
+		variable n : integer;
+		variable c : character;
+	begin
+		while not endfile(vecteurs) loop
+			readline(vecteurs, tampon);
+			if tampon(1 to 2) /= "--" then -- passer les lignes de commentaires
+				read(tampon, n); -- lecture de l'entier
+				read(tampon, c); -- lecture du séparateur
+				read(tampon, c); -- lecture de l'indication: premier ('P') ou non ('N')
+				I <= to_unsigned(n, 6);
+				wait for 10 ns;
+				assert ((c = 'P') = (F = '1') and (c = 'N') = (F = '0'))
+				report "erreur pour l'entrée " & integer'image(n) severity error;
+			end if;
+		end loop;
+		deallocate(tampon); -- relâcher la mémoire du tampon
+		report "simulation terminée" severity failure;
+	end process;
+end arch2;
+

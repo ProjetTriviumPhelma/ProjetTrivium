@@ -24,7 +24,6 @@ COMPONENT Trivium is
 		EN : in std_logic;
 		IV_IN : in std_logic_vector (80 downto 1);	-- Input vector for IV
 		SK_IN : in std_logic_vector (80 downto 1);	-- Input vector for SK
-		ACK : out std_logic;				-- Acknoledge when operation finished
 		MODE_RUN : out std_logic;			-- To know when to get the output 
 		KEY_STREAM_OUT : out std_logic
 	);
@@ -33,7 +32,6 @@ end COMPONENT;
 
 SIGNAL CORE_OUT : STD_LOGIC_VECTOR((width - 1) downto 0);
 SIGNAL s_mode_run : std_logic;
-SIGNAL s_ack : std_logic;
 
 TYPE ARRAY_8x80 is ARRAY (0 to 7) of STD_LOGIC_VECTOR(79 downto 0); ----8x80 bit Array
 CONSTANT KEY_ARRAY : ARRAY_8x80 :=   (
@@ -57,8 +55,7 @@ Inst_TRIVIUM_CORE_X: Trivium PORT MAP(
 		KEY_STREAM_OUT => CORE_OUT(i),
                 RSTb => RST,
                 EN => PLNTXT_EN,
-                MODE_RUN => s_mode_run,
-                ACK => s_ack
+                MODE_RUN => s_mode_run
                 
 	);
 end generate;

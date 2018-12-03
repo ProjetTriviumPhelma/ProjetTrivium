@@ -1,0 +1,122 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
+use ieee.std_logic_textio.all; -- pour le fichier de sortie
+
+
+entity bench_vectors is
+end bench_vectors;
+
+
+architecture arch2 of bench_vectors is
+	constant filename : string := "test-vectors.txt";
+	file vecteurs : text open read_mode is filename;
+        file file_output : text open write_mode is "debug.log"; -- pour fichier de sortie
+begin
+	--UUT : entity detecteurPremier(flotdonnees) port map (I, F);
+	process
+		variable v_ILINE		: line; -- pointeur vers un objet de type string
+		variable v_OLINE		: line; -- pointeur vers un objet de type string
+		variable c		: character;
+                --variable s		: string := "x";
+		--variable v_K		: std_logic_vector(19 downto 0) := X"00000000000000000000";
+		variable v_K		: std_logic_vector(79 downto 0);
+		--variable v_IV		: std_logic_vector(19 downto 0);
+		variable v_IV		: std_logic_vector(79 downto 0);
+    		variable v_0_63		: std_logic_vector(63 downto 0);
+		variable v_192_255	: std_logic_vector(63 downto 0);
+		variable v_256_319	: std_logic_vector(63 downto 0);
+		variable v_448_511	: std_logic_vector(63 downto 0);
+		variable v_XOR		: std_logic_vector(63 downto 0);
+	begin
+		while not endfile(vecteurs) loop
+			readline(vecteurs, v_ILINE);
+			if (v_ILINE(1 to 3) /= "Set") then -- passer la ligne de SET
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				for I in o to 19 loop
+					read(v_ILINE, c); -- lecture
+					--####################COMPLETER LA BOUCLE
+				end loop;
+				--while not (v_ILINE(1 to 1) = "I") loop
+					--read(v_ILINE, c); -- lecture
+					--s <= s&c;
+				--end loop;
+				read(v_ILINE, v_K); -- lecture de key
+				readline(vecteurs, v_ILINE); -- passer la ligne de key
+				--v_K <= to_stdlogicvector(s);
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_IV); -- lecture de IV
+				readline(vecteurs, v_ILINE); -- passer la ligne de IV
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_0_63); -- lecture de [0..63]
+				readline(vecteurs, v_ILINE); -- passer la ligne de [0..63]
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_192_255); -- lecture de [192..255]
+				readline(vecteurs, v_ILINE); -- passer la ligne de [192..255]
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_256_319); -- lecture de [256..319]
+				readline(vecteurs, v_ILINE); -- passer la ligne de [256..319]
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_448_511); -- lecture de [448..511]
+				readline(vecteurs, v_ILINE); -- passer la ligne de [448..511]
+				while not (v_ILINE(1 to 1) = "=") loop
+					read(v_ILINE, c); -- lecture
+				end loop;
+				read(v_ILINE, c); -- lecture du "="
+				read(v_ILINE, v_XOR); -- lecture de XOR
+				
+				wait for 60 ns;
+				--assert ((c = 'P') = (F = '1') and (c = 'N') = (F = '0'))
+				--report "erreur pour l'entrée " & integer'image(n) severity error;
+				write(v_OLINE, v_K, right, 20);
+      				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_IV, right, 20);
+				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_0_63, right, 64);
+				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_192_255, right, 64);
+				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_256_319, right, 64);
+				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_448_511, right, 64);
+				writeline(file_output, v_OLINE);
+				wait for 10 ns;
+				write(v_OLINE, v_XOR, right, 64);
+				writeline(file_output, v_OLINE);
+			end if;
+		end loop;
+		deallocate(v_ILINE); -- relâcher la mémoire du tampon
+		deallocate(v_OLINE); -- relâcher la mémoire du tampon
+		file_close(vecteurs);
+		file_close(file_output);
+		report "simulation terminée" severity failure;
+	end process;
+end arch2;
+
+--https://www.nandland.com/vhdl/examples/example-file-io.html
+--https://moodle.polymtl.ca/pluginfile.php/89255/mod_folder/content/0/pdf/0710ESFichiers.pdf?forcedownload=1
+

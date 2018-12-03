@@ -64,7 +64,7 @@ Inst_TRIVIUM_CORE_X: Trivium PORT MAP(
 end generate;
 
 CPHRTXT_RDY <= s_mode_run;
-CIPHERTEXT_OUT <= (CORE_OUT XOR PLAINTEXT_IN) & s_mode_run;
+CIPHERTEXT_OUT <= CORE_OUT XOR PLAINTEXT_IN;
 
 end Behavioral;
 

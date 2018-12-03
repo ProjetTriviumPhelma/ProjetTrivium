@@ -1,0 +1,1198 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -voptargs=+acc lib_VECT.bench_vectors
+# vsim -voptargs=+acc lib_VECT.bench_vectors 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.bench_vectors(arch2)#1
+run
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 0 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 1080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 1200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 1320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 1800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 1920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 2040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 2280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 2640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 2760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 2880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 3 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 3360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 3840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 3960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 4080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 4200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 4320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 4440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 4560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 4680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 4800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 4920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 5040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 5160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 5280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 5400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 5520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 5640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 5760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 5880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 6 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 6120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 6240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 6360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 6480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 6600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 6720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 6960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 7080 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 7200 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 7320 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 7440 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 7560 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 7680 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 7800 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 7920 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 8040 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 8160 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 8280 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 8400 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 8520 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 8640 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 8760 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 8880 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'B' read, expected STD_ULOGIC literal.
+#    Time: 9 us  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 9120 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'E' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9240 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '7' read, expected STD_ULOGIC literal.
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '9' read, expected STD_ULOGIC literal.
+#    Time: 9360 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3953) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) End of string encountered
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 9480 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 9600 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '5' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'F' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9720 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'D' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '3' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '2' read, expected STD_ULOGIC literal.
+#    Time: 9840 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '"' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'A' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '4' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '6' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character 'C' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Error: (vsim-3560) STD_LOGIC_1164.READ(STD_ULOGIC_VECTOR) Error: Character '8' read, expected STD_ULOGIC literal.
+#    Time: 9960 ns  Iteration: 0  Instance: /bench_vectors
+# ** Failure: simulation terminée
+#    Time: 10080 ns  Iteration: 0  Process: /bench_vectors/line__19 File: bench_vectors.vhd
+# Break in Process line__19 at bench_vectors.vhd line 112

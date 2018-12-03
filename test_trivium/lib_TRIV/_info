@@ -9,190 +9,210 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium
 !i10e 25
 !i10f 100
 T_opt
-!s110 1542718079
-V3d2a<EXd^g_eRSWIjTMdN2
-04 14 8 work trivium_gen_tb behavior 1
-=1-002564c7984c-5bf4027f-978f-3e73
+!s110 1543228435
+VoL2L[6N`oTJ@?^Q:[Hj5:0
+Z1 04 14 8 work trivium_gen_tb behavior 1
+=1-002564c797f3-5bfbcc13-2234-44ab
 o-quiet -auto_acc_if_foreign -work lib_TRIV +acc
 n@_opt
-OL;O;10.2c;57
+Z2 OL;O;10.2c;57
+T_opt1
+VcV9>9?13?1VHc3cHL6[f11
+04 16 10 work trivium_gen_nils behavioral 1
+=1-002564c797f3-5bfbcba5-a184c-43e9
+Z3 o-quiet -auto_acc_if_foreign -work lib_TRIV
+n@_opt1
+R2
+Z4 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium
+!s110 1543228325
+T_opt2
+VQE^9DY4Tg9_S[=G?0Wf^F1
+R1
+=1-002564c797f3-5bfbcbb2-dd8f2-43f8
+R3
+n@_opt2
+R2
+R4
+!s110 1543228339
 Etb_trivium
-Z1 w1542616397
-Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
-Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
-Z5 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium
-Z6 8tb_trivium.vhd
-Z7 Ftb_trivium.vhd
+Z5 w1542616397
+Z6 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z7 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+R4
+Z9 8tb_trivium.vhd
+Z10 Ftb_trivium.vhd
 l0
 L6
 V;LTNIYnaMkbND^fHmHna?2
-Z8 OL;C;10.2c;57
+Z11 OL;C;10.2c;57
 32
-Z9 !s110 1542616404
-Z10 !s108 1542616403.993267
-Z11 !s90 -work|lib_TRIV|tb_trivium.vhd|
-Z12 !s107 tb_trivium.vhd|
-Z13 o-work lib_TRIV
-Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+Z12 !s110 1542616404
+Z13 !s108 1542616403.993267
+Z14 !s90 -work|lib_TRIV|tb_trivium.vhd|
+Z15 !s107 tb_trivium.vhd|
+Z16 o-work lib_TRIV
+Z17 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
 !s100 f?acec7mS?;C72429G1jA2
 !i10b 1
 !i111 0
 Abehavior
-R2
-R3
-R4
+R6
+R7
+R8
 DEx4 work 10 tb_trivium 0 22 ;LTNIYnaMkbND^fHmHna?2
 l45
 L9
 VJKG2D9o?6Jl4c;XP]0nA;0
-R8
-32
-R9
-R10
 R11
+32
 R12
 R13
 R14
+R15
+R16
+R17
 !s100 ^4e@?P7WlJomNC9W81^cM2
 !i10b 1
 !i111 0
 Etrivium
-Z15 w1542614917
-R2
-R3
+Z18 w1543219902
+R6
+R7
+R8
 R4
-R5
-Z16 8trivium.vhd
-Z17 Ftrivium.vhd
+Z19 8trivium_v2.vhd
+Z20 Ftrivium_v2.vhd
 l0
 L13
-VQ9FdYNCkC1d7bDE]bLMDQ1
-R8
+V4lQf=>k3_IM:bPkZUjfXa0
+R11
 32
-Z18 !s110 1542615819
-Z19 !s108 1542615819.716296
-Z20 !s90 -work|lib_TRIV|trivium.vhd|
-Z21 !s107 trivium.vhd|
-R13
-R14
-!s100 dgAczICZef7OUWoFOTZ@52
+Z21 !s110 1543219912
+Z22 !s108 1543219912.519968
+Z23 !s90 -work|lib_TRIV|trivium_v2.vhd|
+Z24 !s107 trivium_v2.vhd|
+R16
+R17
+!s100 13RiIQJV:XhXHne5b:Yz_1
 !i10b 1
 !i111 0
 Abehavior
-R2
-R3
-R4
-DEx4 work 7 trivium 0 22 Q9FdYNCkC1d7bDE]bLMDQ1
-32
-R18
-l42
-L26
-V_a_JDzNR[:GS68bRCCEVm3
+R6
+R7
 R8
-R19
-R20
+DEx4 work 7 trivium 0 22 4lQf=>k3_IM:bPkZUjfXa0
+l63
+L25
+VimGlK;KM67=RJc`m1TTGa3
+R11
+32
 R21
-R13
-R14
-!s100 bf>mg3:]2UULS;S4GJ58Z2
+R22
+R23
+R24
+R16
+R17
+!s100 [gBfgCF`Z6k@L^E7Q7Y2F1
 !i10b 1
 !i111 0
 Akeyinit
-R2
-R3
-R4
+R6
+R7
+R8
 DEx4 work 7 trivium 0 22 DVUc>oh[z=K7D91z`[:Je3
 l40
 L23
 VX1o9J@OmZKgI>0^`Cn<LJ1
-R8
+R11
 32
-R20
-R13
-R14
+R16
+R17
 w1541675051
-R21
+Ftrivium.vhd
+8trivium.vhd
+!s90 -work|lib_TRIV|trivium.vhd|
+!s107 trivium.vhd|
 !s110 1541675126
 !s108 1541675126.610375
 !s100 0g;OPeNeYDKd[1zLjcVS23
 !i10b 1
 !i111 0
 Etrivium_gen_nils
-Z22 w1542623703
-R3
+Z25 w1543219224
+R7
+R8
 R4
-R5
-Z23 8trivium_gen_nils.vhd
-Z24 Ftrivium_gen_nils.vhd
+Z26 8trivium_gen_nils.vhd
+Z27 Ftrivium_gen_nils.vhd
 l0
 L4
 VaY05=C^4Ga72BN4XnV;Oj2
-R8
+R11
 32
-Z25 !s110 1542625181
-Z26 !s108 1542625181.081944
-Z27 !s90 -work|lib_TRIV|trivium_gen_nils.vhd|
-Z28 !s107 trivium_gen_nils.vhd|
-R13
-R14
+Z28 !s110 1543220507
+Z29 !s108 1543220507.791412
+Z30 !s90 -work|lib_TRIV|trivium_gen_nils.vhd|
+Z31 !s107 trivium_gen_nils.vhd|
+R16
+R17
 !s100 ccihG@V^?d>V9ZF7CK3XH1
 !i10b 1
 !i111 0
 Abehavioral
-R3
-R4
-DEx4 work 16 trivium_gen_nils 0 22 aY05=C^4Ga72BN4XnV;Oj2
-l49
-L16
-V96LWe`4JfWZ3Q]LI9M<1T3
+R7
 R8
+DEx4 work 16 trivium_gen_nils 0 22 aY05=C^4Ga72BN4XnV;Oj2
+l47
+L16
+VH6:geBaS4:@Hmeff[2ak]2
+R11
 32
-R25
-R26
-R27
 R28
-R13
-R14
-!s100 9a?S^X09SVYnRf>N^J5h01
+R29
+R30
+R31
+R16
+R17
+!s100 dSbabKLHfaf8T4jiOC]@]1
 !i10b 1
 !i111 0
 Etrivium_gen_tb
-Z29 w1542624341
-R3
+Z32 w1542624341
+R7
+R8
 R4
-R5
-Z30 8tb_trivium_gen_nils.vhd
-Z31 Ftb_trivium_gen_nils.vhd
+Z33 8tb_trivium_gen_nils.vhd
+Z34 Ftb_trivium_gen_nils.vhd
 l0
 L8
-VMPJG;8jB=m2lNjIjC`iPQ2
-R8
+VEKY5KXh38`>VnPlai;_Jn2
+R11
 32
-Z32 !s110 1542625183
-Z33 !s108 1542625183.487575
-Z34 !s90 -work|lib_TRIV|tb_trivium_gen_nils.vhd|
-Z35 !s107 tb_trivium_gen_nils.vhd|
-R13
-R14
+Z35 !s110 1543228410
+Z36 !s108 1543228410.758760
+Z37 !s90 +acc|-work|lib_TRIV/|tb_trivium_gen_nils.vhd|
+Z38 !s107 tb_trivium_gen_nils.vhd|
+Z39 o+acc -work lib_TRIV/
+R17
 !s100 ^HM]]jO<VnHMkLoCP@:=Q3
 !i10b 1
 !i111 0
 Abehavior
-R3
-R4
-DEx4 work 14 trivium_gen_tb 0 22 MPJG;8jB=m2lNjIjC`iPQ2
+R7
+R8
+DEx4 work 14 trivium_gen_tb 0 22 EKY5KXh38`>VnPlai;_Jn2
 l39
 L11
-Vm14B<zkn4ZbLdG3MmLc3W0
-R8
+VBE:o0nYXiPkEdbQG`P;SG0
+R11
 32
-R32
-R33
-R34
 R35
-R13
-R14
+R36
+R37
+R38
+R39
+R17
 !s100 81699a5=Yo94je^O6=WSQ0
 !i10b 1
 !i111 0
