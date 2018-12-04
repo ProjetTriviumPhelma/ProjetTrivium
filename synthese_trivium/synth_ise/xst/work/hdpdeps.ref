@@ -1,0 +1,8 @@
+V3 3
+FL /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/trivium.vhd 2018/11/22.09:15:52 P.20131013
+EN work/Trivium 1542879075 \
+      FL /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/trivium.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Trivium/Behavior 1542879076 \
+      FL /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/trivium.vhd \
+      EN work/Trivium 1542879075

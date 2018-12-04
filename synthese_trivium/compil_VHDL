@@ -1,0 +1,5 @@
+vdel -lib WORK -all
+vlib WORK
+vmap WORK WORK
+
+vcom +acc -work WORK trivium.vhd

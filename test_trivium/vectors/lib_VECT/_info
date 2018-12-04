@@ -9,15 +9,15 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium/vectors
 !i10e 25
 !i10f 100
 T_opt
-!s110 1543834246
-V=gAH9DcB`4l60X:_LQASg2
+!s110 1543875684
+Vg=ke97ZoCQ7Qfe@P>;6Tk2
 04 13 5 work bench_vectors arch2 1
-=1-002564c797f3-5c050a86-cb167-4b9c
-o-quiet -auto_acc_if_foreign -work lib_VECT +acc
+=1-f01fafcf20af-5c05ac64-2bf96-7dd8
+o-quiet -auto_acc_if_foreign -work lib_VECT
 n@_opt
 OL;O;10.2c;57
 Ebench_vectors
-Z1 w1543834206
+Z1 w1543875629
 Z2 DPx4 ieee 16 std_logic_textio 0 22 E=LR>a2bb_I?VV>QDdAdh3
 Z3 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
 Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
@@ -30,8 +30,8 @@ L8
 VnaZlO9Z2CPhAF0__gV`J12
 Z9 OL;C;10.2c;57
 32
-Z10 !s110 1543834237
-Z11 !s108 1543834237.462126
+Z10 !s110 1543875635
+Z11 !s108 1543875635.122253
 Z12 !s90 -work|lib_VECT|bench_vectors.vhd|
 Z13 !s107 bench_vectors.vhd|
 Z14 o-work lib_VECT
@@ -45,9 +45,9 @@ R3
 R4
 R5
 DEx4 work 13 bench_vectors 0 22 naZlO9Z2CPhAF0__gV`J12
-l16
+l32
 L12
-VPNgf0EBfbnL7@S?ITJH[?1
+VRdlnj6cMz^27@Jl<b?zTF0
 R9
 32
 R10
@@ -56,6 +56,47 @@ R12
 R13
 R14
 R15
-!s100 e8aiU@_TamLkI;lHTcfRb0
+!s100 UU0ojWbHV_z[IIVjEXU>Q3
+!i10b 1
+!i111 0
+Ehextobin
+Z16 w1543853217
+R3
+R4
+R5
+R6
+Z17 8hextobin.vhd
+Z18 Fhextobin.vhd
+l0
+L5
+VjeFBQJ2^zEZUTzTc45GSb3
+R9
+32
+Z19 !s110 1543875498
+Z20 !s108 1543875498.477294
+Z21 !s90 -work|lib_VECT|hextobin.vhd|
+Z22 !s107 hextobin.vhd|
+R14
+R15
+!s100 XGENoZ87M]Q=;?:g4ZOSm2
+!i10b 1
+!i111 0
+Adecod
+R3
+R4
+R5
+DEx4 work 8 hextobin 0 22 jeFBQJ2^zEZUTzTc45GSb3
+l12
+L11
+VKFZ>U8?:j7[5lE7j:l;KD3
+R9
+32
+R19
+R20
+R21
+R22
+R14
+R15
+!s100 SE4T]TMjo]oKO4Y]G2Q^;0
 !i10b 1
 !i111 0
