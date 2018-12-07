@@ -153,6 +153,7 @@ begin
 				writeline(file_output, v_OLINE);
 			end if;
 			v_K <= (others => '0');
+			v_IV <= (others => '0');
 			v_0_63 <= (others => '0');
 			v_192_255 <= (others => '0');
 			v_256_319 <= (others => '0');

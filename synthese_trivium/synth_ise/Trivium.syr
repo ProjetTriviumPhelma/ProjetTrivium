@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Reading design: Trivium.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -108,19 +108,18 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/trivium.vhd" in Library work.
-Entity <Trivium> compiled.
-Entity <Trivium> (Architecture <Behavior>) compiled.
+Architecture behavior of Entity trivium is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Trivium> in library <work> (architecture <Behavior>).
+Analyzing hierarchy for entity <Trivium> in library <work> (architecture <behavior>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Trivium> in library <work> (Architecture <Behavior>).
+Analyzing Entity <Trivium> in library <work> (Architecture <behavior>).
 Entity <Trivium> analyzed. Unit <Trivium> generated.
 
 
@@ -408,13 +407,13 @@ Offset:              4.283ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
+Total REAL time to Xst completion: 8.00 secs
 Total CPU time to Xst completion: 6.66 secs
  
 --> 
 
 
-Total memory usage is 521076 kilobytes
+Total memory usage is 521112 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

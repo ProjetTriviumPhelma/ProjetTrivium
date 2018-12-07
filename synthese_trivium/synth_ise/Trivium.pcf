@@ -1,8 +1,63 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 22 10:31:37 2018
+// Written by: Map P.20131013 on Thu Dec 06 11:20:36 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 NET "CLK_BUFGP/IBUFG" BEL "CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP CLK = BEL "s_117" BEL "s_12" BEL "s_122" BEL "s_13" BEL "s_14" BEL
+        "s_118" BEL "s_123" BEL "s_119" BEL "s_124" BEL "s_125" BEL "s_20" BEL
+        "s_15" BEL "s_130" BEL "s_21" BEL "s_16" BEL "s_126" BEL "s_131" BEL
+        "s_22" BEL "s_132" BEL "s_17" BEL "s_127" BEL "s_23" BEL "s_18" BEL
+        "s_24" BEL "s_128" BEL "s_133" BEL "s_19" BEL "s_129" BEL "s_25" BEL
+        "s_134" BEL "s_30" BEL "s_135" BEL "s_140" BEL "s_31" BEL "s_26" BEL
+        "s_136" BEL "s_141" BEL "s_137" BEL "s_32" BEL "s_27" BEL "s_142" BEL
+        "s_33" BEL "s_143" BEL "s_28" BEL "s_138" BEL "s_34" BEL "s_29" BEL
+        "s_40" BEL "s_139" BEL "s_144" BEL "s_35" BEL "s_150" BEL "s_145" BEL
+        "s_200" BEL "s_41" BEL "s_36" BEL "s_201" BEL "s_151" BEL "s_146" BEL
+        "s_42" BEL "s_37" BEL "s_202" BEL "s_152" BEL "s_147" BEL "s_43" BEL
+        "s_38" BEL "s_203" BEL "s_153" BEL "s_148" BEL "s_44" BEL "s_39" BEL
+        "s_154" BEL "s_149" BEL "s_204" BEL "s_205" BEL "s_45" BEL "s_50" BEL
+        "s_160" BEL "s_155" BEL "s_46" BEL "s_210" BEL "s_51" BEL "s_206" BEL
+        "s_161" BEL "s_52" BEL "s_156" BEL "s_211" BEL "s_47" BEL "s_207" BEL
+        "s_162" BEL "s_157" BEL "s_212" BEL "s_53" BEL "s_163" BEL "s_48" BEL
+        "s_208" BEL "s_158" BEL "s_213" BEL "s_209" BEL "s_54" BEL "s_49" BEL
+        "s_164" BEL "s_159" BEL "s_55" BEL "s_214" BEL "s_60" BEL "s_215" BEL
+        "s_170" BEL "s_165" BEL "s_220" BEL "s_61" BEL "s_56" BEL "s_166" BEL
+        "s_216" BEL "s_171" BEL "s_221" BEL "s_62" BEL "s_172" BEL "s_57" BEL
+        "s_217" BEL "s_167" BEL "s_222" BEL "s_218" BEL "s_63" BEL "s_58" BEL
+        "s_173" BEL "s_168" BEL "s_223" BEL "s_64" BEL "s_59" BEL "s_219" BEL
+        "s_224" BEL "s_174" BEL "s_169" BEL "s_70" BEL "s_65" BEL "s_225" BEL
+        "s_180" BEL "s_175" BEL "s_230" BEL "s_226" BEL "s_71" BEL "s_66" BEL
+        "s_181" BEL "s_176" BEL "s_231" BEL "s_72" BEL "s_67" BEL "s_227" BEL
+        "s_232" BEL "s_182" BEL "s_177" BEL "s_73" BEL "s_68" BEL "s_178" BEL
+        "s_228" BEL "s_183" BEL "s_233" BEL "s_74" BEL "s_229" BEL "s_69" BEL
+        "s_234" BEL "s_184" BEL "s_179" BEL "s_80" BEL "s_75" BEL "s_235" BEL
+        "s_190" BEL "s_81" BEL "s_185" BEL "s_240" BEL "s_76" BEL "s_236" BEL
+        "s_241" BEL "s_191" BEL "s_186" BEL "s_82" BEL "s_192" BEL "s_77" BEL
+        "s_237" BEL "s_187" BEL "s_242" BEL "s_83" BEL "s_78" BEL "s_238" BEL
+        "s_193" BEL "s_84" BEL "s_188" BEL "s_243" BEL "s_79" BEL "s_239" BEL
+        "s_244" BEL "s_194" BEL "s_189" BEL "s_90" BEL "s_85" BEL "s_250" BEL
+        "s_245" BEL "s_195" BEL "s_91" BEL "s_86" BEL "s_246" BEL "s_196" BEL
+        "s_251" BEL "s_92" BEL "s_197" BEL "s_87" BEL "s_247" BEL "s_252" BEL
+        "s_93" BEL "s_198" BEL "s_88" BEL "s_248" BEL "s_253" BEL "s_94" BEL
+        "s_199" BEL "s_89" BEL "s_249" BEL "s_254" BEL "s_95" BEL "s_255" BEL
+        "s_260" BEL "s_96" BEL "s_256" BEL "s_257" BEL "s_261" BEL "s_97" BEL
+        "s_262" BEL "s_98" BEL "s_1" BEL "s_258" BEL "s_263" BEL "s_99" BEL
+        "s_259" BEL "s_265" BEL "s_264" BEL "s_2" BEL "s_270" BEL "s_3" BEL
+        "s_266" BEL "s_271" BEL "s_4" BEL "s_267" BEL "s_268" BEL "s_272" BEL
+        "s_5" BEL "s_273" BEL "s_6" BEL "s_7" BEL "s_269" BEL "s_274" BEL
+        "s_275" BEL "s_280" BEL "s_281" BEL "s_8" BEL "s_276" BEL "s_9" BEL
+        "s_277" BEL "s_282" BEL "s_278" BEL "s_283" BEL "s_279" BEL "s_284"
+        BEL "s_285" BEL "s_101" BEL "s_100" BEL "s_102" BEL "s_103" BEL
+        "s_110" BEL "s_104" BEL "s_105" BEL "s_106" BEL "s_111" BEL "s_107"
+        BEL "s_112" BEL "s_108" BEL "s_113" BEL "s_10" BEL "s_109" BEL "s_114"
+        BEL "s_115" BEL "s_120" BEL "s_11" BEL "s_116" BEL "s_121" BEL
+        "nb_loops_0" BEL "nb_loops_1" BEL "nb_loops_2" BEL "nb_loops_3" BEL
+        "nb_loops_4" BEL "nb_loops_5" BEL "nb_loops_6" BEL "nb_loops_7" BEL
+        "nb_loops_8" BEL "nb_loops_9" BEL "nb_loops_10" BEL "KEY_STREAM_OUT"
+        BEL "MODE_RUN" BEL "current_state_FSM_FFd1" BEL
+        "current_state_FSM_FFd2" BEL "s_286" BEL "s_287" BEL "s_288" BEL "ACK"
+        BEL "CLK_BUFGP/BUFG.GCLKMUX" BEL "CLK_BUFGP/BUFG";
+TS_CLK = PERIOD TIMEGRP "CLK" 20 ns HIGH 50%;
 SCHEMATIC END;
 

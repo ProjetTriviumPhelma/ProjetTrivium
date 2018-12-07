@@ -45,6 +45,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Trivium.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Trivium.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Trivium.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Trivium_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Trivium_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Trivium_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Trivium_map.mrp" xil_pn:subbranch="Map"/>
@@ -75,6 +76,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1542879066" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1542879066">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1542879066" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6749036262230365326" xil_pn:start_ts="1542879066">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -100,7 +102,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542879082" xil_pn:in_ck="-8299871160434976501" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6752983574644859759" xil_pn:start_ts="1542879066">
+    <transform xil_pn:end_ts="1544091445" xil_pn:in_ck="7825439245346279069" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4126141343260318365" xil_pn:start_ts="1544091429">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -117,11 +119,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1542879082" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4730783327968231077" xil_pn:start_ts="1542879082">
+    <transform xil_pn:end_ts="1544093398" xil_pn:in_ck="134096386179249948" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4730783327968231077" xil_pn:start_ts="1544093398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542879089" xil_pn:in_ck="134096386179242454" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8273180253585419315" xil_pn:start_ts="1542879082">
+    <transform xil_pn:end_ts="1544093404" xil_pn:in_ck="8523833050335788850" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8273180253585419315" xil_pn:start_ts="1544093398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Trivium.bld"/>
@@ -130,9 +132,11 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1542879099" xil_pn:in_ck="134096386179242455" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6904161257216636093" xil_pn:start_ts="1542879089">
+    <transform xil_pn:end_ts="1544091638" xil_pn:in_ck="8574375156849515667" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6904161257216636093" xil_pn:start_ts="1544091628">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Trivium.pcf"/>
       <outfile xil_pn:name="Trivium_map.map"/>
       <outfile xil_pn:name="Trivium_map.mrp"/>
@@ -143,9 +147,12 @@
       <outfile xil_pn:name="Trivium_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1542879155" xil_pn:in_ck="-1660263289859572624" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1229177303592316936" xil_pn:start_ts="1542879099">
+    <transform xil_pn:end_ts="1544091667" xil_pn:in_ck="-5154041676308645876" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1229177303592316936" xil_pn:start_ts="1544091638">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Trivium.ncd"/>
       <outfile xil_pn:name="Trivium.pad"/>
       <outfile xil_pn:name="Trivium.par"/>
@@ -160,6 +167,12 @@
     <transform xil_pn:end_ts="1542879284" xil_pn:in_ck="134096386179242323" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1542879275">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Trivium.bgn"/>
       <outfile xil_pn:name="Trivium.bit"/>
       <outfile xil_pn:name="Trivium.drc"/>
@@ -168,12 +181,19 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1542879155" xil_pn:in_ck="134096386179242323" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1542879152">
+    <transform xil_pn:end_ts="1544091667" xil_pn:in_ck="1902817097037575823" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544091664">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Trivium.twr"/>
       <outfile xil_pn:name="Trivium.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1544093404" xil_pn:in_ck="8574375156849515667" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1544093404">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 

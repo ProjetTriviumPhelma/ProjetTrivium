@@ -76,7 +76,7 @@ begin
 					read(v_ILINE, c); -- lecture de [0..63]
 					s_I <= c;
 					wait for 10 ns;
-					v_O_63(3 downto 0) <= s_O;
+					v_0_63(3 downto 0) <= s_O;
 					v_0_63(255 downto 4) <= v_0_63(251 downto 0);
 				end loop;
 				readline(vecteurs, v_ILINE); -- passer la ligne de [0..63]

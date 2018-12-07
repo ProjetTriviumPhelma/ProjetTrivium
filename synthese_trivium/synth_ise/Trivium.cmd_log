@@ -4,3 +4,10 @@ map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Triviu
 par -w -intstyle ise -ol high -t 1 Trivium_map.ncd Trivium.ncd Trivium.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Trivium.twx Trivium.ncd -o Trivium.twr Trivium.pcf 
 bitgen -intstyle ise -f Trivium.ut Trivium.ncd 
+xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/synth_ise/Trivium.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/synth_ise/Trivium.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 Trivium.ngc Trivium.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Trivium.ucf -p xc3s1600e-fg320-4 Trivium.ngc Trivium.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Trivium_map.ncd Trivium.ngd Trivium.pcf 
+par -w -intstyle ise -ol high -t 1 Trivium_map.ncd Trivium.ncd Trivium.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Trivium.twx Trivium.ncd -o Trivium.twr Trivium.pcf -ucf Trivium.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Trivium.ucf -p xc3s1600e-fg320-4 Trivium.ngc Trivium.ngd  

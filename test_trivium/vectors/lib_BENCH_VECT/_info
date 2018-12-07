@@ -1,0 +1,305 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium/vectors
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+T_opt
+!s110 1544175119
+V8e<Ya[hM=mLTCg3j5HUH@0
+04 13 8 work tb_generateur behavior 1
+=1-002564c7982c-5c0a3e0d-720c3-7c27
+o-quiet -auto_acc_if_foreign -work lib_BENCH_VECT +acc
+n@_opt
+OL;O;10.2c;57
+Egenerateur_vect
+Z1 w1544117735
+Z2 DPx4 ieee 16 std_logic_textio 0 22 E=LR>a2bb_I?VV>QDdAdh3
+Z3 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z6 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium/vectors
+Z7 8generateur_vect.vhd
+Z8 Fgenerateur_vect.vhd
+l0
+L8
+V`NZGbNZllSZi?[e]6i@W02
+Z9 OL;C;10.2c;57
+32
+Z10 !s110 1544175106
+Z11 !s108 1544175106.293473
+Z12 !s90 -work|lib_BENCH_VECT|generateur_vect.vhd|
+Z13 !s107 generateur_vect.vhd|
+Z14 o-work lib_BENCH_VECT
+Z15 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 CheckSynthesis 1 Show_VitalChecksWarnings 0 NoCoverage 1
+!s100 1zC08<IUzz_m>]m>i0k=;3
+!i10b 1
+!i111 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 15 generateur_vect 0 22 `NZGbNZllSZi?[e]6i@W02
+l34
+L18
+ViPLIcG`o51[3dMcFMDoKC3
+R9
+32
+R10
+R11
+R12
+R13
+R14
+R15
+!s100 ;5AVlOZ_b;^Y<H^OWY<<90
+!i10b 1
+!i111 0
+Ehextobin
+Z16 w1543853217
+R3
+R4
+R5
+R6
+Z17 8hextobin.vhd
+Z18 Fhextobin.vhd
+l0
+L5
+V<U12EdOZAXNV8RV1dQVgl1
+R9
+32
+R10
+Z19 !s108 1544175106.207245
+Z20 !s90 -work|lib_BENCH_VECT|hextobin.vhd|
+Z21 !s107 hextobin.vhd|
+R14
+R15
+!s100 XGENoZ87M]Q=;?:g4ZOSm2
+!i10b 1
+!i111 0
+Adecod
+R3
+R4
+R5
+DEx4 work 8 hextobin 0 22 <U12EdOZAXNV8RV1dQVgl1
+l12
+L11
+VWOog2<cO48A[o]Alg@Ie32
+R9
+32
+R10
+R19
+R20
+R21
+R14
+R15
+!s100 SE4T]TMjo]oKO4Y]G2Q^;0
+!i10b 1
+!i111 0
+Etb_generateur
+Z22 w1544116630
+R3
+R4
+R5
+R6
+Z23 8tb_generateur.vhd
+Z24 Ftb_generateur.vhd
+l0
+L5
+VHa4cD3GX?k17n1?`70Zd=3
+R9
+32
+R10
+Z25 !s108 1544175106.381306
+Z26 !s90 -work|lib_BENCH_VECT|tb_generateur.vhd|
+Z27 !s107 tb_generateur.vhd|
+R14
+R15
+!s100 BcH>jZ07mD`ND>EB>P5MR0
+!i10b 1
+!i111 0
+Abehavior
+R3
+R4
+R5
+DEx4 work 13 tb_generateur 0 22 Ha4cD3GX?k17n1?`70Zd=3
+l69
+L9
+VaF0iT_e6zhbbh44fn^hTF2
+R9
+32
+R10
+R25
+R26
+R27
+R14
+R15
+!s100 PW_k4NQ<[G03l7g2>O<AO0
+!i10b 1
+!i111 0
+Etrivium_core
+Z28 w1543484330
+Z29 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+Z30 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+R4
+R5
+R6
+Z31 8../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd
+Z32 F../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd
+l0
+L58
+V=0NJF1Jfi2gZhYcX_[N]53
+R9
+32
+R10
+Z33 !s108 1544175106.010339
+Z34 !s90 -work|lib_BENCH_VECT|../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd|
+Z35 !s107 ../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd|
+R14
+R15
+!s100 [Z2kd[@MKjm>KkY]V8eF12
+!i10b 1
+!i111 0
+Abehavioral
+R29
+R30
+R4
+R5
+DEx4 work 12 trivium_core 0 22 =0NJF1Jfi2gZhYcX_[N]53
+l90
+L66
+V7MJnbm?h`TiaTAe28VTUK0
+R9
+32
+R10
+R33
+R34
+R35
+R14
+R15
+!s100 V>:=IiDfYm=1W`BG;LS`10
+!i10b 1
+!i111 0
+Etrivium_gen_nils_vvect
+Z36 w1543920339
+R4
+R5
+R6
+Z37 8../trivium_gen_nils_vvect.vhd
+Z38 F../trivium_gen_nils_vvect.vhd
+l0
+L4
+VLhdRzJNUN[3k221SoUmP63
+R9
+32
+Z39 !s110 1544175105
+Z40 !s108 1544175105.945911
+Z41 !s90 -work|lib_BENCH_VECT|../trivium_gen_nils_vvect.vhd|
+Z42 !s107 ../trivium_gen_nils_vvect.vhd|
+R14
+R15
+!s100 ObL:9:R<GXXJK4Jm[;8kS2
+!i10b 1
+!i111 0
+Abehavioral
+R4
+R5
+DEx4 work 22 trivium_gen_nils_vvect 0 22 LhdRzJNUN[3k221SoUmP63
+l37
+L17
+Von`IUSh8`E598z7Y2`AjJ3
+R9
+32
+R39
+R40
+R41
+R42
+R14
+R15
+!s100 ROLZ8JAY^:;g@QVklE6;c2
+!i10b 1
+!i111 0
+Etrivium_generator_vvect
+Z43 w1543921117
+R4
+R5
+R6
+Z44 8../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
+Z45 F../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
+l0
+L61
+VXVDD7VZ62JDJzP`NMm^X<2
+R9
+32
+R10
+Z46 !s108 1544175106.128874
+Z47 !s90 -work|lib_BENCH_VECT|../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
+Z48 !s107 ../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
+R14
+R15
+!s100 J^fQc8C9mHkN>c8iU4N[T0
+!i10b 1
+!i111 0
+Abehavioral
+R4
+R5
+DEx4 work 23 trivium_generator_vvect 0 22 XVDD7VZ62JDJzP`NMm^X<2
+l101
+L74
+VJoI9ZQF4O8QHQ4bn>HQMa1
+R9
+32
+R10
+R46
+R47
+R48
+R14
+R15
+!s100 [LhMQ]:K<3=QV<>ko;YU@0
+!i10b 1
+!i111 0
+Etrivium_v2
+Z49 w1544090551
+R3
+R4
+R5
+R6
+Z50 8../trivium_v2.vhd
+Z51 F../trivium_v2.vhd
+l0
+L13
+VUERLIlOTMT7Ah65iGB;ZZ3
+R9
+32
+R39
+Z52 !s108 1544175105.791592
+Z53 !s90 -work|lib_BENCH_VECT|../trivium_v2.vhd|
+Z54 !s107 ../trivium_v2.vhd|
+R14
+R15
+!s100 Pa0QA_EA?I^ZOX[zk5<^E2
+!i10b 1
+!i111 0
+Abehavior
+R3
+R4
+R5
+DEx4 work 10 trivium_v2 0 22 UERLIlOTMT7Ah65iGB;ZZ3
+l63
+L25
+Vf75]H?K3mmI2:]iN1QO061
+R9
+32
+R39
+R52
+R53
+R54
+R14
+R15
+!s100 ?ZP[cHBU3TnKd6Zn8`<dm3
+!i10b 1
+!i111 0
