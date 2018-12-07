@@ -9,10 +9,10 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/test_trivium/vectors
 !i10e 25
 !i10f 100
 T_opt
-!s110 1544175119
-V8e<Ya[hM=mLTCg3j5HUH@0
+!s110 1544176569
+VC2XnlJT`cga9B18?53V0Q3
 04 13 8 work tb_generateur behavior 1
-=1-002564c7982c-5c0a3e0d-720c3-7c27
+=1-002564c7982c-5c0a43b9-ce3ec-3337
 o-quiet -auto_acc_if_foreign -work lib_BENCH_VECT +acc
 n@_opt
 OL;O;10.2c;57
@@ -30,8 +30,8 @@ L8
 V`NZGbNZllSZi?[e]6i@W02
 Z9 OL;C;10.2c;57
 32
-Z10 !s110 1544175106
-Z11 !s108 1544175106.293473
+Z10 !s110 1544176564
+Z11 !s108 1544176564.858052
 Z12 !s90 -work|lib_BENCH_VECT|generateur_vect.vhd|
 Z13 !s107 generateur_vect.vhd|
 Z14 o-work lib_BENCH_VECT
@@ -73,7 +73,7 @@ V<U12EdOZAXNV8RV1dQVgl1
 R9
 32
 R10
-Z19 !s108 1544175106.207245
+Z19 !s108 1544176564.784342
 Z20 !s90 -work|lib_BENCH_VECT|hextobin.vhd|
 Z21 !s107 hextobin.vhd|
 R14
@@ -101,7 +101,7 @@ R15
 !i10b 1
 !i111 0
 Etb_generateur
-Z22 w1544116630
+Z22 w1544176561
 R3
 R4
 R5
@@ -114,7 +114,7 @@ VHa4cD3GX?k17n1?`70Zd=3
 R9
 32
 R10
-Z25 !s108 1544175106.381306
+Z25 !s108 1544176564.932295
 Z26 !s90 -work|lib_BENCH_VECT|tb_generateur.vhd|
 Z27 !s107 tb_generateur.vhd|
 R14
@@ -129,7 +129,7 @@ R5
 DEx4 work 13 tb_generateur 0 22 Ha4cD3GX?k17n1?`70Zd=3
 l69
 L9
-VaF0iT_e6zhbbh44fn^hTF2
+V_@5cl<8VZ7OMGb6bJ?`kk1
 R9
 32
 R10
@@ -138,7 +138,7 @@ R26
 R27
 R14
 R15
-!s100 PW_k4NQ<[G03l7g2>O<AO0
+!s100 ;T5h<Jk0hBm[`jKc__j8U3
 !i10b 1
 !i111 0
 Etrivium_core
@@ -156,7 +156,7 @@ V=0NJF1Jfi2gZhYcX_[N]53
 R9
 32
 R10
-Z33 !s108 1544175106.010339
+Z33 !s108 1544176564.641648
 Z34 !s90 -work|lib_BENCH_VECT|../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd|
 Z35 !s107 ../../../HDL_Ciphers/Trivium/Sources/TRIVIUM_CORE.vhd|
 R14
@@ -185,7 +185,7 @@ R15
 !i10b 1
 !i111 0
 Etrivium_gen_nils_vvect
-Z36 w1543920339
+Z36 w1544175836
 R4
 R5
 R6
@@ -193,92 +193,92 @@ Z37 8../trivium_gen_nils_vvect.vhd
 Z38 F../trivium_gen_nils_vvect.vhd
 l0
 L4
-VLhdRzJNUN[3k221SoUmP63
+Vf>:Z<jf5c8gD:nh[<8d1<0
 R9
 32
-Z39 !s110 1544175105
-Z40 !s108 1544175105.945911
-Z41 !s90 -work|lib_BENCH_VECT|../trivium_gen_nils_vvect.vhd|
-Z42 !s107 ../trivium_gen_nils_vvect.vhd|
+R10
+Z39 !s108 1544176564.574068
+Z40 !s90 -work|lib_BENCH_VECT|../trivium_gen_nils_vvect.vhd|
+Z41 !s107 ../trivium_gen_nils_vvect.vhd|
 R14
 R15
-!s100 ObL:9:R<GXXJK4Jm[;8kS2
+!s100 9c`g5iDdoN56h8EzaXk000
 !i10b 1
 !i111 0
 Abehavioral
 R4
 R5
-DEx4 work 22 trivium_gen_nils_vvect 0 22 LhdRzJNUN[3k221SoUmP63
+DEx4 work 22 trivium_gen_nils_vvect 0 22 f>:Z<jf5c8gD:nh[<8d1<0
 l37
 L17
-Von`IUSh8`E598z7Y2`AjJ3
+VPaD_9oK6ndYJ89G9WDkdY1
 R9
 32
+R10
 R39
 R40
 R41
-R42
 R14
 R15
-!s100 ROLZ8JAY^:;g@QVklE6;c2
+!s100 gb<HiC:K;HNOm=P:MDLIE0
 !i10b 1
 !i111 0
 Etrivium_generator_vvect
-Z43 w1543921117
+Z42 w1544176277
 R4
 R5
 R6
-Z44 8../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
-Z45 F../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
+Z43 8../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
+Z44 F../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd
 l0
 L61
-VXVDD7VZ62JDJzP`NMm^X<2
+V;k?[2>z5ZcClo:4:VUI171
 R9
 32
 R10
-Z46 !s108 1544175106.128874
-Z47 !s90 -work|lib_BENCH_VECT|../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
-Z48 !s107 ../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
+Z45 !s108 1544176564.715667
+Z46 !s90 -work|lib_BENCH_VECT|../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
+Z47 !s107 ../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator_vvect.vhd|
 R14
 R15
-!s100 J^fQc8C9mHkN>c8iU4N[T0
+!s100 ReID;Lo1?08Fj5c`YzHRZ1
 !i10b 1
 !i111 0
 Abehavioral
 R4
 R5
-DEx4 work 23 trivium_generator_vvect 0 22 XVDD7VZ62JDJzP`NMm^X<2
+DEx4 work 23 trivium_generator_vvect 0 22 ;k?[2>z5ZcClo:4:VUI171
 l101
 L74
-VJoI9ZQF4O8QHQ4bn>HQMa1
+VE_[TT_CnI[>XYkIIX5iO^2
 R9
 32
 R10
+R45
 R46
 R47
-R48
 R14
 R15
-!s100 [LhMQ]:K<3=QV<>ko;YU@0
+!s100 X=AjK0VS`6IF^Y6VgETll2
 !i10b 1
 !i111 0
 Etrivium_v2
-Z49 w1544090551
+Z48 w1544090551
 R3
 R4
 R5
 R6
-Z50 8../trivium_v2.vhd
-Z51 F../trivium_v2.vhd
+Z49 8../trivium_v2.vhd
+Z50 F../trivium_v2.vhd
 l0
 L13
 VUERLIlOTMT7Ah65iGB;ZZ3
 R9
 32
-R39
-Z52 !s108 1544175105.791592
-Z53 !s90 -work|lib_BENCH_VECT|../trivium_v2.vhd|
-Z54 !s107 ../trivium_v2.vhd|
+R10
+Z51 !s108 1544176564.461741
+Z52 !s90 -work|lib_BENCH_VECT|../trivium_v2.vhd|
+Z53 !s107 ../trivium_v2.vhd|
 R14
 R15
 !s100 Pa0QA_EA?I^ZOX[zk5<^E2
@@ -294,10 +294,10 @@ L25
 Vf75]H?K3mmI2:]iN1QO061
 R9
 32
-R39
+R10
+R51
 R52
 R53
-R54
 R14
 R15
 !s100 ?ZP[cHBU3TnKd6Zn8`<dm3

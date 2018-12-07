@@ -20,8 +20,8 @@ end component;
 COMPONENT Trivium_Gen_Nils_vvect
     Port ( SYS_CLK : in  STD_LOGIC;
            RST : in  STD_LOGIC;
-           PLAINTEXT_IN : in  STD_LOGIC_VECTOR (7 downto 0);
-           CIPHERTEXT_OUT : out  STD_LOGIC_VECTOR (7 downto 0);
+           PLAINTEXT_IN : in  std_logic; --STD_LOGIC_VECTOR (7 downto 0);
+           CIPHERTEXT_OUT : out  std_logic; --STD_LOGIC_VECTOR (7 downto 0);
 	   K_INPUT : in  STD_LOGIC_VECTOR (79 downto 0);
 	   IV_INPUT : in  STD_LOGIC_VECTOR (79 downto 0);
            PLNTXT_EN : in  STD_LOGIC;
@@ -32,8 +32,8 @@ COMPONENT Trivium_Generator_vvect
     PORT(
          SYS_CLK : IN  std_logic;
          RST : IN  std_logic;
-         PLAINTEXT_IN : IN  std_logic_vector(7 downto 0);
-         CIPHERTEXT_OUT : OUT  std_logic_vector(7 downto 0);
+         PLAINTEXT_IN : IN  std_logic; --std_logic_vector(7 downto 0);
+         CIPHERTEXT_OUT : OUT  std_logic; --std_logic_vector(7 downto 0);
 	 K_INPUT : in  STD_LOGIC_VECTOR (79 downto 0);
          IV_INPUT : IN  std_logic_vector(79 downto 0);
          PLNTXT_EN : IN  std_logic;
@@ -45,18 +45,18 @@ END COMPONENT;
    signal SYS_CLK : std_logic := '0';
    --signal RST : std_logic := '1';
    signal RSTb : std_logic := '0';
-   signal PLAINTEXT_IN : std_logic_vector(7 downto 0) := (others => '0');
+   signal PLAINTEXT_IN : std_logic := '0'; --std_logic_vector(7 downto 0) := (others => '0');
    signal IV_INPUT : std_logic_vector(79 downto 0);
    signal K_INPUT : std_logic_vector(79 downto 0);
    signal PLNTXT_EN : std_logic := '0';
 
  	--Outputs
-   signal CIPHERTEXT_OUT_NILS : std_logic_vector(7 downto 0);
-   signal CIPHERTEXT_OUT_REF : std_logic_vector(7 downto 0);
+   signal CIPHERTEXT_OUT_NILS : std_logic; --std_logic_vector(7 downto 0);
+   signal CIPHERTEXT_OUT_REF : std_logic; --std_logic_vector(7 downto 0);
    signal CPHRTXT_RDY_NILS : std_logic;
    signal CPHRTXT_RDY_REF : std_logic;
    signal s_Req : std_logic;
-   signal VALIDATION : std_logic_vector(7 downto 0);
+   signal VALIDATION : std_logic; --std_logic_vector(7 downto 0);
 
    signal s_ACK : std_logic;
    signal s_ACK_REF : std_logic;
@@ -68,7 +68,7 @@ END COMPONENT;
  
 BEGIN
    --RST <= '0' after 80 ns;
-   RSTb <= '1' after 60 ns;
+   RSTb <= '1' after 65 ns;
 
 	-- Instantiate the Unit Under Test (UUT)
    uutgenvect: generateur_vect PORT MAP (
@@ -117,7 +117,8 @@ BEGIN
    SORTIE_VALIDE :process (SYS_CLK)
    begin
 		VALIDATION <= CIPHERTEXT_OUT_NILS XOR CIPHERTEXT_OUT_REF;
-                assert VALIDATION = "00000000" report "il y a une erreure" severity warning;
+                -- assert VALIDATION = "00000000" report "il y a une erreure" severity warning;
+		assert VALIDATION = '0' report "il y a une erreure" severity warning;
    end process;
  
 CPHRTXT_OK <= CPHRTXT_RDY_REF and CPHRTXT_RDY_NILS;

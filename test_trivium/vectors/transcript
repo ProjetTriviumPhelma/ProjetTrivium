@@ -27,59 +27,17 @@
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.trivium_core(behavioral)#1
 # ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
-# ** Warning: il y a une erreure
-#    Time: 0 ns  Iteration: 0  Instance: /tb_generateur
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(0)/Inst_TRIVIUM_CORE_X
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(0)/Inst_TRIVIUM_CORE_X
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(0)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(1)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(1)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(1)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(2)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(2)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(2)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(3)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(3)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(3)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(4)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(4)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(4)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(5)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(5)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(5)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(6)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(6)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(6)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(7)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(7)/Inst_TRIVIUM_CORE_X
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN(7)/Inst_TRIVIUM_CORE_X
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
 # ** Warning: il y a une erreure
 #    Time: 5 ns  Iteration: 1  Instance: /tb_generateur
 # ** Warning: il y a une erreure
 #    Time: 10 ns  Iteration: 1  Instance: /tb_generateur
 run
-run
+# ** Failure: simulation terminée
+#    Time: 2590485 ns  Iteration: 0  Process: /tb_generateur/uutgenvect/TRAITEMENT File: generateur_vect.vhd
+# Break in Process TRAITEMENT at generateur_vect.vhd line 91

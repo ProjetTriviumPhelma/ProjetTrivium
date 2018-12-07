@@ -31,7 +31,7 @@ COMPONENT Trivium_v2 is
 end COMPONENT;
 
 
-SIGNAL CORE_OUT : STD_LOGIC_VECTOR;--((width - 1) downto 0);
+SIGNAL CORE_OUT : std_logic; --STD_LOGIC_VECTOR((width - 1) downto 0);
 SIGNAL s_mode_run : std_logic;
 	
 begin
@@ -43,7 +43,7 @@ begin
 		CLK => SYS_CLK ,
 		SK_IN => K_INPUT,
 		IV_IN => IV_INPUT,
-		KEY_STREAM_OUT => CORE_OUT(i),
+		KEY_STREAM_OUT => CORE_OUT, --CORE_OUT(i),
                 RSTb => RST,
                 EN => PLNTXT_EN,
                 MODE_RUN => s_mode_run
