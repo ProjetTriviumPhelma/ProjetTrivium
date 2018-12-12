@@ -72,7 +72,7 @@ signal s_TX_DV : std_logic := '0';
 signal s_TX_Byte : std_logic_vector(7 downto 0) := (others => '0');
 signal s_TX_Active : std_logic := '0'; --pas sûr
 signal s_TX_Serial : std_logic := '1';
-signal s_TX_Done : std_logic := '0'
+signal s_TX_Done : std_logic := '0';
 
 begin
 s_CLK <= i_Clk;
@@ -98,7 +98,7 @@ UUTuart_rx : UART_RX port map (
 		i_Clk => s_CLK,
 		reset => s_RST,
    		i_RX_Serial => s_RX_Serial,
-		o_RX_DV => s_RX_DV
+		o_RX_DV => s_RX_DV,
     		o_RX_Byte => s_RX_Byte
 );
 
@@ -155,12 +155,12 @@ UUTuart_tx : UART_TX port map (
 					count_package_TX <= count_package_TX + 1;
 				end if;
 			else
-				s_TX_DV = '0';
+				s_TX_DV <= '0';
 				s_TX_Byte(7 downto 1) <= s_TX_Byte(6 downto 0);
 				s_TX_Byte(0) <= s_TX_bit;
 				count_package_Byte <= 0;
-				count_package_TX <= '0';
-				s_TX_Done = '0'; -- fin de la transmission
+				count_package_TX <= 0;
+				s_TX_Done <= '0'; -- fin de la transmission
 				
 			end if;
 		end if;

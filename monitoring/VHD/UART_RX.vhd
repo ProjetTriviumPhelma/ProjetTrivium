@@ -64,7 +64,7 @@ begin
          r_SM_Main <= s_Idle;
   	 r_RX_DV <= '0';
   	 r_RX_Byte <= (others => '0');
-    elsif rising_edge(i_Clk)
+    elsif rising_edge(i_Clk) then
 	case r_SM_Main is
 
 		  when s_Idle =>

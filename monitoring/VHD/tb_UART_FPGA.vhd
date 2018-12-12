@@ -27,7 +27,6 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use work.constants.all;
 use ieee.numeric_std.all;
  
 -- Uncomment the following library declaration if using
@@ -53,15 +52,15 @@ ARCHITECTURE behavior OF tb_UART_FPGA IS
 
 
     
-   constant c_CLKS_PER_BIT : integer := 869;
-   constant c_BIT_PERIOD : time := 8680 ns;--8680
+   constant c_CLKS_PER_BIT : integer := 87; -- at 10MHz and 868 at 100MHz
+   constant c_BIT_PERIOD : time := 87 ns;-- 8680 at 100MHz 
 
    --Inputs
    signal s_CLK : std_logic := '0';
    signal bit_CLOCK : std_logic := '0';
    signal s_RST : std_logic := '0';
    signal s_RX_Serial : std_logic := '1';
-   signal testk_IV : std_logic_vector(167 downto 0) := X"0F62B5085BAE0154A7FA288FF65DC42B92F960C70";
+   signal testk_IV : std_logic_vector(167 downto 0) := X"0F62B5085BAE0154A7FA288FF65DC42B92F960C700";
 --key : 0F62B5085BAE0154A7FA
 --IV : 288FF65DC42B92F960C7
 
@@ -119,7 +118,7 @@ BEGIN
 		wait for s_CLK_period/2;
    end process;
  
-	bit_CLOCK <= not bit_CLOCK after 4340 ns;
+	bit_CLOCK <= not bit_CLOCK after 43500 fs;
 
    -- Stimulus process
    stim_proc: process
@@ -145,7 +144,7 @@ BEGIN
 		
 	 -- chiffrage, meme clé
 	jj := 0;
-		while (jj < 168 loop
+		while (jj < 168) loop
 			UART_WRITE_BYTE(testK_IV(jj+7 downto jj), s_RX_Serial);
 			jj := jj + 8;
 		end loop;
