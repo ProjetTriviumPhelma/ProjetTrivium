@@ -42,37 +42,37 @@ ARCHITECTURE behavior OF tb_UART_FPGA IS
     -- Component Declaration for the Unit Under Test (UUT)
 
 	 component top is
-    Port ( reset : in  STD_LOGIC;
-           clock : in  STD_LOGIC;
-           RX_Serial: in  STD_LOGIC;
+    Port ( i_Clk : in  STD_LOGIC;
+           i_RST : in  STD_LOGIC;
+           i_RX_Serial: in  STD_LOGIC;
            o_TX_Active : out std_logic;
-    			o_TX_Serial : out std_logic;
-    			o_TX_Done   : out std_logic
+    	   o_TX_Serial : out std_logic;
+    	   o_TX_Done   : out std_logic
 		);
 	end component top;
 
 
     
-	constant c_CLKS_PER_BIT : integer := 869;
+   constant c_CLKS_PER_BIT : integer := 869;
    constant c_BIT_PERIOD : time := 8680 ns;--8680
 
    --Inputs
-   signal i_Clk : std_logic := '0';
-	signal bit_CLOCK : std_logic := '0';
-   signal reset : std_logic := '0';
-   signal i_RX_Serial : std_logic := '1';
-	signal testCNK : std_logic_vector(199 downto 0) := X"07656b696c20646e751b1a1918131211100b0a090803020100";
-	signal testCMK : std_logic_vector(199 downto 0) := X"06656b696c20646e7500000000000000000000000000000000";
-	signal testDCMK : std_logic_vector(199 downto 0) := X"0444c8fc20b9dfa07a00000000000000000000000000000000";
-	signal testDCNK : std_logic_vector(199 downto 0) := X"0544c8fc20b9dfa07a1b1a1918131211100b0a090803020100";
+   signal s_CLK : std_logic := '0';
+   signal bit_CLOCK : std_logic := '0';
+   signal s_RST : std_logic := '0';
+   signal s_RX_Serial : std_logic := '1';
+   signal testk_IV : std_logic_vector(167 downto 0) := X"0F62B5085BAE0154A7FA288FF65DC42B92F960C70";
+--key : 0F62B5085BAE0154A7FA
+--IV : 288FF65DC42B92F960C7
+
 	
  	--Outputs
-   signal o_TX_Active : std_logic;
-   signal o_TX_Serial : std_logic;
-   signal o_TX_Done : std_logic;
+   signal s_TX_Active : std_logic;
+   signal s_TX_Serial : std_logic;
+   signal s_TX_Done : std_logic;
 
    -- Clock period definitions
-   constant i_Clk_period : time := 10 ns;
+   constant s_CLK_period : time := 10 ns;
 	
 	
    shared variable jj : integer;
@@ -102,21 +102,21 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: top PORT MAP (
-			reset => reset,
-          clock => i_Clk,
-          RX_Serial => i_RX_Serial,
-          o_TX_Active => o_TX_Active,
-          o_TX_Serial => o_TX_Serial,
-          o_TX_Done => o_TX_Done
+	  i_Clk => s_CLK,
+          i_RST => s_RST,
+          i_RX_Serial => s_RX_Serial,
+          o_TX_Active => s_TX_Active,
+          o_TX_Serial => s_TX_Serial,
+          o_TX_Done => s_TX_Done
         );
 		  
    -- Clock process definitions
-   i_Clk_process :process
+   s_CLK_process :process
    begin
-		i_Clk <= '0';
-		wait for i_Clk_period/2;
-		i_Clk <= '1';
-		wait for i_Clk_period/2;
+		s_CLK <= '0';
+		wait for s_CLK_period/2;
+		s_CLK <= '1';
+		wait for s_CLK_period/2;
    end process;
  
 	bit_CLOCK <= not bit_CLOCK after 4340 ns;
@@ -125,86 +125,34 @@ BEGIN
    stim_proc: process
    begin		
 	
-	reset <= '1';
+	s_RST <= '1';
 	wait for 10 ns;
-	reset <= '0';
+	s_RST <= '0';
     -- Send a command to the UART
-    wait until rising_edge(i_Clk);
+    wait until rising_edge(s_CLK);
 	 -- chiffrage, nouvelle clé
 	 jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testCNK(jj+7 downto jj), i_RX_Serial);
+		while (jj < 168) loop
+			UART_WRITE_BYTE(testK_IV(jj+7 downto jj), s_RX_Serial);
 			jj := jj + 8;
 		end loop;
 
 	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
+		while (jj < 168) loop
+			UART_WRITE_BYTE("00000000", s_RX_Serial);
 			jj := jj + 8;
 		end loop;
 		
 	 -- chiffrage, meme clé
 	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testCMK(jj+7 downto jj), i_RX_Serial);
+		while (jj < 168 loop
+			UART_WRITE_BYTE(testK_IV(jj+7 downto jj), s_RX_Serial);
 			jj := jj + 8;
 		end loop;
 		
 	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	-- dechiffrage, meme clé
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testDCMK(jj+7 downto jj), i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-	
-	-- dechiffrage, nouvelle clé
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testDCNK(jj+7 downto jj), i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	-- chiffrage, meme clé
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testCMK(jj+7 downto jj), i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	-- dechiffrage, meme clé
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE(testDCMK(jj+7 downto jj), i_RX_Serial);
-			jj := jj + 8;
-		end loop;
-		
-	jj := 0;
-		while (jj < 200) loop
-			UART_WRITE_BYTE("00000000", i_RX_Serial);
+		while (jj < 168) loop
+			UART_WRITE_BYTE("00000000", s_RX_Serial);
 			jj := jj + 8;
 		end loop;
       wait;
