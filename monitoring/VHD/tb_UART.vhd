@@ -5,10 +5,10 @@ library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.all;
  
-entity uart_tb is
-end uart_tb;
+entity tb_UART is
+end tb_UART;
  
-architecture behave of uart_tb is
+architecture behave of tb_UART is
  
   component uart_tx is
     generic (
@@ -16,7 +16,6 @@ architecture behave of uart_tb is
       );
     port (
       i_clk       : in  std_logic;
-      i_reset	  : in  std_logic;
       i_tx_dv     : in  std_logic;
       i_tx_byte   : in  std_logic_vector(7 downto 0);
       o_tx_active : out std_logic;
@@ -31,6 +30,7 @@ architecture behave of uart_tb is
       );
     port (
       i_clk       : in  std_logic;
+      reset	  : in  std_logic;
       i_rx_serial : in  std_logic;
       o_rx_dv     : out std_logic;
       o_rx_byte   : out std_logic_vector(7 downto 0)
@@ -46,7 +46,7 @@ architecture behave of uart_tb is
   constant c_BIT_PERIOD : time := 8680 ns;
    
   signal r_CLOCK     : std_logic                    := '0';
-  signal r_RST       : std_logic                    := '0';
+  signal r_RST       : std_logic                    := '1';
   signal r_TX_DV     : std_logic                    := '0';
   signal r_TX_BYTE   : std_logic_vector(7 downto 0) := (others => '0');
   signal w_TX_SERIAL : std_logic;
@@ -79,7 +79,7 @@ architecture behave of uart_tb is
  
    
 begin
-  r_RST <= '1' after 2 ns;
+  r_RST <= '0' after 2 ns;
   -- Instantiate UART transmitter
   UART_TX_INST : uart_tx
     generic map (
@@ -101,7 +101,7 @@ begin
       )
     port map (
       i_clk       => r_CLOCK,
-      i_reset     => r_RST,
+      reset     => r_RST,
       i_rx_serial => r_RX_SERIAL,
       o_rx_dv     => w_RX_DV,
       o_rx_byte   => w_RX_BYTE
