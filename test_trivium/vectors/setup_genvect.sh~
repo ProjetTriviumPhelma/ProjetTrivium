@@ -11,4 +11,4 @@ vcom -work lib_BENCH_VECT ../../../HDL_Ciphers/Trivium/Sources/Trivium_Generator
 vcom -work lib_BENCH_VECT hextobin.vhd
 vcom -work lib_BENCH_VECT generateur_vect.vhd
 vcom -work lib_BENCH_VECT tb_generateur.vhd
-vsim &
+vsim -do bench.tcl &

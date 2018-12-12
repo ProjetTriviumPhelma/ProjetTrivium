@@ -114,8 +114,9 @@ BEGIN
 		wait for SYS_CLK_period/2;
    end process;
 
-   SORTIE_VALIDE :process (SYS_CLK)
+   SORTIE_VALIDE :process
    begin
+		wait until SYS_CLK'event;
 		VALIDATION <= CIPHERTEXT_OUT_NILS XOR CIPHERTEXT_OUT_REF;
                 -- assert VALIDATION = "00000000" report "il y a une erreure" severity warning;
 		assert VALIDATION = '0' report "il y a une erreure" severity warning;

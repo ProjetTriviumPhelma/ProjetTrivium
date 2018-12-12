@@ -1,0 +1,13 @@
+net "clock"  LOC = "Y9" | IOSTANDARD = LVCMOS33;	# LD0
+net "reset" LOC = "P16" | IOSTANDARD = LVCMOS33;	# BTNS
+net "RX_Serial" LOC = "W8" | IOSTANDARD = LVCMOS33;	# JB4
+net "o_TX_Serial" LOC = "V10" | IOSTANDARD = LVCMOS33;	# JB3
+net "o_TX_Done"  LOC = "W11" | IOSTANDARD = LVCMOS33;	# JB2
+net "o_TX_Active"  LOC = "W12" | IOSTANDARD = LVCMOS33;	# JB1
+
+#net "clock"  LOC = "Y9" | IOSTANDARD = LVCMOS33;	# LD0
+#net "reset" LOC = "P16" | IOSTANDARD = LVCMOS33;	# BTNS
+#net "RX_Serial" LOC = "V10" | IOSTANDARD = LVCMOS33;	# JB3
+#net "o_TX_Serial" LOC = "W11" | IOSTANDARD = LVCMOS33;	# JB2
+#net "o_TX_Done"  LOC = "T22" | IOSTANDARD = LVCMOS33;	# LD0
+#net "o_TX_Active"  LOC = "T21" | IOSTANDARD = LVCMOS33;	# LD1

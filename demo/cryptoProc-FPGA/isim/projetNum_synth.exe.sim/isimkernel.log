@@ -1,0 +1,35 @@
+Command line:
+   projetNum_synth.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47605
+
+Thu Mar 29 08:35:57 2018
+
+
+ Elaboration Time: 0.11 sec
+
+ Current Memory Usage: 217.252 Meg
+
+ Total Signals          : 8691
+ Total Nets             : 3659
+ Total Signal Drivers   : 2130
+ Total Blocks           : 1368
+ Total Primitive Blocks : 1364
+ Total Processes        : 2094
+ Total Traceable Variables  : 2375
+ Total Scalar Nets and Variables : 126101
+Total Line Count : 7016
+
+** Failure:Tests Complete
+User(VHDL) Code Called Simulation Stop
+In process UART_TB.vhd:77 
+ 
+
+
+ Total Simulation Time: 4.64 sec
+
+ Current Memory Usage: 293.519 Meg
+
+Thu Mar 29 08:43:32 2018
+

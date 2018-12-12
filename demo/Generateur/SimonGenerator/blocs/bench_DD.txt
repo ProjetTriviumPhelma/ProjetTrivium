@@ -1,0 +1,29 @@
+		report "test dechiffrement/dechiffrement ...";
+		-- TEST DECHIFFREMENT/DECHIFFREMENT AVEC LA MEME CLE
+		-- déchiffrement 
+		msg_in <= x"#Ciphertext#";
+		key <= x"#Key#";
+		start_stop <= '1';
+		new_key <= '1';
+		#cipher_sig_0#
+			
+		wait until (eoc = '1') for time2;
+		assert (msg_out= x"#Plaintext#") report "erreur dechiffrement D/D";
+		start_stop <= '0';
+		
+		wait for 20 ns;
+		
+		-- déchiffrement
+		msg_in <= x"#Ciphertext#";
+		start_stop <= '1';
+		new_key <= '0';
+		#cipher_sig_0#
+		
+		wait until (eoc = '1') for time1;
+		assert (msg_out= x"#Plaintext#") report "erreur dechiffrement avec meme cle D/D";
+		start_stop <= '0';
+		--  FIN DECHIFFREMENT/DECHIFFREMENT
+
+		wait for 20 ns;
+
+

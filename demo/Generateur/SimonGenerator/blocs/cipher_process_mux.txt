@@ -1,0 +1,8 @@
+process(ki_mux, ki_r, ki_g)
+begin
+		if (ki_mux = '1') then		--choix de la provenance de la cle suivant si on a garde ou non la meme cle
+			ki_intern <= ki_r;	--cle de keyMemory
+		else 
+			ki_intern <= ki_g;	--cle du generateur
+		end if;
+end process;

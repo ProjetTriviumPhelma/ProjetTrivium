@@ -1,0 +1,9 @@
+msgRegister port map (
+	enable => enable,
+	msg_mux => msg_mux,
+	reset => reset,
+	msg_in => msg_in,
+	round_in => round_in,
+	reg_out => reg_out_sig,
+	clock => clock
+);

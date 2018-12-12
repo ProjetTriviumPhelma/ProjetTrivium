@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/mona/Documents/cryptoProc-FPGA/uart_tb_totale.xst" -ofn "/home/mona/Documents/cryptoProc-FPGA/uart_tb_totale.syr" 

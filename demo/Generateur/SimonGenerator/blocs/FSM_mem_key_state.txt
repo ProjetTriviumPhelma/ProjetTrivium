@@ -1,0 +1,12 @@
+				when mem_key_state => 	
+											next_key <= '1';
+											mem_key <= '1';			--memorisation de la cle
+								
+											if (current_i = Tuns - un) then	--fin du calcul des cle
+												next_state <= decipher;
+--												next_i <= current_i -un;
+												
+											else 				--on reste dans le meme etat pour le calcul suivant
+												next_state <= mem_key_state;
+												next_i <= current_i + un;
+											end if;

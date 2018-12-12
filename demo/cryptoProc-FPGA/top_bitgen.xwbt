@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/mona/Documents/cryptoProc-FPGA/top.ncd
+OUTFILE=/home/mona/Documents/cryptoProc-FPGA/top.bit
+FAMILY=Zynq
+PART=xc7z020-3clg484
+WORKINGDIR=/home/mona/Documents/cryptoProc-FPGA
+LICENSE=WebPack
+USER_INFO=211420324_0_0_579

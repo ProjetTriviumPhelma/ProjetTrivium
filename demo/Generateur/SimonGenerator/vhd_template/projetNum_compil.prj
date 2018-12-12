@@ -1,0 +1,9 @@
+vhdl work "./constants.vhd"
+vhdl work "./cryptoProc.vhd"
+vhdl work "./FSM.vhd"
+vhdl work "./keyGenerator.vhd"
+#keyMemory_compil#
+vhdl work "./romZ.vhd"
+vhdl work "./cipher.vhd"
+vhdl work "./msgRegister.vhd"
+vhdl work "./cryptoProc_tb.vhd"
