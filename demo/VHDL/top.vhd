@@ -22,7 +22,7 @@ component UART_RX is
     i_Clk       : in  std_logic;
     reset       : in std_logic;
     i_RX_Serial : in  std_logic;
-    o_RX_Byte   : out std_logic_vector(162 downto 0)
+    o_RX_Byte   : out std_logic_vector(7 downto 0)
     );
 end component UART_RX;
 
@@ -38,7 +38,7 @@ component Trivium_Top is
 		Go_NoGo		: out std_logic;
 		Data_out	: out std_logic
 		);
-end entity;		
+end component;		
 
 component UART_TX is
   port (
