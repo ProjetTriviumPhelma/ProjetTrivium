@@ -9,7 +9,7 @@
 -- Set Generic g_CLKS_PER_BIT as follows:
 -- g_CLKS_PER_BIT = (Frequency of i_Clk)/(Frequency of UART)
 -- Example: 10 MHz Clock, 115200 baud UART
--- (10000000)/(115200) = 87
+-- (100000000)/(115200) = 870
 --
 library ieee;
 use ieee.std_logic_1164.ALL;
