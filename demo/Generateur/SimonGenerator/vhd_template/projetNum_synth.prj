@@ -1,8 +1,0 @@
-work "./constants.vhd"
-work "./FSM.vhd"
-work "./keyGenerator.vhd"
-#keyMemory_synth#
-work "./romZ.vhd"
-work "./cipher.vhd"
-work "./msgRegister.vhd"
-work "./cryptoProc.vhd"

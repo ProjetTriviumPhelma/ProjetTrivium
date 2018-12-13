@@ -1,4 +1,0 @@
-process(ki_r)
-begin
-		ki_intern <= ki_r;	--la cle vient obligatoirement de keyMemory
-end process;

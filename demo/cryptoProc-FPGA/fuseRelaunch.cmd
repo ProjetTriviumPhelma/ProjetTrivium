@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/mona/Documents/cryptoProc-FPGA/uart_tb_totale_isim_beh.exe" -prj "/home/mona/Documents/cryptoProc-FPGA/uart_tb_totale_beh.prj" "work.uart_tb_totale" 

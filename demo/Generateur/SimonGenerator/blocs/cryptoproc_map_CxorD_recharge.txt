@@ -1,9 +1,0 @@
-   uut: cryptoProc PORT MAP (
-          reset => reset,
-          clock => clock,
-          start_stop => start_stop,
-          key => key,
-          msg_in => msg_in,
-          msg_out => msg_out,
-          eoc => eoc
-        );

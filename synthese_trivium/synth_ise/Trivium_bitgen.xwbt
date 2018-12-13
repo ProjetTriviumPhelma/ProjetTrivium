@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/synth_ise/Trivium.ncd
-OUTFILE=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/synth_ise/Trivium.bit
-FAMILY=Spartan3E
-PART=xc3s1600e-4fg320
-WORKINGDIR=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/synth_ise
-LICENSE=ISE
-USER_INFO=174170201_174170202_210646199_166

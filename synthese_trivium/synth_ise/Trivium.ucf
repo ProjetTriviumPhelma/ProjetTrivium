@@ -1,4 +1,0 @@
-
-#Created by Constraints Editor (xc3s1600e-fg320-4) - 2018/12/06
-NET "CLK" TNM_NET = CLK;
-TIMESPEC TS_CLK = PERIOD "CLK" 1 ns HIGH 50%;

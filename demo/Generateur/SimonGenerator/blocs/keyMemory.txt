@@ -1,7 +1,0 @@
-keyMemory port map (
-	mem_key => mem_key,
-	key_address => key_address,
-	ki_in => ki,
-	ki_out => ki_reg,
-	clock => clock
-);

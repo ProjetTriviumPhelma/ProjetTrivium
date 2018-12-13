@@ -1,4 +1,0 @@
-				when init => next_i <= zero;
-									if (start_stop = '1') then
-										next_state <= load_cipher;
-									end if;

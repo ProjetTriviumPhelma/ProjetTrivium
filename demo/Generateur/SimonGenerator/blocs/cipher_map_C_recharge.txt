@@ -1,7 +1,0 @@
-Cipher port map (
-	x_i => reg_out_sig((2*N)-1 downto N),
-	y_i => reg_out_sig(N-1 downto 0),
-	ki_g => ki,
-	x_o => round_in((2*N)-1 downto N),
-	y_o => round_in(N-1 downto 0)
-);

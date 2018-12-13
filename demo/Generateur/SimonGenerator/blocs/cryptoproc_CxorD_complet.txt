@@ -1,8 +1,0 @@
-    Port ( reset : in  STD_LOGIC;
-           clock : in  STD_LOGIC;
-           start_stop : in  STD_LOGIC;
-           new_key : in  STD_LOGIC;
-           key : in  std_logic_vector(NM-1 downto 0);
-           msg_in : in  std_logic_vector((2*N)-1 downto 0);
-           msg_out : out  std_logic_vector((2*N)-1 downto 0);
-           eoc : out  STD_LOGIC);

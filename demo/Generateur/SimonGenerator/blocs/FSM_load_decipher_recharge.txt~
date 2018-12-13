@@ -1,5 +1,0 @@
-				when load_decipher => load_key <= '1';
-											msg_mux <= '1';
-											enable <= '1';
-											switch <= '1';
-											next_state <= mem_key_state;

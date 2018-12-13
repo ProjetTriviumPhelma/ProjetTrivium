@@ -1,2 +1,0 @@
-vhdl isim_temp "../projet num/64-128-UART/constants.vhd"
-vhdl isim_temp "FSM.vhd"
