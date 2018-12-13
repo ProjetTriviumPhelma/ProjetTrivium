@@ -1,0 +1,11 @@
+U1 : FSM port map (
+	reset => reset,
+	clock => clock,
+	start_stop => start_stop,
+	eoc => eoc,
+	load_key => load_key,
+	next_key => next_key,
+	rom_address => rom_address,
+	msg_mux => msg_mux,
+	enable => enable
+);

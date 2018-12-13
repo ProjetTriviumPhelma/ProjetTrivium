@@ -1,0 +1,5 @@
+			if (switch = '1') then			--inversion des moitiés du message
+					reg_out<= reg_in_intern(N-1 downto 0) & reg_in_intern((2*N)-1 downto N);
+			else
+					reg_out <= reg_in_intern;
+			end if;

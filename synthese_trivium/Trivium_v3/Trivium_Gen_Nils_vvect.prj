@@ -1,0 +1,2 @@
+vhdl work "trivium_v3.vhd"
+vhdl work "trivium_gen_nils_vvect.vhd"

@@ -1,0 +1,5 @@
+				when load_cipher => load_key <= '1';		--chargement de la cle d'entree
+						    msg_mux <= '1';		--chargement du message d'entree
+						    enable <= '1';
+						    next_state <= cipher;
+										

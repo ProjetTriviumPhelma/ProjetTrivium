@@ -1,0 +1,47 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do bench.tcl 
+# vsim -voptargs=+acc lib_BENCH.tb_generateur 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Trivium_v3(Behavior)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Trivium_Generator_vvect(Behavioral)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_generateur(behavior)#1
+# Loading ieee.std_logic_textio(body)
+# Loading work.generateur_vect(behavior)#1
+# Loading work.hextobin(decod)#1
+# Loading work.trivium_gen_nils_vvect(behavioral)#1
+# Loading work.trivium_v3(behavior)#1
+# Loading work.trivium_generator_vvect(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.trivium_core(behavioral)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur/uutref/TRIV_CORE_GEN
+# ** Warning: il y a une erreur
+#    Time: 5 ns  Iteration: 1  Instance: /tb_generateur
+# ** Warning: il y a une erreur
+#    Time: 10 ns  Iteration: 1  Instance: /tb_generateur
+run
+run
+run
+run
+run
+# ** Failure: simulation terminée
+#    Time: 2590485 ns  Iteration: 0  Process: /tb_generateur/uutgenvect/TRAITEMENT File: VHDL/generateur_vect.vhd
+# Break in Process TRAITEMENT at VHDL/generateur_vect.vhd line 91

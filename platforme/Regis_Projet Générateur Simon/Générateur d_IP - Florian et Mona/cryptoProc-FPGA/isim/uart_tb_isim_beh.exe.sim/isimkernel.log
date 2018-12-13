@@ -1,0 +1,36 @@
+Command line:
+   uart_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  46441
+
+Thu Mar 29 01:37:21 2018
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 198.271 Meg
+
+ Total Signals          : 126
+ Total Nets             : 2540
+ Total Signal Drivers   : 56
+ Total Blocks           : 14
+ Total Primitive Blocks : 11
+ Total Processes        : 28
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 3116
+Total Line Count : 211
+Total Line Count : 211
+
+** Failure:Tests Complete
+User(VHDL) Code Called Simulation Stop
+In process UART_TB.vhd:77 
+ 
+
+
+ Total Simulation Time: 0.08 sec
+
+ Current Memory Usage: 273.773 Meg
+
+Thu Mar 29 01:37:40 2018
+

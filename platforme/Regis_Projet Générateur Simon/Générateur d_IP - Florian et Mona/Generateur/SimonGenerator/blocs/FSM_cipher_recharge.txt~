@@ -1,0 +1,10 @@
+				when cipher => next_i <= current_i + un;	
+									next_key <= '1';
+									enable <= '1';
+								
+									if (current_i = Tuns - un) then
+										next_state <= wait_state;
+									else 
+										next_state <= cipher;
+									
+									end if;

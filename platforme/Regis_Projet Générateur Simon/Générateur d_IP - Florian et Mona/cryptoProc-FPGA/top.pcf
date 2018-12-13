@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 05 11:44:38 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset" LOCATE = SITE "P16" LEVEL 1;
+COMP "o_TX_Serial" LOCATE = SITE "V10" LEVEL 1;
+COMP "o_TX_Active" LOCATE = SITE "W12" LEVEL 1;
+COMP "o_TX_Done" LOCATE = SITE "W11" LEVEL 1;
+COMP "RX_Serial" LOCATE = SITE "W8" LEVEL 1;
+COMP "clock" LOCATE = SITE "Y9" LEVEL 1;
+SCHEMATIC END;
+

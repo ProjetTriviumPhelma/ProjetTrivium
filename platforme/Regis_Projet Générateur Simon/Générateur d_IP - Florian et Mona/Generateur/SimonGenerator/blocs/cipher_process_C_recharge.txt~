@@ -1,0 +1,4 @@
+process(ki_g)
+begin
+		ki_intern <= ki_g;	--la clé vient du generateur obligatoirement
+end process;

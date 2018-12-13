@@ -1,0 +1,2 @@
+vhdl work "TRIVIUM_CORE.vhd"
+vhdl work "Trivium_Generator_vvect.vhd"

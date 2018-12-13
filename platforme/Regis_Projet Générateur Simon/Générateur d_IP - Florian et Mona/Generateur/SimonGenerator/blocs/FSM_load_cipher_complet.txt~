@@ -1,0 +1,8 @@
+				when load_cipher => load_key <= '1';
+										msg_mux <= '1';
+										enable <= '1';
+										if (new_key = '1') then
+											next_state <= cipher;
+										else
+											next_state <= recipher;
+										end if;

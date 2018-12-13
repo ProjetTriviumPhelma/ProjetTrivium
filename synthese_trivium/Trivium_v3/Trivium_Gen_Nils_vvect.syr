@@ -1,0 +1,465 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: Trivium_Gen_Nils_vvect.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Trivium_Gen_Nils_vvect.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Trivium_Gen_Nils_vvect"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : Trivium_Gen_Nils_vvect
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" into library work
+Parsing entity <Trivium_v3>.
+Parsing architecture <Behavior> of entity <trivium_v3>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_gen_nils_vvect.vhd" into library work
+Parsing entity <Trivium_Gen_Nils_vvect>.
+Parsing architecture <Behavioral> of entity <trivium_gen_nils_vvect>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Trivium_Gen_Nils_vvect> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Trivium_v3> (architecture <Behavior>) from library <work>.
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" Line 110. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" Line 167. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Trivium_Gen_Nils_vvect>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_gen_nils_vvect.vhd".
+        width = 8
+    Summary:
+Unit <Trivium_Gen_Nils_vvect> synthesized.
+
+Synthesizing Unit <Trivium_v3>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd".
+    Found 2-bit register for signal <current_state>.
+    Found 11-bit register for signal <nb_loops>.
+    Found 1-bit register for signal <KEY_STREAM_OUT>.
+    Found 1-bit register for signal <MODE_RUN>.
+    Found 288-bit register for signal <s>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RSTb (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <nb_loops[10]_GND_5_o_add_0_OUT> created at line 1241.
+    Found 11-bit comparator greater for signal <nb_loops[10]_PWR_5_o_LessThan_10_o> created at line 154
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 301 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <Trivium_v3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 11-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 11-bit register                                       : 1
+ 288-bit register                                      : 1
+# Comparators                                          : 1
+ 11-bit comparator greater                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Trivium_v3>.
+The following registers are absorbed into counter <nb_loops>: 1 register on signal <nb_loops>.
+Unit <Trivium_v3> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 290
+ Flip-Flops                                            : 290
+# Comparators                                          : 1
+ 11-bit comparator greater                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <TRIV_CORE_GEN_NILS/FSM_0> on signal <current_state[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ init        | 00
+ load_key    | 01
+ first_loops | 11
+ run         | 10
+-------------------------
+
+Optimizing unit <Trivium_Gen_Nils_vvect> ...
+
+Optimizing unit <Trivium_v3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Trivium_Gen_Nils_vvect, actual ratio is 0.
+FlipFlop TRIV_CORE_GEN_NILS/current_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop TRIV_CORE_GEN_NILS/current_state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 305
+ Flip-Flops                                            : 305
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Trivium_Gen_Nils_vvect.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 335
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 10
+#      LUT2                        : 127
+#      LUT3                        : 6
+#      LUT4                        : 159
+#      LUT5                        : 1
+#      LUT6                        : 7
+#      MUXCY                       : 10
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 305
+#      FD                          : 290
+#      FDC                         : 4
+#      FDR                         : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 165
+#      IBUF                        : 163
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             305  out of  106400     0%  
+ Number of Slice LUTs:                  312  out of  53200     0%  
+    Number used as Logic:               312  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    313
+   Number with an unused Flip Flop:       8  out of    313     2%  
+   Number with an unused LUT:             1  out of    313     0%  
+   Number of fully used LUT-FF pairs:   304  out of    313    97%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                         166
+ Number of bonded IOBs:                 166  out of    125   132% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SYS_CLK                            | BUFGP                  | 305   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.207ns (Maximum Frequency: 828.638MHz)
+   Minimum input arrival time before clock: 1.079ns
+   Maximum output required time after clock: 0.898ns
+   Maximum combinational path delay: 0.612ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 1.207ns (frequency: 828.638MHz)
+  Total number of paths / destination ports: 885 / 316
+-------------------------------------------------------------------------
+Delay:               1.207ns (Levels of Logic = 2)
+  Source:            TRIV_CORE_GEN_NILS/nb_loops_7 (FF)
+  Destination:       TRIV_CORE_GEN_NILS/current_state_FSM_FFd2 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: TRIV_CORE_GEN_NILS/nb_loops_7 to TRIV_CORE_GEN_NILS/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.232   0.461  TRIV_CORE_GEN_NILS/nb_loops_7 (TRIV_CORE_GEN_NILS/nb_loops_7)
+     LUT6:I2->O            1   0.043   0.428  TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In2_SW0 (N6)
+     LUT6:I3->O            2   0.043   0.000  TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In3 (TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In)
+     FDC:D                    -0.001          TRIV_CORE_GEN_NILS/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      1.207ns (0.318ns logic, 0.889ns route)
+                                       (26.4% logic, 73.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 176 / 168
+-------------------------------------------------------------------------
+Offset:              1.079ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       TRIV_CORE_GEN_NILS/current_state_FSM_FFd2 (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: RST to TRIV_CORE_GEN_NILS/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.000   0.564  RST_IBUF (RST_IBUF)
+     LUT6:I0->O            1   0.043   0.428  TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In2_SW0 (N6)
+     LUT6:I3->O            2   0.043   0.000  TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In3 (TRIV_CORE_GEN_NILS/current_state_FSM_FFd2-In)
+     FDC:D                    -0.001          TRIV_CORE_GEN_NILS/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      1.079ns (0.086ns logic, 0.993ns route)
+                                       (8.0% logic, 92.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.898ns (Levels of Logic = 2)
+  Source:            TRIV_CORE_GEN_NILS/KEY_STREAM_OUT (FF)
+  Destination:       CIPHERTEXT_OUT (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: TRIV_CORE_GEN_NILS/KEY_STREAM_OUT to CIPHERTEXT_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.232   0.343  TRIV_CORE_GEN_NILS/KEY_STREAM_OUT (TRIV_CORE_GEN_NILS/KEY_STREAM_OUT)
+     LUT2:I0->O            1   0.043   0.279  Mxor_CIPHERTEXT_OUT_xo<0>1 (CIPHERTEXT_OUT_OBUF)
+     OBUF:I->O                 0.000          CIPHERTEXT_OUT_OBUF (CIPHERTEXT_OUT)
+    ----------------------------------------
+    Total                      0.898ns (0.275ns logic, 0.623ns route)
+                                       (30.6% logic, 69.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.612ns (Levels of Logic = 3)
+  Source:            PLAINTEXT_IN (PAD)
+  Destination:       CIPHERTEXT_OUT (PAD)
+
+  Data Path: PLAINTEXT_IN to CIPHERTEXT_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.289  PLAINTEXT_IN_IBUF (PLAINTEXT_IN_IBUF)
+     LUT2:I1->O            1   0.043   0.279  Mxor_CIPHERTEXT_OUT_xo<0>1 (CIPHERTEXT_OUT_OBUF)
+     OBUF:I->O                 0.000          CIPHERTEXT_OUT_OBUF (CIPHERTEXT_OUT)
+    ----------------------------------------
+    Total                      0.612ns (0.043ns logic, 0.569ns route)
+                                       (7.0% logic, 93.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SYS_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYS_CLK        |    1.207|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 11.81 secs
+ 
+--> 
+
+
+Total memory usage is 514260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

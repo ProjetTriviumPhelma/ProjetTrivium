@@ -1,0 +1,43 @@
+Running: /media/mona/d2/xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/mona/Documents/cryptoProc-FPGA/uart_tb_totale_isim_beh.exe -prj /home/mona/Documents/cryptoProc-FPGA/uart_tb_totale_beh.prj work.uart_tb_totale 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/../projet num/64-128-UART/constants.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/romZ.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/msgRegister.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/keyMemory.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/keyGenerator.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/FSM.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/cipher.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/UART_TX.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/UART_RX.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/cryptoProc.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/top.vhd" into library work
+Parsing VHDL file "/home/mona/Documents/cryptoProc-FPGA/uart_tb_totale.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97184 KB
+Fuse CPU Usage: 1120 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package constants
+Compiling architecture rtl of entity UART_RX [uart_rx_default]
+Compiling architecture behavioral of entity FSM [fsm_default]
+Compiling architecture behavioral of entity keyGenerator [keygenerator_default]
+Compiling architecture behavioral of entity keyMemory [keymemory_default]
+Compiling architecture behavioral of entity romZ [romz_default]
+Compiling architecture behave of entity Cipher [cipher_default]
+Compiling architecture bihave of entity msgRegister [msgregister_default]
+Compiling architecture behavioral of entity cryptoProc [cryptoproc_default]
+Compiling architecture rtl of entity UART_TX [uart_tx_default]
+Compiling architecture behavioral of entity top [top_default]
+Compiling architecture behavior of entity uart_tb_totale
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable /home/mona/Documents/cryptoProc-FPGA/uart_tb_totale_isim_beh.exe
+Fuse Memory Usage: 409060 KB
+Fuse CPU Usage: 1250 ms
+GCC CPU Usage: 670 ms

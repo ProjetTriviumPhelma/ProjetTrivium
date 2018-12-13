@@ -1,0 +1,9 @@
+[Inputs]
+reset
+clock
+RX_Serial
+[Outputs]
+o_TX_Active
+o_TX_Serial
+o_TX_Done
+[BiDir]

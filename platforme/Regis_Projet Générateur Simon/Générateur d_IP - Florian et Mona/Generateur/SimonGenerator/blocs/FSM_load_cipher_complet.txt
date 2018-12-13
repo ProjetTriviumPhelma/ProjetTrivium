@@ -1,0 +1,8 @@
+				when load_cipher => load_key <= '1';			--chargement de la cle d'entree
+										msg_mux <= '1';			--chargement du message d'entree
+										enable <= '1';	
+										if (new_key = '1') then		--nouvelle cle
+											next_state <= cipher;
+										else				--meme cle
+											next_state <= recipher;
+										end if;

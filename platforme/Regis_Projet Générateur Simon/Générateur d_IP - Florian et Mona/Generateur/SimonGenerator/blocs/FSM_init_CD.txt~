@@ -1,0 +1,9 @@
+				when init => next_i <= zero;
+									if (start_stop = '1') then
+										
+										if (cipher_sig = '1') then
+											next_state <= load_cipher;
+										else
+											next_state <= load_decipher;
+										end if;
+									end if;

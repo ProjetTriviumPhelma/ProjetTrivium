@@ -1,0 +1,17 @@
+		report "test chiffrement...";
+
+		-- TEST CHIFFREMENT
+
+		msg_in <= x"#Plaintext#";	--message 
+		key <= x"#Key#";		--clé
+		start_stop <= '1';
+		#cipher_sig_1#
+		reset <= '0';
+
+		wait until (eoc = '1') for time1;
+		assert (msg_out= x"#Ciphertext#") report "erreur chiffrement C";
+		start_stop <= '0';
+		
+		wait for 20 ns;
+
+

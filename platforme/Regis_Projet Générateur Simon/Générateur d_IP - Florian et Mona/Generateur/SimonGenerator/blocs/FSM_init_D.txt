@@ -1,0 +1,4 @@
+				when init => next_i <= zero;
+									if (start_stop = '1') then		--demande de dechiffrement
+										next_state <= load_decipher;
+									end if;

@@ -1,0 +1,187 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: uart_tb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "uart_tb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "uart_tb"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : uart_tb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/constants.vhd" into library work
+Parsing package <constants>.
+Parsing package body <constants>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/romZ.vhd" into library work
+Parsing entity <romZ>.
+Parsing architecture <Behavioral> of entity <romz>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/msgRegister.vhd" into library work
+Parsing entity <msgRegister>.
+Parsing architecture <bihave> of entity <msgregister>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/keyMemory.vhd" into library work
+Parsing entity <keyMemory>.
+Parsing architecture <Behavioral> of entity <keymemory>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/keyGenerator.vhd" into library work
+Parsing entity <keyGenerator>.
+Parsing architecture <Behavioral> of entity <keygenerator>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/FSM.vhd" into library work
+Parsing entity <FSM>.
+Parsing architecture <Behavioral> of entity <fsm>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/cipher.vhd" into library work
+Parsing entity <Cipher>.
+Parsing architecture <Behave> of entity <cipher>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/UART_TX.vhd" into library work
+Parsing entity <UART_TX>.
+Parsing architecture <RTL> of entity <uart_tx>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/UART_RX.vhd" into library work
+Parsing entity <UART_RX>.
+Parsing architecture <rtl> of entity <uart_rx>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/cryptoProc.vhd" into library work
+Parsing entity <cryptoProc>.
+Parsing architecture <Behavioral> of entity <cryptoproc>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+Parsing VHDL file "/home/mona/Documents/projet num/64-128-UART/UART_TB.vhd" into library work
+Parsing entity <uart_tb>.
+Parsing architecture <behave> of entity <uart_tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <uart_tb> (architecture <behave>) from library <work>.
+
+Elaborating entity <top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UART_RX> (architecture <rtl>) from library <work>.
+INFO:HDLCompiler:679 - "/home/mona/Documents/projet num/64-128-UART/UART_RX.vhd" Line 134. Case statement is complete. others clause is never selected
+
+Elaborating entity <cryptoProc> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FSM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <keyGenerator> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "/home/mona/Documents/projet num/64-128-UART/keyGenerator.vhd" Line 54: Using initial value "0000000000000000000000000000000" for zero since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mona/Documents/projet num/64-128-UART/keyGenerator.vhd" Line 55: Using initial value "111111111111111111111111111111" for un since it is never assigned
+
+Elaborating entity <keyMemory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <romZ> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cipher> (architecture <Behave>) from library <work>.
+
+Elaborating entity <msgRegister> (architecture <bihave>) from library <work>.
+
+Elaborating entity <UART_TX> (architecture <RTL>) from library <work>.
+INFO:HDLCompiler:679 - "/home/mona/Documents/projet num/64-128-UART/UART_TX.vhd" Line 127. Case statement is complete. others clause is never selected
+ERROR:HDLCompiler:890 - "/home/mona/Documents/projet num/64-128-UART/UART_TB.vhd" Line 81: wait statement without UNTIL clause not supported for synthesis
+Netlist uart_tb(behave) remains a blackbox, due to errors in its contents
+--> 
+
+
+Total memory usage is 357604 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
