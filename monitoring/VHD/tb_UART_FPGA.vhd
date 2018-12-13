@@ -52,8 +52,8 @@ ARCHITECTURE behavior OF tb_UART_FPGA IS
 
 
     
-   constant c_CLKS_PER_BIT : integer := 87; -- at 10MHz and 868 at 100MHz
-   constant c_BIT_PERIOD : time := 87 ns;-- 8680 at 100MHz 
+   constant c_CLKS_PER_BIT : integer := 868;-- at 100MHz
+   constant c_BIT_PERIOD : time := 8680 ns;-- at 100MHz 
 
    --Inputs
    signal s_CLK : std_logic := '0';
@@ -118,7 +118,7 @@ BEGIN
 		wait for s_CLK_period/2;
    end process;
  
-	bit_CLOCK <= not bit_CLOCK after 43500 fs;
+	bit_CLOCK <= not bit_CLOCK after 4340 ns;
 
    -- Stimulus process
    stim_proc: process

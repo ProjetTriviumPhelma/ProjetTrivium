@@ -12,7 +12,7 @@ architecture behave of tb_UART is
  
   component uart_tx is
     generic (
-      g_CLKS_PER_BIT : integer := 115   -- Needs to be set correctly
+      g_CLKS_PER_BIT : integer := 868   -- Needs to be set correctly
       );
     port (
       i_clk       : in  std_logic;
@@ -26,7 +26,7 @@ architecture behave of tb_UART is
  
   component uart_rx is
     generic (
-      g_CLKS_PER_BIT : integer := 115   -- Needs to be set correctly
+      g_CLKS_PER_BIT : integer := 868   -- Needs to be set correctly
       );
     port (
       i_clk       : in  std_logic;
@@ -41,7 +41,7 @@ architecture behave of tb_UART is
   -- Test Bench uses a 10 MHz Clock
   -- Want to interface to 115200 baud UART
   -- 10000000 / 115200 = 87 Clocks Per Bit.
-  constant c_CLKS_PER_BIT : integer := 87;
+  constant c_CLKS_PER_BIT : integer := 868;
  
   constant c_BIT_PERIOD : time := 8680 ns;
    
@@ -107,7 +107,7 @@ begin
       o_rx_byte   => w_RX_BYTE
       );
  
-  r_CLOCK <= not r_CLOCK after 50 ns;
+  r_CLOCK <= not r_CLOCK after 5 ns;
    
   process is
   begin
