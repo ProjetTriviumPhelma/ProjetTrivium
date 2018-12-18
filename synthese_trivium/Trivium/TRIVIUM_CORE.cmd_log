@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/TRIVIUM_CORE.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/TRIVIUM_CORE.syr" 
