@@ -134,9 +134,9 @@ UUTuart_tx : UART_TX port map (
 	process (s_RST,s_CLK)
 	begin
 		if (s_RST='1') then
-			s_TX_Active <= '0'; --pas sûr
-			s_TX_Serial <= '1';
-			s_TX_Done <= '0';
+			--s_TX_Active <= '0'; --pas sûr
+			--s_TX_Serial <= '1';
+			--s_TX_Done <= '0';
 			count_package_TX <= 0;
 			s_TX_DV <= '0';
 			s_TX_Byte <= (others => '0');
@@ -147,6 +147,7 @@ UUTuart_tx : UART_TX port map (
 					s_TX_DV <= '0';
 					s_TX_Byte(7 downto 1) <= s_TX_Byte(6 downto 0);
 					s_TX_Byte(0) <= s_TX_bit;
+					count_package_Byte <= count_package_Byte + 1;
 				else
 					s_TX_DV <= '1';
 					s_TX_Byte(7 downto 1) <= s_TX_Byte(6 downto 0);
@@ -160,7 +161,7 @@ UUTuart_tx : UART_TX port map (
 				s_TX_Byte(0) <= s_TX_bit;
 				count_package_Byte <= 0;
 				count_package_TX <= 0;
-				s_TX_Done <= '0'; -- fin de la transmission
+				--s_TX_Done <= '0'; -- fin de la transmission
 				
 			end if;
 		end if;
