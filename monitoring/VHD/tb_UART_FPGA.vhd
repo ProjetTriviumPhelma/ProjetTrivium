@@ -74,7 +74,7 @@ ARCHITECTURE behavior OF tb_UART_FPGA IS
    constant s_CLK_period : time := 10 ns;
 	
 	
-   shared variable jj : integer;
+  --shared variable jj : integer;
   -- Low-level byte-write
   procedure UART_WRITE_BYTE (
     i_data_in       : in  std_logic_vector(7 downto 0);
@@ -122,6 +122,7 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
+   variable jj : integer;
    begin		
 	
 	s_RST <= '1';

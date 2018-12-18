@@ -9,10 +9,10 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/validation_trivium
 !i10e 25
 !i10f 100
 T_opt
-!s110 1545066056
-V00G2>H58kNSCT0kg963D:2
+!s110 1545146325
+V`2nzK:lY48=7F0D`kQ>G>1
 04 13 8 work tb_generateur behavior 1
-=1-0023ae91a14a-5c17d648-a0685-29c0
+=1-002564c7984c-5c190fd5-91a1c-6358
 o-quiet -auto_acc_if_foreign -work lib_BENCH +acc
 n@_opt
 OL;O;10.2c;57
@@ -30,8 +30,8 @@ L8
 VbT?n=i7nVYGH9=@F^=Eed0
 Z9 OL;C;10.2c;57
 32
-Z10 !s110 1545066051
-Z11 !s108 1545066051.585630
+Z10 !s110 1545146320
+Z11 !s108 1545146320.166922
 Z12 !s90 -work|lib_BENCH|VHDL/generateur_vect.vhd|
 Z13 !s107 VHDL/generateur_vect.vhd|
 Z14 o-work lib_BENCH
@@ -73,7 +73,7 @@ VJJEUWaK7UKOk6XWM<R_XW1
 R9
 32
 R10
-Z19 !s108 1545066051.511944
+Z19 !s108 1545146320.089859
 Z20 !s90 -work|lib_BENCH|VHDL/hextobin.vhd|
 Z21 !s107 VHDL/hextobin.vhd|
 R14
@@ -114,7 +114,7 @@ V6f6N8UlDZLSLTY?=`@EaN0
 R9
 32
 R10
-Z25 !s108 1545066051.660617
+Z25 !s108 1545146320.243220
 Z26 !s90 -work|lib_BENCH|VHDL/tb_generateur.vhd|
 Z27 !s107 VHDL/tb_generateur.vhd|
 R14
@@ -155,10 +155,10 @@ L58
 VQ6<OCcQ9Y2Ahm9>3HLD9_0
 R9
 32
-R10
-Z33 !s108 1545066051.367184
-Z34 !s90 -work|lib_BENCH|REF/TRIVIUM_CORE.vhd|
-Z35 !s107 REF/TRIVIUM_CORE.vhd|
+Z33 !s110 1545146319
+Z34 !s108 1545146319.944639
+Z35 !s90 -work|lib_BENCH|REF/TRIVIUM_CORE.vhd|
+Z36 !s107 REF/TRIVIUM_CORE.vhd|
 R14
 R15
 !s100 [Z2kd[@MKjm>KkY]V8eF12
@@ -175,31 +175,31 @@ L66
 VNb^^@KnS?m7eoKEcWgKGi3
 R9
 32
-R10
 R33
 R34
 R35
+R36
 R14
 R15
 !s100 V>:=IiDfYm=1W`BG;LS`10
 !i10b 1
 !i111 0
 Etrivium_gen_nils_vvect
-Z36 w1544431235
+Z37 w1544431235
 R4
 R5
 R6
-Z37 8VHDL/trivium_gen_nils_vvect.vhd
-Z38 FVHDL/trivium_gen_nils_vvect.vhd
+Z38 8VHDL/trivium_gen_nils_vvect.vhd
+Z39 FVHDL/trivium_gen_nils_vvect.vhd
 l0
 L4
 VEXQEf7>2hU5ENH_P:_<2e2
 R9
 32
-R10
-Z39 !s108 1545066051.299990
-Z40 !s90 -work|lib_BENCH|VHDL/trivium_gen_nils_vvect.vhd|
-Z41 !s107 VHDL/trivium_gen_nils_vvect.vhd|
+R33
+Z40 !s108 1545146319.879178
+Z41 !s90 -work|lib_BENCH|VHDL/trivium_gen_nils_vvect.vhd|
+Z42 !s107 VHDL/trivium_gen_nils_vvect.vhd|
 R14
 R15
 !s100 9c`g5iDdoN56h8EzaXk000
@@ -214,31 +214,31 @@ L17
 VQ>D`Y46]Zl:Iz5Wl>ILXD3
 R9
 32
-R10
-R39
+R33
 R40
 R41
+R42
 R14
 R15
 !s100 TZ<Cje`j1>`jd^oI87<gR1
 !i10b 1
 !i111 0
 Etrivium_generator_vvect
-Z42 w1544187102
+Z43 w1544187102
 R4
 R5
 R6
-Z43 8REF/Trivium_Generator_vvect.vhd
-Z44 FREF/Trivium_Generator_vvect.vhd
+Z44 8REF/Trivium_Generator_vvect.vhd
+Z45 FREF/Trivium_Generator_vvect.vhd
 l0
 L61
 VcVg?hBo_O1eb2Se90ZY^n1
 R9
 32
 R10
-Z45 !s108 1545066051.441433
-Z46 !s90 -work|lib_BENCH|REF/Trivium_Generator_vvect.vhd|
-Z47 !s107 REF/Trivium_Generator_vvect.vhd|
+Z46 !s108 1545146320.023637
+Z47 !s90 -work|lib_BENCH|REF/Trivium_Generator_vvect.vhd|
+Z48 !s107 REF/Trivium_Generator_vvect.vhd|
 R14
 R15
 !s100 ReID;Lo1?08Fj5c`YzHRZ1
@@ -254,31 +254,31 @@ Voke7kC3K8fD5A_XSR>c6e3
 R9
 32
 R10
-R45
 R46
 R47
+R48
 R14
 R15
 !s100 X=AjK0VS`6IF^Y6VgETll2
 !i10b 1
 !i111 0
 Etrivium_v3
-Z48 w1544431750
+Z49 w1544431750
 R3
 R4
 R5
 R6
-Z49 8VHDL/trivium_v3.vhd
-Z50 FVHDL/trivium_v3.vhd
+Z50 8VHDL/trivium_v3.vhd
+Z51 FVHDL/trivium_v3.vhd
 l0
 L13
 VS;EF@nTb4W2KJmkY[j9;g0
 R9
 32
-R10
-Z51 !s108 1545066051.188638
-Z52 !s90 -work|lib_BENCH|VHDL/trivium_v3.vhd|
-Z53 !s107 VHDL/trivium_v3.vhd|
+R33
+Z52 !s108 1545146319.761580
+Z53 !s90 -work|lib_BENCH|VHDL/trivium_v3.vhd|
+Z54 !s107 VHDL/trivium_v3.vhd|
 R14
 R15
 !s100 ?AAX`<zY6:]CN3`2U=R`b0
@@ -294,10 +294,10 @@ L25
 VBC=Tca>Hb=^I]RBzYj74T0
 R9
 32
-R10
-R51
+R33
 R52
 R53
+R54
 R14
 R15
 !s100 OcS6ICXN4>HmO5IWd`1Q10

@@ -21,4 +21,4 @@ read_netlist /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/corel
 #read_netlist -library $lib_path/XORCY.v
 read_netlist /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/DV/Trivium_ref_netlist.v
 run_build_model Trivium_Generator_vvect
-
+run_drc

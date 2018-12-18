@@ -1,5 +1,11 @@
 vsim -voptargs=+acc lib_BENCH.tb_generateur
-vcd file trivium_vcd_unstable.vcd
-add wave -position end sim:/tb_generateur/uutnils/*
+#vcd file trivium.vcd
+#vcd add sim:/tb_generateur/uutref/*
+#vcd add -ports /tb_generateur/uutref/*
+vcd dumpports -file myvcdfile.vcd /tb_generateur/uutref/*
 run 2590 us
-checkpoint trivium.vcd
+#checkpoint trivium.vcd
+#quit -f
+
+
+#https://stackoverflow.com/questions/7003098/vcd-dump-of-only-a-sub-part-of-the-design-via-modelsim

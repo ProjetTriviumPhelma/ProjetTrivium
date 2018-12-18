@@ -9,4 +9,4 @@ vcom -work lib_UART VHD/UART_RX.vhd
 vcom -work lib_UART VHD/UART_TX.vhd
 vcom -work lib_UART VHD/top.vhd
 vcom -work lib_UART VHD/tb_UART_FPGA.vhd
-##vsim &
+vsim &
