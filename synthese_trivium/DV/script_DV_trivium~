@@ -1,0 +1,19 @@
+analyze -library WORK -format vhdl { \
+  /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/TRIVIUM_CORE.vhd \
+  /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_Generator_vvect.vhd}
+
+elaborate Trivium_Generator_vvect -architecture Behavioral -library WORK
+link
+current_design Trivium_Generator_vvect
+
+create_clock -name "clk" -period 10 -waveform { 0 5  }  { SYS_CLK }
+set_max_area 0
+
+
+compile 
+
+change_names -rules verilog -hierarchy -verbose
+write -hierarchy -format vhdl    -output /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_ref_netlist.vhd
+write -hierarchy -format verilog -output /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_ref_netlist.v
+
+

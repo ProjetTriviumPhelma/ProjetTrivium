@@ -7,7 +7,7 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# do bench.tcl 
+# do vsim_for_vcd.tcl 
 # vsim -voptargs=+acc lib_BENCH.tb_generateur 
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "Trivium_v3(Behavior)".
@@ -37,11 +37,3 @@
 #    Time: 5 ns  Iteration: 1  Instance: /tb_generateur
 # ** Warning: il y a une erreur
 #    Time: 10 ns  Iteration: 1  Instance: /tb_generateur
-run
-run
-run
-run
-run
-# ** Failure: simulation terminée
-#    Time: 2590485 ns  Iteration: 0  Process: /tb_generateur/uutgenvect/TRAITEMENT File: VHDL/generateur_vect.vhd
-# Break in Process TRAITEMENT at VHDL/generateur_vect.vhd line 91

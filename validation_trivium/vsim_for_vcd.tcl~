@@ -1,0 +1,5 @@
+vsim -voptargs=+acc lib_BENCH.tb_generateur
+vcd file trivium_vcd_unstable.vcd
+add wave -position end sim:/tb_generateur/uutnils/*
+run 2590 us
+checkpoint trivium.vcd

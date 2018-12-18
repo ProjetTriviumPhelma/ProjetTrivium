@@ -1,0 +1,2 @@
+ngdbuild -p xc7z020-3clg400 Trivium_Generator_vvect.ngc
+netgen -sim -ofmt vhdl Trivium_Generator_vvect_netlist.ngd

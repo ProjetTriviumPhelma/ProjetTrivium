@@ -8,124 +8,295 @@ Z0 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring
 !i10d 8192
 !i10e 25
 !i10f 100
-Euart_rx
-Z1 w1541402920
-Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
-Z3 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z4 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
-Z5 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring
-Z6 8UART_RX.vhd
-Z7 FUART_RX.vhd
+T_opt
+V:0`57RFAd3HLjU@NEI3IL0
+04 12 8 work tb_uart_fpga behavior 1
+=1-f01fafcf20af-5c1260e9-26c5d-6df2
+o-quiet -auto_acc_if_foreign -work lib_UART +acc
+n@_opt
+OL;O;10.2c;57
+Z1 d/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring
+!s110 1544708329
+Etb_uart_fpga
+Z2 w1544705359
+Z3 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+R1
+Z6 8VHD/tb_UART_FPGA.vhd
+Z7 FVHD/tb_UART_FPGA.vhd
 l0
-L18
-V[3Pl3h1P^4Z5WjA>K78W72
+L36
+VN4z;P5P[@m302=QP_P>Vh1
+!s100 kSK8lii0X^m:Z9oKfZQZa0
 Z8 OL;C;10.2c;57
 32
-Z9 !s110 1541674978
-Z10 !s108 1541674978.644146
-Z11 !s90 -work|lib_UART|UART_RX.vhd|
-Z12 !s107 UART_RX.vhd|
-Z13 o-work lib_UART
-Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
-!s100 >0NhBa;H>l<j0<@e:3BPZ2
+Z9 !s110 1545138355
 !i10b 1
+Z10 !s108 1545138355.144068
+Z11 !s90 -work|lib_UART|VHD/tb_UART_FPGA.vhd|
+Z12 !s107 VHD/tb_UART_FPGA.vhd|
 !i111 0
-Artl
-R2
+Z13 o-work lib_UART
+Z14 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 CheckSynthesis 1 Show_VitalChecksWarnings 0 NoCoverage 1
+Abehavior
 R3
 R4
-DEx4 work 7 uart_rx 0 22 [3Pl3h1P^4Z5WjA>K78W72
-l45
-L31
-VFR3m5cPL7@[jTdniNQaRV1
+R5
+Z15 DEx4 work 12 tb_uart_fpga 0 22 N4z;P5P[@m302=QP_P>Vh1
+l100
+L39
+Z16 VYlm_jao3NM37>l3O^:KVC2
+Z17 !s100 ZaaXz0Gk@8El]jEZXJP3Y3
 R8
 32
 R9
+!i10b 1
 R10
 R11
 R12
+!i111 0
 R13
 R14
-!s100 cOLQ<K[X38Hi@_g3SG;`n2
-!i10b 1
-!i111 0
-Euart_tb
-R1
+Etop
 R2
 R3
 R4
 R5
-Z15 8tb_UART.vhd
-Z16 Ftb_UART.vhd
+R1
+Z18 8VHD/top.vhd
+Z19 FVHD/top.vhd
 l0
-L8
-V2ABK=72;RYeg]k:PQ6k_i3
-!s100 S^;Le777g@oc>>MD<[>Gd3
+L5
+Vg<ZLbY9O^8z?f?[<_a=A?0
 R8
 32
-Z17 !s110 1541675005
-!i10b 1
-Z18 !s108 1541675005.798379
-Z19 !s90 -work|lib_UART|tb_UART.vhd|
-Z20 !s107 tb_UART.vhd|
-!i111 0
+R9
+Z20 !s108 1545138355.054808
+Z21 !s90 -work|lib_UART|VHD/top.vhd|
+Z22 !s107 VHD/top.vhd|
 R13
 R14
-Abehave
+!s100 :i30JelV0b9@;PAdZZ6AJ2
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R5
+DEx4 work 3 top 0 22 g<ZLbY9O^8z?f?[<_a=A?0
+l77
+L16
+VlP`1cn46ZP@<Q6KK^M0a=3
+!s100 bO@bb4zLmgAcQH7Hfn[Z?0
+R8
+32
+R9
+R20
+R21
+R22
+R13
+R14
+!i10b 1
+!i111 0
+Etrivium_gen_nils_vvect
+R2
+R4
+R5
+R1
+Z23 8VHD/trivium_gen_nils_vvect.vhd
+Z24 FVHD/trivium_gen_nils_vvect.vhd
+l0
+L4
+V1SUCCMF^_=nWEMWC1lATd2
+R8
+32
+Z25 !s110 1545138354
+Z26 !s108 1545138354.787704
+Z27 !s90 -work|lib_UART|VHD/trivium_gen_nils_vvect.vhd|
+Z28 !s107 VHD/trivium_gen_nils_vvect.vhd|
+R13
+R14
+!s100 9c`g5iDdoN56h8EzaXk000
+!i10b 1
+!i111 0
+Abehavioral
+R4
+R5
+DEx4 work 22 trivium_gen_nils_vvect 0 22 1SUCCMF^_=nWEMWC1lATd2
+l37
+L17
+V=]W7JMeg@cjI`PP:D_cP_3
+R8
+32
+R25
+R26
+R27
+R28
+R13
+R14
+!s100 TZ<Cje`j1>`jd^oI87<gR1
+!i10b 1
+!i111 0
+Etrivium_v3
 R2
 R3
 R4
+R5
+R1
+Z29 8VHD/trivium_v3.vhd
+Z30 FVHD/trivium_v3.vhd
+l0
+L13
+V]UX_T9^9KYKZV=g_cN2Na3
+R8
+32
+R25
+Z31 !s108 1545138354.605642
+Z32 !s90 -work|lib_UART|VHD/trivium_v3.vhd|
+Z33 !s107 VHD/trivium_v3.vhd|
+R13
+R14
+!s100 ?AAX`<zY6:]CN3`2U=R`b0
+!i10b 1
+!i111 0
+Abehavior
+R3
+R4
+R5
+DEx4 work 10 trivium_v3 0 22 ]UX_T9^9KYKZV=g_cN2Na3
+l63
+L25
+V8?l_H]5YCKiIzI<BRA@SQ2
+R8
+32
+R25
+R31
+R32
+R33
+R13
+R14
+!s100 OcS6ICXN4>HmO5IWd`1Q10
+!i10b 1
+!i111 0
+Euart_rx
+R2
+R3
+R4
+R5
+R1
+Z34 8VHD/UART_RX.vhd
+Z35 FVHD/UART_RX.vhd
+l0
+L18
+VDM971^AoF`Gd:BjQWXTUV1
+R8
+32
+R25
+Z36 !s108 1545138354.870416
+Z37 !s90 -work|lib_UART|VHD/UART_RX.vhd|
+Z38 !s107 VHD/UART_RX.vhd|
+R13
+R14
+!s100 C@?=ziz0i0>TlNSHhhg[43
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R5
+DEx4 work 7 uart_rx 0 22 DM971^AoF`Gd:BjQWXTUV1
+l46
+L32
+Vl=dkeJeE2NX7E83i9gc>o3
+R8
+32
+R25
+R36
+R37
+R38
+R13
+R14
+!s100 >izS[b?kchTXgYNGaHEoA3
+!i10b 1
+!i111 0
+Euart_tb
+Z39 w1541402920
+R3
+R4
+R5
+R1
+Z40 8tb_UART.vhd
+Z41 Ftb_UART.vhd
+l0
+L8
+V2ABK=72;RYeg]k:PQ6k_i3
+R8
+32
+Z42 !s110 1541675005
+Z43 !s108 1541675005.798379
+Z44 !s90 -work|lib_UART|tb_UART.vhd|
+Z45 !s107 tb_UART.vhd|
+R13
+Z46 tOptimize_1164 0 Explicit 1 IgnoreVitalErrors 1 Show_VitalChecksWarnings 0
+!s100 S^;Le777g@oc>>MD<[>Gd3
+!i10b 1
+!i111 0
+Abehave
+R3
+R4
+R5
 DEx4 work 7 uart_tb 0 22 2ABK=72;RYeg]k:PQ6k_i3
 l79
 L11
 VHl80iX9BocZ:GMHmoICXg0
-!s100 _aeo^]DUV_J6RTmLeQl@13
 R8
 32
-R17
-!i10b 1
-R18
-R19
-R20
-!i111 0
+R42
+R43
+R44
+R45
 R13
-R14
+R46
+!s100 _aeo^]DUV_J6RTmLeQl@13
+!i10b 1
+!i111 0
 Euart_tx
-R1
 R2
 R3
 R4
 R5
-Z21 8UART_TX.vhd
-Z22 FUART_TX.vhd
+R1
+Z47 8VHD/UART_TX.vhd
+Z48 FVHD/UART_TX.vhd
 l0
 L18
-V5FAgL>EM>2XhBbOOVXT_i2
+V?gC:LOnF;ak0Wo;0FWF[61
 R8
 32
-Z23 !s110 1541674982
-Z24 !s108 1541674982.325846
-Z25 !s90 -work|lib_UART|UART_TX.vhd|
-Z26 !s107 UART_TX.vhd|
+R9
+Z49 !s108 1545138354.965692
+Z50 !s90 -work|lib_UART|VHD/UART_TX.vhd|
+Z51 !s107 VHD/UART_TX.vhd|
 R13
 R14
-!s100 WPO=d]T7IP4@=ec@9a4Q51
+!s100 <`3TekI:<La352SS[fHV^2
 !i10b 1
 !i111 0
 Artl
-R2
 R3
 R4
-DEx4 work 7 uart_tx 0 22 5FAgL>EM>2XhBbOOVXT_i2
+R5
+DEx4 work 7 uart_tx 0 22 ?gC:LOnF;ak0Wo;0FWF[61
 l44
 L33
-VDi`ogBleXW1QPAYo`NZYB1
+VmOVBYZK=ONVljWSDeETQQ0
 R8
 32
-R23
-R24
-R25
-R26
+R9
+R49
+R50
+R51
 R13
 R14
 !s100 j`_P8giTo]O=VdTg?8Pbj2

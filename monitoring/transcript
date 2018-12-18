@@ -1,0 +1,28 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -voptargs=+acc lib_UART.tb_uart_fpga
+# vsim -voptargs=+acc lib_UART.tb_uart_fpga 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Trivium_v3(Behavior)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_uart_fpga(behavior)#1
+# Loading work.top(rtl)#1
+# Loading work.trivium_gen_nils_vvect(behavioral)#1
+# Loading work.trivium_v3(behavior)#1
+# Loading work.uart_rx(rtl)#1
+# Loading work.uart_tx(rtl)#1
+add wave -r /*
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+run
+# Causality operation skipped due to absence of debug database file

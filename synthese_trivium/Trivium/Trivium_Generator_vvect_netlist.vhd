@@ -40,10 +40,10 @@ use SIMPRIM.VPACKAGE.ALL;
 
 entity Trivium_Generator_vvect is
   port (
-    SYS_CLK : in STD_LOGIC := 'X'; 
-    RST : in STD_LOGIC := 'X'; 
-    PLAINTEXT_IN : in STD_LOGIC := 'X'; 
-    PLNTXT_EN : in STD_LOGIC := 'X'; 
+    SYS_CLK : in STD_LOGIC; 
+    RST : in STD_LOGIC; 
+    PLAINTEXT_IN : in STD_LOGIC; 
+    PLNTXT_EN : in STD_LOGIC ; 
     CIPHERTEXT_OUT : out STD_LOGIC; 
     CPHRTXT_RDY : out STD_LOGIC; 
     K_INPUT : in STD_LOGIC_VECTOR ( 79 downto 0 ); 
@@ -8628,10 +8628,10 @@ begin
     port map (
       O => VCC
     );
-  NlwBlockROC : X_ROC
-    port map (O => GSR);
-  NlwBlockTOC : X_TOC
-    port map (O => GTS);
+--  NlwBlockROC : X_ROC
+--    port map (O => GSR);
+--  NlwBlockTOC : X_TOC
+--    port map (O => GTS);
 
 end STRUCTURE;
 

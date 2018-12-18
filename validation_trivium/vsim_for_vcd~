@@ -1,0 +1,2 @@
+vsim -voptargs=+acc lib_BENCH.tb_generateur
+vcd file trivium_vcd.vcd

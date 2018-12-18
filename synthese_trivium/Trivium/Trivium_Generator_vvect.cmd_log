@@ -1,3 +1,2 @@
-xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.syr" 
-xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.syr" 
-xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.syr" 
+/softl3/precision2014a_64b/Mgc_home/bin/precision -shell -file /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/precsynth.tcl 
+/softl3/precision2014a_64b/Mgc_home/bin/precision -shell -file /tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/precsynth.tcl 
