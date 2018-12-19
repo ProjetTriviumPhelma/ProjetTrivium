@@ -1,0 +1,9 @@
+net "i_Clk"  LOC = "Y9" |IOSTANDARD = LVCMOS33;	# LD0
+net "i_RST" LOC = "P16" |IOSTANDARD = LVCMOS33;	# BTNS
+net "i_RX_Serial" LOC = "W8" |IOSTANDARD = LVCMOS33;	# JB4
+net "o_TX_Serial" LOC = "V10" |IOSTANDARD = LVCMOS33;	# JB3
+net "o_TX_Done"  LOC = "W11" |IOSTANDARD = LVCMOS33;	# JB2
+#net "o_TX_Active"  LOC = "W12" |IOSTANDARD = LVCMOS33;	# JB1
+#Created by Constraints Editor (xc7z020-clg400-3) - 2018/12/19
+NET "i_Clk" TNM_NET = i_Clk;
+TIMESPEC TS_clk = PERIOD "i_Clk" 10 ns HIGH 50%;

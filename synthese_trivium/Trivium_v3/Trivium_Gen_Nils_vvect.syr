@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: Trivium_Gen_Nils_vvect.prj
@@ -452,12 +452,12 @@ SYS_CLK        |    1.207|         |         |         |
 
 
 Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 11.81 secs
+Total CPU time to Xst completion: 9.95 secs
  
 --> 
 
 
-Total memory usage is 514260 kilobytes
+Total memory usage is 514304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

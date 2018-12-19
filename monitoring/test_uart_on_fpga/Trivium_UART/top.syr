@@ -1,0 +1,705 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_v3.vhd" into library work
+Parsing entity <Trivium_v3>.
+Parsing architecture <Behavior> of entity <trivium_v3>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_TX.vhd" into library work
+Parsing entity <UART_TX>.
+Parsing architecture <RTL> of entity <uart_tx>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_RX.vhd" into library work
+Parsing entity <UART_RX>.
+Parsing architecture <rtl> of entity <uart_rx>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_gen_nils_vvect.vhd" into library work
+Parsing entity <Trivium_Gen_Nils_vvect>.
+Parsing architecture <Behavioral> of entity <trivium_gen_nils_vvect>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <rtl> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Trivium_Gen_Nils_vvect> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Trivium_v3> (architecture <Behavior>) from library <work>.
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_v3.vhd" Line 110. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_v3.vhd" Line 167. Case statement is complete. others clause is never selected
+
+Elaborating entity <UART_RX> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_RX.vhd" Line 137. Case statement is complete. others clause is never selected
+
+Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_TX.vhd" Line 126. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.vhd" Line 144: s_rdy should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.vhd".
+INFO:Xst:3210 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.vhd" line 105: Output port <o_TX_Active> of the instance <UUTuart_tx> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <s_enable_triv>.
+    Found 1-bit register for signal <s_TX_DV>.
+    Found 5-bit register for signal <count_package>.
+    Found 4-bit register for signal <count_package_TX>.
+    Found 4-bit register for signal <count_package_Byte>.
+    Found 8-bit register for signal <s_TX_Byte>.
+    Found 168-bit register for signal <s_RX_Frame>.
+    Found 5-bit adder for signal <count_package[4]_GND_4_o_add_1_OUT> created at line 124.
+    Found 4-bit adder for signal <count_package_Byte[3]_GND_4_o_add_8_OUT> created at line 150.
+    Found 4-bit adder for signal <count_package_TX[3]_GND_4_o_add_9_OUT> created at line 156.
+    Found 5-bit comparator greater for signal <count_package[4]_PWR_4_o_LessThan_1_o> created at line 122
+    Found 4-bit comparator greater for signal <count_package_TX[3]_PWR_4_o_LessThan_7_o> created at line 145
+    Found 4-bit comparator greater for signal <count_package_Byte[3]_GND_4_o_LessThan_8_o> created at line 146
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 191 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <Trivium_Gen_Nils_vvect>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_gen_nils_vvect.vhd".
+        width = 8
+    Summary:
+Unit <Trivium_Gen_Nils_vvect> synthesized.
+
+Synthesizing Unit <Trivium_v3>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/trivium_v3.vhd".
+    Found 2-bit register for signal <current_state>.
+    Found 11-bit register for signal <nb_loops>.
+    Found 1-bit register for signal <KEY_STREAM_OUT>.
+    Found 1-bit register for signal <MODE_RUN>.
+    Found 288-bit register for signal <s>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RSTb (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <nb_loops[10]_GND_6_o_add_0_OUT> created at line 1241.
+    Found 11-bit comparator greater for signal <nb_loops[10]_PWR_6_o_LessThan_10_o> created at line 154
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 301 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <Trivium_v3> synthesized.
+
+Synthesizing Unit <UART_RX>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_RX.vhd".
+        g_CLKS_PER_BIT = 868
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <r_RX_DV>.
+    Found 1-bit register for signal <r_RX_Data>.
+    Found 10-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 1-bit register for signal <r_RX_Data_R>.
+    Found finite state machine <FSM_1> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_idle                                         |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_7_o_add_11_OUT> created at line 109.
+    Found 10-bit adder for signal <r_Clk_Count[9]_GND_7_o_add_19_OUT> created at line 122.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_7_o_LessThan_11_o> created at line 108
+    Found 10-bit comparator greater for signal <r_Clk_Count[9]_PWR_7_o_LessThan_19_o> created at line 121
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_RX> synthesized.
+
+Synthesizing Unit <UART_TX>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/UART_TX.vhd".
+        g_CLKS_PER_BIT = 868
+    Found 1-bit register for signal <o_TX_Serial>.
+    Found 1-bit register for signal <r_TX_Done>.
+    Found 10-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 8-bit register for signal <r_TX_Data>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 1-bit register for signal <o_TX_Active>.
+    Found finite state machine <FSM_2> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_8_o_add_10_OUT> created at line 95.
+    Found 10-bit adder for signal <r_Clk_Count[9]_GND_8_o_add_17_OUT> created at line 110.
+    Found 1-bit 8-to-1 multiplexer for signal <r_Bit_Index[2]_r_TX_Data[7]_Mux_6_o> created at line 85.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_9_o_LessThan_10_o> created at line 94
+    Found 10-bit comparator greater for signal <r_Clk_Count[9]_PWR_9_o_LessThan_17_o> created at line 109
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_TX> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+# Registers                                            : 23
+ 1-bit register                                        : 10
+ 10-bit register                                       : 2
+ 11-bit register                                       : 1
+ 168-bit register                                      : 1
+ 288-bit register                                      : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 2
+ 11-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 2
+ 4-bit comparator greater                              : 2
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 27
+ 1-bit 2-to-1 multiplexer                              : 11
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 7
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <s_RX_Frame_161> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_162> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_163> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_164> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_165> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_166> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_167> of sequential type is unconnected in block <top>.
+
+Synthesizing (advanced) Unit <Trivium_v3>.
+The following registers are absorbed into counter <nb_loops>: 1 register on signal <nb_loops>.
+Unit <Trivium_v3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <count_package_TX>: 1 register on signal <count_package_TX>.
+The following registers are absorbed into counter <count_package>: 1 register on signal <count_package>.
+Unit <top> synthesized (advanced).
+WARNING:Xst:2677 - Node <s_RX_Frame_161> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_162> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_163> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_164> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_165> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_166> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <s_RX_Frame_167> of sequential type is unconnected in block <top>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 2
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 513
+ Flip-Flops                                            : 513
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 2
+ 11-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 2
+ 4-bit comparator greater                              : 2
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 11
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 7
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 3
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UUTtrivium/TRIV_CORE_GEN_NILS/FSM_0> on signal <current_state[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ init        | 00
+ load_key    | 01
+ first_loops | 11
+ run         | 10
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UUTuart_rx/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_rx_start_bit | 001
+ s_rx_data_bits | 010
+ s_rx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UUTuart_tx/FSM_2> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_tx_start_bit | 001
+ s_tx_data_bits | 010
+ s_tx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+
+Optimizing unit <top> ...
+WARNING:Xst:1293 - FF/Latch <count_package_Byte_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_package_Byte_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Trivium_v3> ...
+
+Optimizing unit <UART_RX> ...
+
+Optimizing unit <UART_TX> ...
+WARNING:Xst:2677 - Node <UUTuart_tx/o_TX_Active> of sequential type is unconnected in block <top>.
+INFO:Xst:2261 - The FF/Latch <UUTuart_rx/r_RX_DV> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <UUTuart_rx/r_SM_Main_FSM_FFd1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <top> :
+	Found 2-bit shift register for signal <UUTuart_rx/r_RX_Data>.
+Unit <top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 536
+ Flip-Flops                                            : 536
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 456
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 10
+#      LUT2                        : 133
+#      LUT3                        : 21
+#      LUT4                        : 175
+#      LUT5                        : 24
+#      LUT6                        : 64
+#      MUXCY                       : 10
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 537
+#      FD                          : 294
+#      FDC                         : 11
+#      FDCE                        : 185
+#      FDE                         : 36
+#      FDR                         : 11
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             537  out of  106400     0%  
+ Number of Slice LUTs:                  433  out of  53200     0%  
+    Number used as Logic:               432  out of  53200     0%  
+    Number used as Memory:                1  out of  17400     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    605
+   Number with an unused Flip Flop:      68  out of    605    11%  
+   Number with an unused LUT:           172  out of    605    28%  
+   Number of fully used LUT-FF pairs:   365  out of    605    60%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    125     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+UUTuart_rx/r_RX_DV                 | BUFG                   | 167   |
+i_Clk                              | BUFGP                  | 371   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.717ns (Maximum Frequency: 582.276MHz)
+   Minimum input arrival time before clock: 1.446ns
+   Maximum output required time after clock: 0.521ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UUTuart_rx/r_RX_DV'
+  Clock period: 1.404ns (frequency: 712.178MHz)
+  Total number of paths / destination ports: 988 / 320
+-------------------------------------------------------------------------
+Delay:               1.404ns (Levels of Logic = 1)
+  Source:            count_package_3 (FF)
+  Destination:       s_RX_Frame_0 (FF)
+  Source Clock:      UUTuart_rx/r_RX_DV rising
+  Destination Clock: UUTuart_rx/r_RX_DV rising
+
+  Data Path: count_package_3 to s_RX_Frame_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.232   0.570  count_package_3 (count_package_3)
+     LUT5:I0->O          161   0.043   0.406  count_package[4]_PWR_4_o_LessThan_1_o_inv_inv1 (count_package[4]_PWR_4_o_LessThan_1_o_inv_inv)
+     FDCE:CE                   0.153          s_RX_Frame_0
+    ----------------------------------------
+    Total                      1.404ns (0.428ns logic, 0.976ns route)
+                                       (30.5% logic, 69.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_Clk'
+  Clock period: 1.717ns (frequency: 582.276MHz)
+  Total number of paths / destination ports: 2051 / 440
+-------------------------------------------------------------------------
+Delay:               1.717ns (Levels of Logic = 2)
+  Source:            UUTuart_rx/r_Clk_Count_2 (FF)
+  Destination:       UUTuart_rx/r_Clk_Count_9 (FF)
+  Source Clock:      i_Clk rising
+  Destination Clock: i_Clk rising
+
+  Data Path: UUTuart_rx/r_Clk_Count_2 to UUTuart_rx/r_Clk_Count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.232   0.582  UUTuart_rx/r_Clk_Count_2 (UUTuart_rx/r_Clk_Count_2)
+     LUT6:I0->O            2   0.043   0.348  UUTuart_rx/GND_7_o_r_Clk_Count[9]_equal_2_o<9>_SW1 (N43)
+     LUT6:I4->O            9   0.043   0.316  UUTuart_rx/_n0121_inv1 (UUTuart_rx/_n0121_inv)
+     FDE:CE                    0.153          UUTuart_rx/r_Clk_Count_1
+    ----------------------------------------
+    Total                      1.717ns (0.471ns logic, 1.246ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UUTuart_rx/r_RX_DV'
+  Total number of paths / destination ports: 167 / 167
+-------------------------------------------------------------------------
+Offset:              0.667ns (Levels of Logic = 1)
+  Source:            i_RST (PAD)
+  Destination:       s_enable_triv (FF)
+  Destination Clock: UUTuart_rx/r_RX_DV rising
+
+  Data Path: i_RST to s_enable_triv
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           203   0.000   0.412  i_RST_IBUF (UUTtrivium/TRIV_CORE_GEN_NILS/RSTb_inv)
+     FDC:CLR                   0.255          s_enable_triv
+    ----------------------------------------
+    Total                      0.667ns (0.255ns logic, 0.412ns route)
+                                       (38.2% logic, 61.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_Clk'
+  Total number of paths / destination ports: 49 / 45
+-------------------------------------------------------------------------
+Offset:              1.446ns (Levels of Logic = 4)
+  Source:            i_RST (PAD)
+  Destination:       UUTuart_rx/r_Bit_Index_2 (FF)
+  Destination Clock: i_Clk rising
+
+  Data Path: i_RST to UUTuart_rx/r_Bit_Index_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           203   0.000   0.589  i_RST_IBUF (UUTtrivium/TRIV_CORE_GEN_NILS/RSTb_inv)
+     LUT4:I0->O            1   0.043   0.428  UUTuart_rx/r_Clk_Count[9]_PWR_7_o_LessThan_19_o12_SW1 (N48)
+     LUT6:I3->O            3   0.043   0.299  UUTuart_rx/_n0141_inv1_rstpot (UUTuart_rx/_n0141_inv1_rstpot)
+     LUT5:I4->O            1   0.043   0.000  UUTuart_rx/r_Bit_Index_2_dpot (UUTuart_rx/r_Bit_Index_2_dpot)
+     FDE:D                    -0.001          UUTuart_rx/r_Bit_Index_2
+    ----------------------------------------
+    Total                      1.446ns (0.129ns logic, 1.317ns route)
+                                       (8.9% logic, 91.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_Clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.521ns (Levels of Logic = 1)
+  Source:            UUTuart_tx/r_TX_Done (FF)
+  Destination:       o_TX_Done (PAD)
+  Source Clock:      i_Clk rising
+
+  Data Path: UUTuart_tx/r_TX_Done to o_TX_Done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.232   0.289  UUTuart_tx/r_TX_Done (UUTuart_tx/r_TX_Done)
+     OBUF:I->O                 0.000          o_TX_Done_OBUF (o_TX_Done)
+    ----------------------------------------
+    Total                      0.521ns (0.232ns logic, 0.289ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock UUTuart_rx/r_RX_DV
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+UUTuart_rx/r_RX_DV|    1.404|         |         |         |
+i_Clk             |    0.521|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_Clk
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+UUTuart_rx/r_RX_DV|    1.127|         |         |         |
+i_Clk             |    1.717|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.38 secs
+ 
+--> 
+
+
+Total memory usage is 516296 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,348 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 19 11:53:11 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_TX_Serial" LOCATE = SITE "V10" LEVEL 1;
+COMP "o_TX_Done" LOCATE = SITE "W11" LEVEL 1;
+COMP "i_Clk" LOCATE = SITE "Y9" LEVEL 1;
+COMP "i_RX_Serial" LOCATE = SITE "W8" LEVEL 1;
+COMP "i_RST" LOCATE = SITE "P16" LEVEL 1;
+TIMEGRP i_Clk = BEL "s_TX_DV" BEL "count_package_Byte_0" BEL
+        "count_package_Byte_1" BEL "count_package_Byte_2" BEL "s_TX_Byte_0"
+        BEL "s_TX_Byte_1" BEL "s_TX_Byte_2" BEL "s_TX_Byte_3" BEL
+        "s_TX_Byte_4" BEL "s_TX_Byte_5" BEL "s_TX_Byte_6" BEL "s_TX_Byte_7"
+        BEL "count_package_TX_0" BEL "count_package_TX_1" BEL
+        "count_package_TX_2" BEL "count_package_TX_3" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_10" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_9" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_8" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_7" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_6" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_5" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_4" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_3" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_2" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_1" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/nb_loops_0" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/current_state_FSM_FFd1" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/current_state_FSM_FFd2" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/MODE_RUN" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_288" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_287" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_286" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_285" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_284" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_283" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_282" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_281" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_280" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_279" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_278" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_277" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_276" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_275" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_274" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_273" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_272" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_271" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_270" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_269" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_268" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_267" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_266" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_265" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_264" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_263" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_262" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_261" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_260" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_259" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_258" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_257" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_256" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_255" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_254" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_253" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_252" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_251" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_250" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_249" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_248" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_247" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_246" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_245" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_244" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_243" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_242" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_241" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_240" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_239" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_238" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_237" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_236" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_235" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_234" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_233" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_232" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_231" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_230" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_229" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_228" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_227" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_226" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_225" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_224" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_223" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_222" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_221" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_220" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_219" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_218" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_217" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_216" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_215" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_214" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_213" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_212" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_211" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_210" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_209" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_208" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_207" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_206" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_205" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_204" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_203" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_202" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_201" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_200" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_199" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_198" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_197" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_196" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_195" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_194" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_193" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_192" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_191" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_190" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_189" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_188" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_187" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_186" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_185" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_184" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_183" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_182" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_181" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_180" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_179" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_178" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_177" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_176" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_175" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_174" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_173" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_172" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_171" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_170" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_169" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_168" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_167" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_166" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_165" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_164" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_163" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_162" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_161" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_160" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_159" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_158" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_157" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_156" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_155" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_154" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_153" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_152" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_151" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_150" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_149" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_148" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_147" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_146" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_145" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_144" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_143" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_142" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_141" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_140" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_139" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_138" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_137" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_136" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_135" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_134" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_133" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_132" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_131" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_130" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_129" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_128" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_127" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_126" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_125" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_124" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_123" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_122" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_121" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_120" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_119" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_118" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_117" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_116" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_115" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_114" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_113" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_112" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_111" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_110" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_109" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_108" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_107" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_106" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_105" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_104" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_103" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_102" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_101" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_100" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_99" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_98" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_97" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_96" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_95" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_94" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_93" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_92" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_91" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_90" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_89" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_88" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_87" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_86" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_85" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_84" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_83" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_82" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_81" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_80" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_79" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_78" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_77" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_76" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_75" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_74" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_73" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_72" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_71" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_70" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_69" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_68" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_67" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_66" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_65" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_64" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_63" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_62" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_61" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_60" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_59" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_58" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_57" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_56" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_55" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_54" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_53" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_52" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_51" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_50" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_49" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_48" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_47" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_46" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_45" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_44" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_43" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_42" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_41" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_40" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_39" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_38" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_37" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_36" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_35" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_34" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_33" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_32" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_31" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_30" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_29" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_28" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_27" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_26" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_25" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_24" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_23" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_22" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_21" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_20" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_19" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_18" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_17" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_16" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_15" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_14" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_13" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_12" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_11" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_10" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_9" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_8" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_7" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_6" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_5" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_4" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_3" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_2" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/s_1" BEL
+        "UUTuart_rx/r_SM_Main_FSM_FFd2" BEL "UUTuart_rx/r_SM_Main_FSM_FFd3"
+        BEL "UUTuart_rx/r_Clk_Count_9" BEL "UUTuart_rx/r_Clk_Count_8" BEL
+        "UUTuart_rx/r_Clk_Count_7" BEL "UUTuart_rx/r_Clk_Count_6" BEL
+        "UUTuart_rx/r_Clk_Count_5" BEL "UUTuart_rx/r_Clk_Count_4" BEL
+        "UUTuart_rx/r_Clk_Count_3" BEL "UUTuart_rx/r_Clk_Count_2" BEL
+        "UUTuart_rx/r_Clk_Count_1" BEL "UUTuart_rx/r_Clk_Count_0" BEL
+        "UUTuart_rx/r_Bit_Index_2" BEL "UUTuart_rx/r_Bit_Index_1" BEL
+        "UUTuart_rx/r_Bit_Index_0" BEL "UUTuart_rx/r_RX_Byte_7" BEL
+        "UUTuart_rx/r_RX_Byte_6" BEL "UUTuart_rx/r_RX_Byte_5" BEL
+        "UUTuart_rx/r_RX_Byte_4" BEL "UUTuart_rx/r_RX_Byte_3" BEL
+        "UUTuart_rx/r_RX_Byte_2" BEL "UUTuart_rx/r_RX_Byte_1" BEL
+        "UUTuart_rx/r_RX_Byte_0" BEL "UUTuart_tx/r_SM_Main_FSM_FFd2" BEL
+        "UUTuart_tx/r_SM_Main_FSM_FFd3" BEL "UUTuart_tx/r_SM_Main_FSM_FFd1"
+        BEL "UUTuart_tx/o_TX_Serial" BEL "UUTuart_tx/r_Clk_Count_9" BEL
+        "UUTuart_tx/r_Clk_Count_8" BEL "UUTuart_tx/r_Clk_Count_7" BEL
+        "UUTuart_tx/r_Clk_Count_6" BEL "UUTuart_tx/r_Clk_Count_5" BEL
+        "UUTuart_tx/r_Clk_Count_4" BEL "UUTuart_tx/r_Clk_Count_3" BEL
+        "UUTuart_tx/r_Clk_Count_2" BEL "UUTuart_tx/r_Clk_Count_1" BEL
+        "UUTuart_tx/r_Clk_Count_0" BEL "UUTuart_tx/r_Bit_Index_2" BEL
+        "UUTuart_tx/r_Bit_Index_1" BEL "UUTuart_tx/r_Bit_Index_0" BEL
+        "UUTuart_tx/r_TX_Data_7" BEL "UUTuart_tx/r_TX_Data_6" BEL
+        "UUTuart_tx/r_TX_Data_5" BEL "UUTuart_tx/r_TX_Data_4" BEL
+        "UUTuart_tx/r_TX_Data_3" BEL "UUTuart_tx/r_TX_Data_2" BEL
+        "UUTuart_tx/r_TX_Data_1" BEL "UUTuart_tx/r_TX_Data_0" BEL
+        "UUTtrivium/TRIV_CORE_GEN_NILS/KEY_STREAM_OUT" BEL
+        "UUTuart_rx/r_RX_DV" BEL "UUTuart_tx/r_TX_Done" BEL "i_Clk_BUFGP/BUFG"
+        BEL "UUTuart_rx/Mshreg_r_RX_Data" BEL "UUTuart_rx/r_RX_Data";
+TS_clk = PERIOD TIMEGRP "i_Clk" 10 ns HIGH 50%;
+SCHEMATIC END;
+

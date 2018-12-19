@@ -1,0 +1,5 @@
+vhdl work "trivium_v3.vhd"
+vhdl work "UART_TX.vhd"
+vhdl work "UART_RX.vhd"
+vhdl work "trivium_gen_nils_vvect.vhd"
+vhdl work "top.vhd"
