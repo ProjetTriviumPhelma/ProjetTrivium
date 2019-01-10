@@ -1,0 +1,446 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Trivium_Generator_vvect.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Trivium_Generator_vvect.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Trivium_Generator_vvect"
+Output Format                      : NGC
+Target Device                      : xc7z020-3-clg400
+
+---- Source Options
+Top Module Name                    : Trivium_Generator_vvect
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/TRIVIUM_CORE.vhd" into library work
+Parsing entity <TRIVIUM_CORE>.
+Parsing architecture <Behavioral> of entity <trivium_core>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.vhd" into library work
+Parsing entity <Trivium_Generator_vvect>.
+Parsing architecture <Behavioral> of entity <trivium_generator_vvect>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Trivium_Generator_vvect> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <TRIVIUM_CORE> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Trivium_Generator_vvect>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.vhd".
+        width = 8
+    Found 2-bit register for signal <CORE_CNTRL>.
+    Found 11-bit register for signal <INIT_COUNTER>.
+    Found 1-bit register for signal <CIPHERTEXT_OUT>.
+    Found 1-bit register for signal <CPHRTXT_RDY>.
+    Found 3-bit register for signal <pr_state>.
+    Found finite state machine <FSM_0> for signal <pr_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | SYS_CLK (rising_edge)                          |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | reset_1                                        |
+    | Power Up State     | reset_1                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <INIT_COUNTER[10]_GND_3_o_add_21_OUT> created at line 184.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Trivium_Generator_vvect> synthesized.
+
+Synthesizing Unit <TRIVIUM_CORE>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/TRIVIUM_CORE.vhd".
+    Found 288-bit register for signal <STATE>.
+    Summary:
+	inferred 288 D-type flip-flop(s).
+Unit <TRIVIUM_CORE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 11-bit adder                                          : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 11-bit register                                       : 1
+ 2-bit register                                        : 1
+ 288-bit register                                      : 1
+# Multiplexers                                         : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Trivium_Generator_vvect>.
+The following registers are absorbed into counter <INIT_COUNTER>: 1 register on signal <INIT_COUNTER>.
+Unit <Trivium_Generator_vvect> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 292
+ Flip-Flops                                            : 292
+# Multiplexers                                         : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <pr_state[1:3]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ reset_1      | 000
+ reset_2      | 001
+ load_key_iv  | 010
+ init_cycles  | 011
+ output_prime | 100
+ operational  | 101
+--------------------------
+
+Optimizing unit <Trivium_Generator_vvect> ...
+
+Optimizing unit <TRIVIUM_CORE> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Trivium_Generator_vvect, actual ratio is 0.
+FlipFlop CORE_CNTRL_0 has been replicated 1 time(s)
+FlipFlop CORE_CNTRL_1 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 309
+ Flip-Flops                                            : 309
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Trivium_Generator_vvect.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 341
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 10
+#      LUT2                        : 8
+#      LUT3                        : 128
+#      LUT4                        : 161
+#      LUT6                        : 9
+#      MUXCY                       : 10
+#      VCC                         : 1
+#      XORCY                       : 11
+# FlipFlops/Latches                : 309
+#      FD                          : 1
+#      FDE                         : 288
+#      FDR                         : 4
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 165
+#      IBUF                        : 163
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             309  out of  106400     0%  
+ Number of Slice LUTs:                  318  out of  53200     0%  
+    Number used as Logic:               318  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    320
+   Number with an unused Flip Flop:      11  out of    320     3%  
+   Number with an unused LUT:             2  out of    320     0%  
+   Number of fully used LUT-FF pairs:   307  out of    320    95%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                         166
+ Number of bonded IOBs:                 166  out of    125   132% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SYS_CLK                            | BUFGP                  | 309   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.254ns (Maximum Frequency: 797.385MHz)
+   Minimum input arrival time before clock: 0.728ns
+   Maximum output required time after clock: 0.515ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 1.254ns (frequency: 797.385MHz)
+  Total number of paths / destination ports: 1647 / 630
+-------------------------------------------------------------------------
+Delay:               1.254ns (Levels of Logic = 1)
+  Source:            pr_state_FSM_FFd2 (FF)
+  Destination:       CORE_CNTRL_0 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: pr_state_FSM_FFd2 to CORE_CNTRL_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.232   0.366  pr_state_FSM_FFd2 (pr_state_FSM_FFd2)
+     LUT2:I0->O           18   0.043   0.358  GND_3_o_GND_3_o_OR_17_o1 (GND_3_o_GND_3_o_OR_17_o)
+     FDRE:R                    0.255          CORE_CNTRL_0
+    ----------------------------------------
+    Total                      1.254ns (0.530ns logic, 0.724ns route)
+                                       (42.3% logic, 57.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 168 / 167
+-------------------------------------------------------------------------
+Offset:              0.728ns (Levels of Logic = 3)
+  Source:            PLNTXT_EN (PAD)
+  Destination:       CPHRTXT_RDY (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: PLNTXT_EN to CPHRTXT_RDY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.299  PLNTXT_EN_IBUF (PLNTXT_EN_IBUF)
+     LUT4:I3->O            1   0.043   0.343  CPHRTXT_RDY_rstpot (CPHRTXT_RDY_rstpot)
+     LUT2:I0->O            1   0.043   0.000  CPHRTXT_RDY_rstpot1 (CPHRTXT_RDY_rstpot1)
+     FD:D                     -0.001          CPHRTXT_RDY
+    ----------------------------------------
+    Total                      0.728ns (0.086ns logic, 0.642ns route)
+                                       (11.8% logic, 88.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.515ns (Levels of Logic = 1)
+  Source:            CIPHERTEXT_OUT (FF)
+  Destination:       CIPHERTEXT_OUT (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: CIPHERTEXT_OUT to CIPHERTEXT_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.232   0.283  CIPHERTEXT_OUT (CIPHERTEXT_OUT_OBUF)
+     OBUF:I->O                 0.000          CIPHERTEXT_OUT_OBUF (CIPHERTEXT_OUT)
+    ----------------------------------------
+    Total                      0.515ns (0.232ns logic, 0.283ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SYS_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYS_CLK        |    1.254|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.36 secs
+ 
+--> 
+
+
+Total memory usage is 513936 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

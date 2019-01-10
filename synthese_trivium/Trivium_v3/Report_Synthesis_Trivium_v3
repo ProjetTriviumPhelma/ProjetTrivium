@@ -1,0 +1,184 @@
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/Trivium_Gen_Nils_vvect.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/Trivium_Gen_Nils_vvect.syr"
+Reading design: Trivium_Gen_Nils_vvect.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" into library work
+Parsing entity <Trivium_v3>.
+Parsing architecture <Behavior> of entity <trivium_v3>.
+Parsing VHDL file "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_gen_nils_vvect.vhd" into library work
+Parsing entity <Trivium_Gen_Nils_vvect>.
+Parsing architecture <Behavioral> of entity <trivium_gen_nils_vvect>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Trivium_Gen_Nils_vvect> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Trivium_v3> (architecture <Behavior>) from library <work>.
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" Line 110. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd" Line 167. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Trivium_Gen_Nils_vvect>.
+Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_gen_nils_vvect.vhd".
+        width = 8
+    Summary:
+Unit <Trivium_Gen_Nils_vvect> synthesized.
+    
+Synthesizing Unit <Trivium_v3>.
+    Related source file is "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/trivium_v3.vhd".
+    Found 2-bit register for signal <current_state>.
+    Found 11-bit register for signal <nb_loops>.
+    Found 1-bit register for signal <KEY_STREAM_OUT>.
+    Found 1-bit register for signal <MODE_RUN>.
+    Found 288-bit register for signal <s>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RSTb (negative)                                |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit adder for signal <nb_loops[10]_GND_5_o_add_0_OUT> created at line 1241.
+    Found 11-bit comparator greater for signal <nb_loops[10]_PWR_5_o_LessThan_10_o> created at line 154
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 301 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <Trivium_v3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 11-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 11-bit register                                       : 1
+ 288-bit register                                      : 1
+# Comparators                                          : 1
+ 11-bit comparator greater                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Trivium_v3>.
+The following registers are absorbed into counter <nb_loops>: 1 register on signal <nb_loops>.
+Unit <Trivium_v3> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 290
+ Flip-Flops                                            : 290
+# Comparators                                          : 1
+ 11-bit comparator greater                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 12
+ 1-bit xor2                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <TRIV_CORE_GEN_NILS/FSM_0> on signal <current_state[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ init        | 00
+ load_key    | 01
+ first_loops | 11
+ run         | 10
+-------------------------
+
+Optimizing unit <Trivium_Gen_Nils_vvect> ...
+
+Optimizing unit <Trivium_v3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Trivium_Gen_Nils_vvect, actual ratio is 0.
+FlipFlop TRIV_CORE_GEN_NILS/current_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop TRIV_CORE_GEN_NILS/current_state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 305
+ Flip-Flops                                            : 305
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SYS_CLK                            | BUFGP                  | 305   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.207ns (Maximum Frequency: 828.638MHz)
+   Minimum input arrival time before clock: 1.079ns
+   Maximum output required time after clock: 0.898ns
+   Maximum combinational path delay: 0.612ns
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully

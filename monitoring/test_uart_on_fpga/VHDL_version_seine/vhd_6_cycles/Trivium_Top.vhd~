@@ -1,0 +1,340 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all; -- WARP : use work.std_arith.all;
+use ieee.std_logic_unsigned.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+
+entity Trivium_Top is
+	port 	(
+		CLK		: in std_logic;				
+		RESET		: in std_logic;
+		IV		: in std_logic_vector (3 downto 0); 
+		SK		: in std_logic_vector (3 downto 0);
+		mode_test	: in std_logic;
+		enable		: in std_logic;
+		data_in		: in std_logic;
+		Go_NoGo		: out std_logic;
+		test_done	: out std_logic;
+		--ciphertext_out	: out std_logic;
+		Data_out	: out std_logic
+		);
+end entity;		
+
+architecture arch_Trivium of Trivium_Top is
+
+component Trivium_v3
+	port 	(
+		
+		CLK : in std_logic;
+		RSTb : in std_logic;
+		EN : in std_logic;
+		IV_IN : in std_logic_vector (79 downto 0);	-- Input vector for IV
+		SK_IN : in std_logic_vector (79 downto 0);	-- Input vector for SK
+		MODE_RUN : out std_logic;			-- To know when to get the output 
+		KEY_STREAM_OUT : out std_logic;
+		ACK_RUN : out std_logic;
+		ACK_LOAD : out std_logic
+		
+	);
+end component;
+
+component mux
+	port 	(
+		sel: in std_logic;
+	       A : in std_logic_vector (79 downto 0);
+               B : in std_logic_vector (79 downto 0);
+               S : out std_logic_vector (79 downto 0)
+               );
+end component;
+
+
+component Buffer_160bits
+	port 	(
+		CLK : in std_logic;
+		RSTb : in std_logic;
+		MODE_RUN : in std_logic;
+                STREAM_IN : in std_logic;
+		ACK : out std_logic;
+		STREAM_OUT : out std_logic_vector (159 downto 0)
+               );
+end component;
+
+
+component Buffer_80bits
+	port 	(
+		CLK : in std_logic;
+		RSTb : in std_logic;
+                STREAM_IN : in std_logic_vector (3 downto 0);
+		STREAM_OUT : out std_logic_vector (79 downto 0)
+               );
+end component;
+
+component xor_ab
+	port (	clk : in std_logic;
+	       	xor_A : in std_logic;
+               	xor_B : in std_logic;
+               	xor_S : out std_logic
+               	);
+end component;
+
+component mux_ack 
+        port ( 	ack : in std_logic;
+		clk : in std_logic;
+		reset : in std_logic;
+               	buffer_in : in std_logic_vector (79 downto 0);
+               	S_out : out std_logic_vector (79 downto 0)
+               	);
+end component;
+
+
+component xor_var
+	port 	(
+		actif : in std_logic;
+		clk : in std_logic;
+		var_a: in std_logic;
+                g_Ng : out std_logic
+               );
+end component;
+
+signal cpt : std_logic;
+signal cpt_mode_run : integer range 0 to 8;
+constant vecteur_init_IV 	:std_logic_vector:= X"288FF65DC42B92F960C7"; 
+constant Vecteur_init_SK	:std_logic_vector:= X"0F62B5085BAE0154A7FA"; 
+
+
+signal sign_SK:std_logic_vector (79 downto 0);
+signal sign_IV:std_logic_vector (79 downto 0); 
+signal sign_SK_init:std_logic_vector (79 downto 0);
+signal sign_IV_init:std_logic_vector (79 downto 0); 
+signal mux_init: std_logic; 
+signal signal_key_out: std_logic; 
+signal signal_buffer_out: std_logic_vector(159 downto 0); 
+signal signal_mode_run: std_logic;
+signal signal_ack_run: std_logic;
+signal signal_ack_load: std_logic;
+signal signal_data_out: std_logic; 
+signal signal_ack: std_logic;
+signal signal_act: std_logic;
+signal i: integer range 0 to 333; 
+signal signal_reset_mode_test: std_logic;
+signal signal_reset_trivium: std_logic;
+signal sign_buffer_IV :std_logic_vector (79 downto 0);
+signal sign_buffer_SK :std_logic_vector (79 downto 0);
+signal SK_buffer :std_logic_vector (79 downto 0);
+signal IV_buffer :std_logic_vector (79 downto 0);
+
+
+
+--signal cpt_run : std_logic_vector (2 downto 0);								
+begin
+Trivium : Trivium_V3 port map				
+	(
+	CLK		=> CLK,
+	rstb		=> signal_reset_trivium,
+	en		=> Enable,
+	iv_in		=> sign_iv,
+	sk_in		=> sign_sk,
+	mode_run	=> signal_mode_run,
+	key_stream_out	=> signal_key_out ,
+	ack_run		=> signal_ack_run ,
+	ack_load	=> signal_ack_load
+	);
+
+Multiplexeur_IV : mux port map				
+	(
+	sel 		=> mode_test,
+	A		=> IV_buffer,
+	B		=> sign_IV_init,
+	S		=> sign_IV   
+	);
+
+Multiplexeur_SK : mux port map				
+	(
+	sel 		=> mode_test,
+	A		=> SK_buffer,
+	B		=> sign_SK_init,
+	S		=> sign_SK 
+	);
+
+Multiplexeur_init_IV : mux port map				
+	(
+	sel 		=> mux_init,-- depend du Cpt
+	A		=>vecteur_init_IV ,
+	B		=> sign_buffer_IV, 
+	S		=> sign_IV_init
+	);
+
+Multiplexeur_init_SK : mux port map				
+	(
+	sel 		=> mux_init, -- depend du Cpt
+	A		=> vecteur_init_SK ,
+	B		=> sign_buffer_SK, 
+	S		=> sign_SK_init 
+	);
+
+
+Multiplexeur_ack_IV : mux_ack port map				
+	(
+	ack 		=> signal_ack, 
+	reset 		=> reset , 
+	clk 		=> clk ,
+	buffer_in	=> signal_buffer_out(159 downto 80),
+	S_out		=> sign_buffer_iv 
+	);
+
+Multiplexeur_ack_Sk : mux_ack port map				
+	(
+	ack 		=> signal_ack , 
+	reset 		=> reset , 
+	clk 		=> clk , 
+	buffer_in	=> signal_buffer_out(79 downto 0),
+	S_out		=> sign_buffer_SK 
+	);
+
+buffer_r: buffer_160bits port map
+	(
+	CLK 		=> clk,
+	RSTb 		=> reset,
+	MODE_RUN 	=> signal_mode_run, 
+        STREAM_IN 	=> signal_key_out ,
+	ACK 		=> signal_ack ,
+	STREAM_OUT 	=> signal_buffer_out
+	);
+buffer_IV: buffer_80bits port map
+	(
+	CLK 		=> clk,
+	RSTb 		=> reset,
+        STREAM_IN 	=> IV,
+	STREAM_OUT 	=> IV_buffer
+	);
+buffer_SK: buffer_80bits port map
+	(
+	CLK 		=> clk,
+	RSTb 		=> reset,
+        STREAM_IN 	=> SK ,
+	STREAM_OUT 	=> SK_buffer
+	);
+
+xor1 : xor_ab port map				
+	(
+	clk 	=> clk,
+	xor_A	=> data_in , 
+	xor_B	=> signal_key_out , 
+	xor_S	=> signal_data_out 
+	);
+xor2 : xor_var port map				
+	(
+	var_A	=> signal_data_out,
+	actif 	=> signal_act,
+	clk 	=> clk,
+	g_Ng	=> go_Nogo
+	);
+
+-- definir le mux_init , utiliser le acknoledge du buffer
+	
+	process (clk,reset)
+	begin
+		if (reset = '0') then 
+			mux_init<= '0';
+			cpt <= '0';
+			signal_act <= '0';
+			i <= 0;
+			test_done <= '0';
+			signal_reset_mode_test <= '1';
+		elsif (CLK'event and CLK='1') then 
+
+			if mode_test= '0' then 
+				cpt <= '0';
+				mux_init <= '0';
+				i <= 0;
+				signal_act <= '0';
+				test_done <= '0';
+				signal_reset_mode_test <= '1';
+			else
+				if(signal_ack_load = '1') then
+					if cpt= '0' then
+						cpt <='1';
+						mux_init <= '0';
+					else 
+						cpt <= '1';
+						mux_init <= '1';
+					end if;
+				end if;
+
+				if(signal_mode_run ='1') then
+					if (cpt_mode_run < 6) then
+
+						signal_act <= '0';	
+						test_done <= '0';			
+
+						if i=160 then
+							i <= 0;
+							signal_reset_mode_test <= '0';
+						else 	
+							i <= i+1;
+							signal_reset_mode_test <= '1';
+						end if;
+					elsif (cpt_mode_run = 6) then
+				
+						if i=300 then
+							signal_act <= '1';
+							i <= i+1;
+							test_done <= '0';
+							signal_reset_mode_test <= '1';
+						
+						elsif i=332 then 
+							signal_act <= '0';
+							i <= 332;
+							test_done <= '1';
+							signal_reset_mode_test <= '1';
+	
+						else 	
+							i <= i+1;
+							test_done <= '0';
+							signal_reset_mode_test <= '1';	
+						end if;
+				
+					end if; --cpt_mode_run
+				end if; --signal_mode_run
+			end if; --mode_test
+		end if; --CLK'event
+	end process;
+
+	process (clk) 
+	begin 
+		if (clk'event and clk ='1') then
+			if signal_ack_run = '1' then 
+				cpt_mode_run  <= cpt_mode_run  + 1;
+			end if; 
+		end if; 
+	end process;
+
+	data_out <= signal_data_out and signal_mode_run;
+	signal_reset_trivium <= RESET and (signal_reset_mode_test or not mode_test);
+
+end arch_Trivium;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

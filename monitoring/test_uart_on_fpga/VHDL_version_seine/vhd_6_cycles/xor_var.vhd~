@@ -1,0 +1,52 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity xor_var is
+        port (clk: in std_logic;
+	      var_a: in std_logic;
+	      actif: in std_logic;
+              g_Ng : out std_logic
+               );
+end entity;
+
+-- 2 cycles, 8 bits : 	00001011
+-- 3 cycles, 8 bits : 	11001001
+-- 4 cycles, 8 bits : 	11000011
+-- 5 cycles, 8 bits : 	00111111
+-- 6 cycles, 8 bits : 	00100110
+-- 2 cycles, 16 bits : 	0000101100100000
+-- 3 cycles, 16 bits : 	1100100111110111
+-- 4 cycles, 16 bits : 	1100001100111110
+-- 5 cycles, 16 bits : 	0011111111011010
+-- 6 cycles, 16 bits : 	0010011010010001
+-- 2 cycles, 32 bits : 	00001011001000001100101011101000
+-- 3 cycles, 32 bits : 	11001001111101110011010011111000
+-- 4 cycles, 32 bits : 	11000011001111100011000000011110
+-- 5 cycles, 32 bits : 	00111111110110101111111001011011
+-- 6 cycles, 32 bits : 	00100110100100010010111010011101
+
+
+architecture arch_xor of xor_var is
+constant data_test:std_logic_vector:= "11001001111101110011010011111000";
+signal I: integer range 0 to 31;
+begin
+
+	process (clk)
+	begin
+		if (CLK'event and CLK='1') then 
+			if actif = '1' then 
+		    		g_Ng <= var_a xor data_test(i);
+				if i >= 31 then i<= 0;
+				else i <= i+1;
+				end if;	
+			else g_Ng <= '0';
+			end if; 	
+		end if;
+	end process;
+end architecture;
+
+
+
+

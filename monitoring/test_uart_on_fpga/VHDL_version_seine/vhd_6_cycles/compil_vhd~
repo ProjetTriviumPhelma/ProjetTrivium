@@ -1,0 +1,23 @@
+
+
+vdel -lib lib_VHDL -all
+vlib lib_VHDL
+vmap lib_VHDL lib_VHDL
+
+
+
+vcom +acc -work lib_VHDL Trivium_Top.vhd
+vcom +acc -work lib_VHDL trivium_v3.vhd 
+vcom +acc -work lib_VHDL buffer_160bits.vhd 
+vcom +acc -work lib_VHDL buffer_80bits.vhd 
+vcom +acc -work lib_VHDL xor_ab.vhd 
+vcom +acc -work lib_VHDL xor_var.vhd 
+vcom +acc -work lib_VHDL mux.vhd 
+vcom +acc -work lib_VHDL mux_ack.vhd 
+vcom +acc -work lib_VHDL bench_bist.vhd
+
+
+#vsim -do Trivium.tcl >> test
+
+
+

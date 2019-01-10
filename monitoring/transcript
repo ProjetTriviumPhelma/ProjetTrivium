@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.2.0-4-amd64
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 3.16.0-6-amd64
 # //
 # //  Copyright 1991-2013 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -20,8 +20,7 @@ vsim -voptargs=+acc lib_UART.tb_uart_fpga
 # Loading work.trivium_v3(behavior)#1
 # Loading work.uart_rx(rtl)#1
 # Loading work.uart_tx(rtl)#1
-add wave -r /*
+add wave -position insertpoint sim:/tb_uart_fpga/*
 # ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+add wave -position insertpoint sim:/tb_uart_fpga/uut/UUTtrivium/*
 run
-run
-# Causality operation skipped due to absence of debug database file

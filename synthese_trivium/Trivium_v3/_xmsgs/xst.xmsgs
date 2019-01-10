@@ -5,6 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium/Trivium_Generator_vvect.vhd" Line 79: &lt;<arg fmt="%s" index="1">trivium_core</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
 <msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
 </msg>
 

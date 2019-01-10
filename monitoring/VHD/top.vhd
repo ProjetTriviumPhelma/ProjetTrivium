@@ -52,7 +52,7 @@ end component;
 --- INPUT ---
 -------------
 signal count_package : integer range 0 to 21 := 0;
-signal s_RX_Frame : std_logic_vector(167 downto 0);
+signal s_RX_Frame : std_logic_vector(0 to 167);
 signal s_RX_Byte : std_logic_vector(7 downto 0);
 signal s_RX_Serial : std_logic;
 signal s_CLK : std_logic;
@@ -86,8 +86,8 @@ o_TX_Done <= s_TX_Done;
 UUTtrivium : Trivium_Gen_Nils_vvect port map (
 		SYS_CLK => s_CLK,				
 		RST => s_RSTb,
-		IV_INPUT => s_RX_Frame(79 downto 0),
-		K_INPUT => s_RX_Frame(159 downto 80),
+		IV_INPUT => s_RX_Frame(0 to 79),
+		K_INPUT => s_RX_Frame(80 to 159),
 		PLNTXT_EN => s_enable_triv,
 		PLAINTEXT_IN => s_RX_Frame(160),
 		CPHRTXT_RDY => s_RDY,
@@ -122,8 +122,8 @@ UUTuart_tx : UART_TX port map (
 			if count_package < 21 then
 				s_enable_triv <= '0';
 				count_package <= count_package + 1;
-				s_RX_Frame(167 downto 8) <= s_RX_Frame(159 downto 0);
-				s_RX_Frame(7 downto 0) <= s_RX_Byte;
+				s_RX_Frame(8 to 167) <= s_RX_Frame(0 to 159);
+				s_RX_Frame(0 to 7) <= s_RX_Byte;
 			else
 				s_enable_triv <= '1';
 				count_package <= 0;

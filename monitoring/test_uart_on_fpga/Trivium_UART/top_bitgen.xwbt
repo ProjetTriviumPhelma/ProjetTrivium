@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.ncd
-OUTFILE=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART/top.bit
-FAMILY=Zynq
-PART=xc7z020-3clg400
-WORKINGDIR=/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/Trivium_UART
-LICENSE=ISE
-USER_INFO=174170201_174170202_210646199_166

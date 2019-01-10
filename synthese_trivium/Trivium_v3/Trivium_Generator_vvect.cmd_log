@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/Trivium_Generator_vvect.xst" -ofn "/tp/xph3app/xph3app604/Trivium/ProjetTrivium/synthese_trivium/Trivium_v3/Trivium_Generator_vvect.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg400-3 Trivium_Generator_vvect.ngc Trivium_Generator_vvect.ngd  

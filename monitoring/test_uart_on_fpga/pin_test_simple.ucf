@@ -1,0 +1,5 @@
+net "i_Clk"  LOC = "Y9" | IOSTANDARD = LVCMOS33;	# LD0 clk 100MHz
+net "i_RST" LOC = "P16" | IOSTANDARD = LVCMOS33;	# BTNC
+net "i_RX_Serial" LOC = "T18" | IOSTANDARD = LVCMOS33;	# BTNU
+net "o_TX_Serial" LOC = "V10" | IOSTANDARD = LVCMOS33;	# JB3
+

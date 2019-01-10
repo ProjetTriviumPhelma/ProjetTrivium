@@ -1,0 +1,26 @@
+
+vsim  lib_VHDL.bench_bist 
+do /tp/xph3app/xph3app604/Trivium/partie_Design/vhd/wave.do
+#add wave -r /*
+#add wave -position end  sim:/tb_trivium_gen_nils/SYS_CLK
+#property wave -radix binary /bench_alu/SYS_CLK
+#add wave -position end  sim:/tb_trivium_gen_nils/PLAINTEXT_IN
+#property wave -radix binary /tb_trivium_gen_nils/PLAINTEXT_IN
+
+
+set tableau1 [find signal -r /*]
+#set tableau2 [find nets /tb_trivium_gen_nils/uut/*]
+#set cpt= 0
+#set compteur_nb_faute = 0
+puts "tableau1 : "
+puts  $tableau1
+puts  [llength $tableau1]
+
+
+
+
+# Run simulation  en mode normal
+run 100 us
+#restart
+
+

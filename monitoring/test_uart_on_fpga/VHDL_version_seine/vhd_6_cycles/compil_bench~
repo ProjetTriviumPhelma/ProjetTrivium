@@ -1,0 +1,25 @@
+##############################
+# Definition de la librairie #
+##############################
+
+vdel -lib lib_VHDL -all
+vlib lib_VHDL
+vmap lib_VHDL lib_VHDL
+
+###############
+# Compilation #
+###############
+
+# *.vhd permet de compiler tous les fichiers d'un coup
+vcom +acc -work lib_VHDL *.vhd
+
+
+##############
+# Simulation #
+##############
+
+# Lancement mode graphique
+vsim -do Bist.tcl
+
+# Lancement mode console 
+#vsim -c -do Bist.tcl >> output_bist

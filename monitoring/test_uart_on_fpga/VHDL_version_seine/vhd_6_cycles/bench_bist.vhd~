@@ -1,0 +1,117 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+use std.textio.all;
+use ieee.math_real.all;
+
+library modelsim_lib;
+use modelsim_lib.util.all;
+
+library lib_Trivium; -- A garder ?
+
+entity Bench_Bist is
+end entity; 
+
+architecture TEST of Bench_Bist is
+
+    component Trivium_Top
+	port(
+		CLK		: in std_logic;				
+		RESET		: in std_logic;
+		IV		: in std_logic_vector (3 downto 0); -- à determiner
+		SK		: in std_logic_vector (3 downto 0);-- à determiner
+		mode_test	: in std_logic;
+		enable		: in std_logic;
+		data_in		: in std_logic;
+		Go_NoGo		: out std_logic;
+		--ciphertext_out	: out std_logic;
+		Data_out	: out std_logic
+	);
+    end component;
+              
+
+	signal sig_clk, sig_reset, sig_mode_test, sig_enable, sig_data_in, sig_Go_NoGo, sig_ciphertext_out, sig_Data_out : std_logic := '0';
+	signal sig_iv, sig_sk : std_logic_vector (3 downto 0) := (others => '0');
+
+
+   -- Clock period definitions
+   constant CLK_PERIOD 	: time := 10 ns;
+   constant TIME_RUN 	: time := 20 us;	 -- Temps de run avant un restart
+   constant TIME_VERIF 	: time := CLK_PERIOD*32; -- Verif pour un cycle de 32 bits
+
+begin
+
+   test_bist : Trivium_Top
+        port map (
+		CLK		=> sig_clk,	
+		RESET		=> sig_reset,
+		IV		=> sig_iv,
+		SK		=> sig_sk,
+		mode_test	=> sig_mode_test,
+		enable		=> sig_enable,
+		data_in		=> sig_data_in,
+		Go_NoGo		=> sig_Go_NoGo,
+		--ciphertext_out	=> sig_ciphertext_out,
+		Data_out	=> sig_Data_out
+            ) ;
+--	sig_iv <= X"F52FF65DC42B92F960C7";
+--	sig_sk <= X"6532B5085BAE0154A7FA";
+
+   -- Clock process definitions
+   CLK_process: process
+   begin
+	sig_clk <= '1';
+	wait for CLK_PERIOD/2;
+	sig_clk <= '0';
+	wait for CLK_PERIOD/2;
+   end process;
+
+   -- Data process definitions
+   DATA_process: process
+   begin
+	sig_data_in <= '1';
+	wait for CLK_PERIOD;
+	sig_data_in <= '0';
+	wait for CLK_PERIOD;
+   end process;
+
+   -- Definition des cycles de run   
+   RESTART_process : process
+   begin
+	sig_reset <= '0';
+	wait for CLK_PERIOD;
+	sig_reset <= '1';
+	wait for TIME_RUN - CLK_PERIOD;
+   end process;
+
+   -- Definition des clés
+   -- pour l'instant pas besoin de process car elles ne changent pas au cours du temps
+--   KEY_process: process
+--   begin
+	sig_iv <= "0111";
+	sig_sk <= "1001";
+--   end process; 
+
+   -- Definition des signaux de contrôle
+   -- pour l'instant pas besoin de process car ils ne changent pas au cours du temps
+--   LAUNCH_TEST : process
+--   begin
+	sig_mode_test 	<= '1';	-- on passe en mode test
+	sig_enable	<= '1'; -- on lance le trivium	
+--   end process;
+
+   GO_NGO_monitoring: process(sig_Go_NoGo)
+   begin
+	ASSERT sig_Go_NoGo = '0' 	-- on surveille le fait que le Go_NoGo soit égal de 0
+
+  	  REPORT "Test Failure - Go_NoGo at 1" -- affiche un message d'avertissement sinon
+  	  SEVERITY warning;
+   end process;
+
+
+end architecture; 
+
+

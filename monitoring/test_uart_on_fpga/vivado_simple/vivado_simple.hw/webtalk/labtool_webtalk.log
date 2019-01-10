@@ -1,0 +1,9 @@
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/vivado_simple/vivado_simple.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/tp/xph3app/xph3app604/Trivium/ProjetTrivium/monitoring/test_uart_on_fpga/vivado_simple/vivado_simple.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Jan 10 15:45:12 2019. For additional details about this file, please refer to the WebTalk help file at /softslin/vivado_17.1/Vivado/2017.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan 10 15:45:12 2019...

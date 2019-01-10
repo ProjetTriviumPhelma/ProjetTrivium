@@ -22,44 +22,65 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Trivium.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Precision"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_EDIF" xil_pn:name="Trivium_Generator_vvect.edf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PREC_LOG" xil_pn:name="Trivium_Generator_vvect.prec_log"/>
-    <file xil_pn:fileType="FILE_TCL" xil_pn:name="ise_settings.tcl"/>
-    <file xil_pn:fileType="FILE_TCL" xil_pn:name="precproj.tcl"/>
-    <file xil_pn:fileType="FILE_TCL" xil_pn:name="precsynth.tcl"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Trivium_Generator_vvect.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Trivium_Generator_vvect.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Trivium_Generator_vvect.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Trivium_Generator_vvect.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Trivium_Generator_vvect.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Trivium_Generator_vvect.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Trivium_Generator_vvect.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Trivium_Generator_vvect.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Trivium_Generator_vvect_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Trivium_Generator_vvect_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Trivium_Generator_vvect_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1545057239" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1547131188">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6557755119664852956" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545057239" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7512457447411387887" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3589810328974422701" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545057239" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3589810328974422701" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545057239" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4388609654186303520" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545057239" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1052310674813694195" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8962985228163541850" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545057261" xil_pn:in_ck="-2115849520374017451" xil_pn:name="TRANEXT_precSynthesize_FPGA" xil_pn:prop_ck="-4583288616462274974" xil_pn:start_ts="1545057239">
+    <transform xil_pn:end_ts="1547131188" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2688910342960965725" xil_pn:start_ts="1547131188">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Precision"/>
-      <outfile xil_pn:name="Trivium_Generator_vvect.edf"/>
-      <outfile xil_pn:name="Trivium_Generator_vvect.prec_log"/>
-      <outfile xil_pn:name="ise_settings.tcl"/>
-      <outfile xil_pn:name="precproj.tcl"/>
-      <outfile xil_pn:name="precsynth.tcl"/>
+    </transform>
+    <transform xil_pn:end_ts="1547131197" xil_pn:in_ck="-2115849520374017451" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-1490962534661256371" xil_pn:start_ts="1547131188">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.lso"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.ngc"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.ngr"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.prj"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.stx"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.syr"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect.xst"/>
+      <outfile xil_pn:name="Trivium_Generator_vvect_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

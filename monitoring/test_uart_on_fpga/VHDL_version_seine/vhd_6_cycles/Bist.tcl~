@@ -1,0 +1,100 @@
+
+vsim  lib_VHDL.bench_alu -wlf ALU.wlf
+add wave -r /*
+#add wave -position end  sim:/tb_trivium_gen_nils/SYS_CLK
+#property wave -radix binary /bench_alu/SYS_CLK
+#add wave -position end  sim:/tb_trivium_gen_nils/PLAINTEXT_IN
+#property wave -radix binary /tb_trivium_gen_nils/PLAINTEXT_IN
+
+
+set tableau1 [find signal -r /*]
+#set tableau2 [find nets /tb_trivium_gen_nils/uut/*]
+
+puts "tableau1 : "
+puts  $tableau1
+puts  [llength $tableau1]
+
+
+
+
+# Run simulation  en mode normal
+run 20 us
+restart
+
+
+
+for {set i 0}  {$i<[llength $tableau1]} {incr i} {
+
+
+
+
+# test faute de collage à 1
+
+
+	if { [lindex $tableau1 $i] eq "/bench_alu/CMD"} { 
+		puts "loop3 ! "
+		for {set j 0}  {$j< 3 } {incr j} {
+			force  -freeze sim://[lindex $tableau1 $i]($j)  2#1
+			run 20 us
+			restart -force
+		}
+	} elseif { [lindex $tableau1 $i] eq "/bench_alu/A" ||  [lindex $tableau1 $i] eq "/bench_alu/B" || [lindex $tableau1 $i] eq "/bench_alu/S" } { 
+		puts "looop4 ! "
+		for {set j 0}  {$j< 4 } {incr j} {
+			force  -freeze sim://[lindex $tableau1 $i]($j)  2#1
+			run 20 us
+			restart -force
+		}
+	} else {
+
+		puts "Collage a 1" 
+		force  -freeze sim://[lindex $tableau1 $i]  2#1
+		run 20 us
+		restart -force
+	}
+
+# test faute de collage à 0
+	
+	if { [lindex $tableau1 $i] eq "/bench_alu/CMD"} { 
+		puts "loop3 ! "
+		for {set j 0}  {$j< 3 } {incr j} {
+			force  -freeze sim://[lindex $tableau1 $i]($j)  2#0
+			run 20 us
+			restart -force
+		}
+	} elseif { [lindex $tableau1 $i] eq "/bench_alu/A" ||  [lindex $tableau1 $i] eq "/bench_alu/B" || [lindex $tableau1 $i] eq "/bench_alu/S" } { 
+		puts "looop4 ! "
+		for {set j 0}  {$j< 4 } {incr j} {
+			force  -freeze sim://[lindex $tableau1 $i]($j)  2#0
+			run 20 us
+			restart -force
+		}
+	} else {
+
+		puts "Collage a 1" 
+		force  -freeze sim://[lindex $tableau1 $i]  2#0
+		run 20 us
+		restart -force
+	}
+	#restart 
+ 
+
+}
+	puts "ciao !"
+
+
+#fin boucle for
+
+#restart
+
+
+
+#[lindex $tableau1 $i eq "/tb_trivium_gen_nils/PLAINTEXT_IN" ]
+#Pour les if ==> tjr mettre un else
+# NILS N OUBLIE PAS LES DOLLARS !!!
+
+# changer la valeur du signal car tt le temps à 0
+#||  ([lindex $tableau1 $i] eq "/bench_alu/B")|| ([lindex $tableau1 $i] eq "/bench_alu/S")
+
+
+

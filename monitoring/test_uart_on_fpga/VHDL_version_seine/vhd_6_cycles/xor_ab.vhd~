@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity xor_ab is
+        port ( clk: in std_logic;
+		xor_a: in std_logic;
+	       xor_b : in std_logic;
+              xor_S : out std_logic
+               );
+end entity;
+
+architecture arch_xor of xor_ab is
+begin
+  
+
+	if (CLK'event and CLK='1') then 
+	    xor_S <= xor_a xor xor_b;
+	end if;
+end architecture;
+

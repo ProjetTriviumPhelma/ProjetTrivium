@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity mux_ack is
+        port ( ack : in std_logic;
+		reset: in std_logic;
+               buffer_in : in std_logic_vector (79 downto 0);
+               S_out : out std_logic_vector (79 downto 0)
+               );
+end entity;
+
+architecture Behavior of mux_ack is
+
+
+signal boucle: std_logic_vector (79 downto 0); --:= x"00000000000000000000"
+ 
+begin
+	process (reset, ack, buffer_in)
+	begin 
+		
+ 	if reset ='0' then 
+		boucle <=x"00000000000000000000";
+	elsif ack ='1' then 
+		boucle  <=  buffer_in;
+	end if;
+	 end process;
+S_out <= boucle;
+end architecture;
+
+
